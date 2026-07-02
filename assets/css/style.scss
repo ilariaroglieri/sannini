@@ -129,39 +129,6 @@ Version: 1.0
   a {
     text-decoration: underline;
   }
-  &.s-sm-3 {
-    & > p, ul {
-      margin-bottom: calc(var(--s-sm-3) * 1.3);
-    }
-  }
-  &.s-sm-2 {
-    & > p, ul {
-      margin-bottom: calc(var(--s-sm-2) * 1.3);
-    }
-  }
-  &.s-sm-1 {
-    & > p, ul {
-      margin-bottom: calc(var(--s-sm-1) * 1.3);
-    }
-    &.truncated {
-      max-height: calc(var(--s-sm-1) * 1.3 * 4);
-      overflow: hidden;
-      transition: all .7s;
-      &.expanded {
-        max-height: 100vh;
-        overflow: visible;
-      }
-    }
-  }
-}
-
-.two-columns {
-  columns: 2;
-  column-gap: var(--double-spacing);
-}
-
-.max-width {
-  max-width: 500px;
 }
 
 
@@ -171,11 +138,13 @@ html {
 }
 
 body {
-  font-family: 'GT Alpina', serif;
-  color: $primaryColor;
-  overflow-x: hidden;
+  font-family: 'NB National';
   line-height: 1.3;
+  @extend .s-regular;
   text-rendering: geometricPrecision;
+  color: $primaryColor;
+  background-color: $secColor;
+  overflow-x: hidden;
 }
 
 p {
@@ -190,9 +159,9 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color:$primaryColor;
   text-decoration: none;
+  transition: color .3s;
   &:hover {
-    color: $primaryColor;
-    // border-bottom: 1px solid;
+    color: #F01D1D;
   }
 }
 
@@ -233,19 +202,6 @@ img, video {
 
 .underlined {
   text-decoration: underline;
-}
-
-button {
-  @extend .condensed;
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-  cursor: pointer;
-  &.read-more-btn {
-    @extend .normal;
-    color: $primaryColor;
-    @extend .underlined;
-  }
 }
 
 .container {
