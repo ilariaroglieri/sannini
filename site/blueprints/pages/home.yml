@@ -1,4 +1,4 @@
-title: Default page
+title: Home
 
 tabs:
 
@@ -38,3 +38,4 @@ tabs:
             label: Descrizione SEO
             type: textarea
             rows: 3
+

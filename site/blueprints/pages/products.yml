@@ -1,0 +1,26 @@
+title: Prodotti
+
+columns:
+  - width: 2/3
+    sections:
+      contents:
+        headline: Page contents
+        type: fields
+        fields:
+          intro_text:
+            extends: fields/writer-basic
+
+  - width: 1/3
+    sections:
+      products_list:
+        type: pages
+        label: Products
+        parent: site.find("products")
+        templates:
+          - product
+        layout: cards
+        size: tiny
+        image:
+          query: page.cover_img.toFile
+        empty: No products. Click "+" to add one.
+

@@ -1,0 +1,50 @@
+title: Contacts
+
+columns:
+  - width: 1/2
+    sections:
+      label: Contacts
+      icon: email
+      basic_info:
+        type: fields
+        label: Informazioni di contatto
+        help: "Questi dati vengono usati anche nel footer del sito."
+        fields:
+          address:
+            label: Address
+            type: textarea
+            rows: 3
+
+          phome:
+            label: Phone
+            type: textarea
+
+          email:
+            label: Email
+            type: email
+
+          instagram:
+            label: Instagram
+            type: url
+            placeholder: "https://instagram.com/..."
+
+  - width: 1/2
+    sections:
+      additional_info:
+        type: fields
+        label: Additional contacts
+        fields:
+          departments:
+            type: structure
+            columns:
+              title:
+                width: 1/2
+              email:
+                width: 1/2
+            fields:
+              title:
+                label: Titolo
+                type: text
+              email:
+                label: Email
+                type: email

@@ -23,99 +23,94 @@ tabs:
   # ──────────────────────────────────────────
   # TAB: PRODOTTI
   # ──────────────────────────────────────────
-  prodotti:
-    label: Prodotti
+  products:
+    label: Products
     icon: tag
     sections:
-      prodotti_parent:
+      products_parent:
         type: pages
-        label: false
+        label: Products general page
         parent: site
         templates:
-          - prodotti
+          - products
         layout: list
         limit: 1
         empty: ""
         options: false
 
-      prodotti_lista:
+      products_list:
         type: pages
-        label: Prodotti
-        parent: site.find("prodotti")
+        label: Products
+        parent: site.find("products")
         templates:
-          - prodotto
+          - product
         layout: cards
+        size: tiny
         image:
-          query: page.immagine_copertina.toFile
-        info: "{{ page.testo_introduttivo.excerpt(60) }}"
-        empty: Nessun prodotto. Clicca "+" per aggiungerne uno.
+          query: page.cover_img.toFile
+        empty: No products. Click "+" to add one.
 
   # ──────────────────────────────────────────
   # TAB: SISTEMI DI FACCIATA
   # ──────────────────────────────────────────
-  sistemi:
-    label: Sistemi di Facciata
+  claddingsystems:
+    label: Cladding systems
     icon: layers
     sections:
-      sistemi_parent:
+      systems_parent:
         type: pages
-        label: false
+        label: Cladding systems general page
         parent: site
         templates:
-          - sistemi-di-facciata
+          - cladding-systems
         layout: list
         limit: 1
         empty: ""
         options: false
 
-      sistemi_lista:
+      systems_list:
         type: pages
-        label: Sistemi
-        parent: site.find("sistemi-di-facciata")
+        label: Cladding systems
+        parent: site.find("cladding-systems")
         templates:
-          - sistema-di-facciata
+          - cladding-system
         layout: list
-        info: "{{ page.testo_lv1.excerpt(60) }}"
-        empty: Nessun sistema. Clicca "+" per aggiungerne uno.
+        empty: No cladding systems. Click "+" to add one.
 
   # ──────────────────────────────────────────
   # TAB: REALIZZAZIONI
   # ──────────────────────────────────────────
-  realizzazioni:
-    label: Realizzazioni
+  realizations:
+    label: Realizations
     icon: images
     sections:
-      realizzazioni_lista:
+      realizations_list:
         type: pages
-        label: Realizzazioni
-        parent: site.find("realizzazioni")
+        label: Realizations
+        parent: site.find("realizations")
         templates:
-          - realizzazione
-        layout: cards
-        image:
-          query: page.immagine_copertina.toFile
-        info: "{{ page.didascalia }}"
-        empty: Nessuna realizzazione. Clicca "+" per aggiungerne una.
+          - realization
+        empty: No realizations. Click "+" to add one.
 
   # ──────────────────────────────────────────
   # TAB: CONTATTI
   # ──────────────────────────────────────────
-  contatti:
-    label: Contatti
+  contacts:
+    label: Contacts
     icon: email
     sections:
       contatti_info:
         type: fields
-        label: Informazioni
+        label: Informations
         fields:
           indirizzo:
-            label: Indirizzo
+            label: Address
             type: textarea
             rows: 3
 
           telefono:
-            label: Telefono
-            type: tel
+            label: Phone
+            type: textarea
 
           email:
             label: Email
@@ -126,21 +121,19 @@ tabs:
             type: url
             placeholder: "https://instagram.com/..."
 
-      contatti_dipartimenti:
+      additional_info:
         type: fields
-        label: Contatti aggiuntivi
+        label: Additional contacts
         fields:
-          dipartimenti:
-            label: false
-            help: "Aggiungi titolo e indirizzo email per ogni dipartimento o referente."
+          departments:
             type: structure
             columns:
-              titolo:
+              title:
                 width: 1/2
               email:
                 width: 1/2
             fields:
-              titolo:
+              title:
                 label: Titolo
                 type: text
               email:

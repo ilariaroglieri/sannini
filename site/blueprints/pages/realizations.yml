@@ -1,25 +1,25 @@
-title: Default page
+title: Realizzazioni
 
 tabs:
 
   # ──────────────────────────────────────────
-  # TAB: CONTENUTO
+  # TAB: REALIZZAZIONI
   # ──────────────────────────────────────────
-  contents:
-    label: Contents
-    icon: home
+  realizzazioni:
+    label: Realizzazioni
+    icon: grid
     sections:
-      blocchi:
-        type: fields
-        fields:
-          blocks:
-            label: Blocks
-            type: blocks
-            fieldsets:
-              - text-block
-              - 3-col-text-block
-              - img-block
-              - special-block
+      lista_realizzazioni:
+        type: pages
+        label: Realizzazioni
+        parent: site.find('realizzazioni')
+        templates:
+          - realizzazione
+        layout: cards
+        info: "{{ page.didascalia }}"
+        image:
+          query: page.immagine_copertina.toFile
+        empty: Nessuna realizzazione ancora. Clicca "+" per aggiungere.
 
   # ──────────────────────────────────────────
   # TAB: SEO

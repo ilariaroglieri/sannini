@@ -1,0 +1,106 @@
+title: Prodotto
+
+columns:
+  - width: 1/2
+    sections:
+      intro_fields:
+        type: fields
+        fields:
+          cover_img:
+            label: Cover Image
+            type: files
+            max: 1
+            accepts:
+              mime: image/*
+
+          intro_text:
+            extends: fields/writer-basic
+
+          blocks:
+            label: Blocks
+            type: blocks
+            fieldsets:
+              - text-block
+              - 3-col-text-block
+              - img-block
+
+  - width: 1/2
+    sections:
+      tech_sheet:
+        type: fields
+        label: Dati tecnici
+        fields:
+          design:
+            label: Design
+            type: text
+            help: 'If present, this will be displayes inside the main Products page.'
+
+          measures:
+            label: Measures
+            type: text
+            width: 1/2
+
+          weight:
+            label: Weight
+            type: text
+            width: 1/2
+
+          finishing:
+            label: Finishing
+            type: text
+            help: 'If this field is filled, it will override the following three.'
+
+          finishing_front:
+            label: Finishing front
+            type: text
+            width: 1/3
+
+          finishing_back:
+            label: Finishing back
+            type: text
+            width: 1/3
+
+          coste:
+            label: Coste
+            type: text
+            width: 1/3
+
+          variables:
+            label: Variables
+            type: structure
+            columns:
+              titolo:
+                width: 1/3
+              immagine:
+                width: 1/3
+              testo:
+                width: 1/3
+            fields:
+              titolo:
+                label: Titolo
+                type: text
+              immagine:
+                label: Immagine
+                type: files
+                max: 1
+                accepts:
+                  mime: image/*
+              testo:
+                label: Breve testo
+                type: textarea
+                rows: 3
+
+      download_section:
+        type: fields
+        label: Download
+        fields:
+          pdf:
+            label: Scheda PDF
+            type: files
+            max: 1
+            accepts:
+              mime: application/pdf
+
+
+
+

@@ -1,0 +1,39 @@
+title: Realizzazione
+
+columns:
+  - width: 2/3
+    sections: 
+      contents:
+        type: fields
+        fields:
+          subtitle:
+            label: Subtitle
+            type: text
+
+          intro_text:
+            label: Text introduction
+            extends: fields/writer-basic
+          blocks:
+            label: Blocchi
+            type: blocks
+            fieldsets:
+              - text-block
+              - 3-col-text-block
+              - img-block
+
+  - width: 1/3
+    sections:
+      intro_fields:
+        type: fields
+        fields:
+          cover_img:
+            label: Cover Image
+            type: files
+            max: 1
+            accepts:
+              mime: image/*
+
+          realization_caption:
+            label: Realization caption
+            extends: fields/writer-basic
+

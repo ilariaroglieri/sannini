@@ -1,0 +1,34 @@
+title: Cladding systems
+
+columns:
+
+  - width: 2/3
+    sections:
+      intro:
+        type: fields
+        fields:
+          page_title:
+            label: Page title
+            type: text
+          cover_img:
+            label: Image
+            type: files
+            max: 1
+            accepts:
+              mime: image/*
+          intro_text:
+            label: Text introduction
+            extends: fields/writer-basic
+
+  - width: 1/3
+    sections:
+      lista_sistemi:
+        type: pages
+        label: Cladding systems
+        parent: site.find("cladding-systems")
+        templates:
+          - cladding-system
+        layout: list
+        info: "{{ page.testo_lv1.excerpt(80) }}"
+        empty: No cladding systems. Click "+" to add one.
+

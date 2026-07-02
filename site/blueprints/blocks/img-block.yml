@@ -1,0 +1,100 @@
+name: Blocco Immagini
+icon: image
+
+fields:
+  larghezza:
+    label: Configurazione layout
+    type: select
+    default: full
+    help: "Full = un'immagine a tutta larghezza. M+S = due colonne (media + small). S+S+S = tre colonne uguali (ogni slot può contenere 1 o 2 immagini)."
+    options:
+      - value: full
+        text: "Full – 1 immagine"
+      - value: m-s
+        text: "M + S – 2 colonne"
+      - value: s-s-s
+        text: "S + S + S – 3 colonne"
+
+  # ── FULL ──────────────────────────────────
+  immagine_full:
+    label: Immagine
+    type: files
+    max: 1
+    accepts:
+      mime: image/*
+    when:
+      larghezza: full
+
+  # ── M + S ─────────────────────────────────
+  immagine_m:
+    label: Immagine M (grande)
+    type: files
+    max: 1
+    accepts:
+      mime: image/*
+    when:
+      larghezza: m-s
+
+  immagine_s:
+    label: Immagine S (piccola)
+    type: files
+    max: 1
+    accepts:
+      mime: image/*
+    when:
+      larghezza: m-s
+
+  # ── S + S + S ─────────────────────────────
+  immagine_s1:
+    label: "Colonna 1 – immagine A"
+    type: files
+    max: 1
+    accepts:
+      mime: image/*
+    when:
+      larghezza: s-s-s
+
+  immagine_s1b:
+    label: "Colonna 1 – immagine B (opzionale)"
+    type: files
+    max: 1
+    accepts:
+      mime: image/*
+    when:
+      larghezza: s-s-s
+
+  immagine_s2:
+    label: "Colonna 2 – immagine A"
+    type: files
+    max: 1
+    accepts:
+      mime: image/*
+    when:
+      larghezza: s-s-s
+
+  immagine_s2b:
+    label: "Colonna 2 – immagine B (opzionale)"
+    type: files
+    max: 1
+    accepts:
+      mime: image/*
+    when:
+      larghezza: s-s-s
+
+  immagine_s3:
+    label: "Colonna 3 – immagine A"
+    type: files
+    max: 1
+    accepts:
+      mime: image/*
+    when:
+      larghezza: s-s-s
+
+  immagine_s3b:
+    label: "Colonna 3 – immagine B (opzionale)"
+    type: files
+    max: 1
+    accepts:
+      mime: image/*
+    when:
+      larghezza: s-s-s

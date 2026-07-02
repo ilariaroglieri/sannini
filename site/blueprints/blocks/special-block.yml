@@ -1,0 +1,51 @@
+name: Special Block (6 immagini)
+icon: grid
+
+fields:
+  immagine_1:
+    label: Immagine 1
+    type: files
+    max: 1
+    accepts:
+      mime: image/*
+    width: 1/3
+
+  immagine_2:
+    label: Immagine 2
+    type: files
+    max: 1
+    accepts:
+      mime: image/*
+    width: 1/3
+
+  immagine_3:
+    label: Immagine 3
+    type: files
+    max: 1
+    accepts:
+      mime: image/*
+    width: 1/3
+
+  immagine_4:
+    label: Immagine 4
+    type: files
+    max: 1
+    accepts:
+      mime: image/*
+    width: 1/3
+
+  immagine_5:
+    label: Immagine 5
+    type: files
+    max: 1
+    accepts:
+      mime: image/*
+    width: 1/3
+
+  immagine_6:
+    label: Immagine 6
+    type: files
+    max: 1
+    accepts:
+      mime: image/*
+    width: 1/3
