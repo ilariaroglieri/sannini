@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;iCACkC;EAChC,gBAAgB,EAAE,YAAY;;AAGhC;oDACqD;EACnD,gBAAgB,EAAE,OAAO",
+"sources": ["custom-panel.scss"],
+"names": [],
+"file": "custom-panel.css"
+}

@@ -1,0 +1,18 @@
+label:
+  en: Text
+  sv: Text
+type: writer
+translate: true
+toolbar:
+  inline: false
+nodes:
+  - bulletList
+  - orderedList
+marks:
+  - largeText
+  - bold
+  - italic
+  - link
+  - ul
+  - ol
+width: 1/1

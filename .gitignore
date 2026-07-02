@@ -4,6 +4,12 @@
 Icon
 .DS_Store
 
+# Content
+/content/
+
+# Kirby
+/kirby/
+
 # Temporary files
 # ---------------
 

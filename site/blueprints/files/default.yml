@@ -1,0 +1,12 @@
+fields:
+  alt:
+    label:
+      en: Alt text
+      sv: Alternativ text
+    type: text
+    translate: true
+  focus:
+    label:
+      en: Focus point
+      sv: Fokuspunkt
+    type: focus

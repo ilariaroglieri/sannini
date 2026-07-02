@@ -1,0 +1,276 @@
+// =============================
+// BREAKPOINTS
+// =============================
+
+$desktop: 1440px;
+$tablet: 768px;
+$mobile: 640px;
+
+
+// =============================
+// COLORS
+// =============================
+
+$primaryColor: #3C3CD3;
+$secColor: #f5f5f5;
+
+$defaultColor: #71DBD6;
+$exhibitionsColor: #C3C3FF;
+$programColor: #FF9E66;
+$graphicsColor: #61DB98;
+
+
+// =============================
+// SPACING
+// =============================
+
+$spacing: clamp(12px, 1.25vw, 18px);
+$half-spacing: calc(#{$spacing} / 2);
+$double-spacing: calc(#{$spacing} * 2);
+
+$col: 8.3333%; // 12 columns
+
+
+// =============================
+// FONTS
+// =============================
+
+@font-face {
+  font-family: 'GT Alpina';
+  src: url('../fonts/GT-Alpina-Standard-Regular.woff2') format('woff2'),
+       url('../fonts/GT-Alpina-Standard-Regular.woff') format('woff'),
+       url('../fonts/GT-Alpina-Standard-Regular.otf') format('otf'),
+       url('../fonts/GT-Alpina-Standard-Regular.ttf') format('ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'GT Alpina';
+  src: url('../fonts/GT-Alpina-Standard-Regular.woff2') format('woff2'),
+       url('../fonts/GT-Alpina-Standard-Regular.woff') format('woff'),
+       url('../fonts/GT-Alpina-Standard-Regular.otf') format('otf'),
+       url('../fonts/GT-Alpina-Standard-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GT Alpina';
+  src: url('../fonts/GT-Alpina-Standard-Bold.woff2') format('woff2'),
+       url('../fonts/GT-Alpina-Standard-Bold.woff') format('woff'),
+       url('../fonts/GT-Alpina-Standard-Bold.otf') format('otf'),
+       url('../fonts/GT-Alpina-Standard-Bold.ttf') format('ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'GT Alpina';
+  src: url('../fonts/GT-Alpina-Standard-Bold.woff2') format('woff2'),
+       url('../fonts/GT-Alpina-Standard-Bold.woff') format('woff'),
+       url('../fonts/GT-Alpina-Standard-Bold.otf') format('otf'),
+       url('../fonts/GT-Alpina-Standard-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GT Alpina Condensed';
+  src: url('../fonts/GT-Alpina-Condensed-Light.woff2') format('woff2'),
+       url('../fonts/GT-Alpina-Condensed-Light.woff') format('woff'),
+       url('../fonts/GT-Alpina-Condensed-Light.otf') format('otf'),
+       url('../fonts/GT-Alpina-Condensed-Light.ttf') format('ttf');
+  font-weight: 300;
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: 'GT Alpina Fine';
+  src: url('../fonts/GT-Alpina-Fine-Standard-Bold.woff2') format('woff2'),
+       url('../fonts/GT-Alpina-Fine-Standard-Bold.woff') format('woff'),
+       url('../fonts/GT-Alpina-Fine-Standard-Bold.otf') format('otf'),
+       url('../fonts/GT-Alpina-Fine-Standard-Bold.ttf') format('ttf');
+  font-weight: 700;
+}
+
+
+// =============================
+// TYPOGRAPHY
+// =============================
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.normal {
+  font-family: 'GT Alpina';
+  font-weight: 400;
+}
+
+.condensed {
+  font-family: 'GT Alpina Condensed';
+  font-weight: 300;
+}
+
+.fine {
+  font-family: 'GT Alpina Fine';
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+$font-sizes: (
+  'huge-1': clamp(35px, 4.6042vw, 66.3px), // original: 78px
+
+  'big-3': clamp(32px, 3.5417vw, 51px),    // original: 60px
+  'big-2': clamp(30px, 3.1267vw, 45.05px), // original: 53px
+  'big-1': clamp(20px, 2.6563vw, 38.25px), // original: 45px
+
+  'lrg-3': clamp(10px, 2.3611vw, 34px),    // original: 40px
+  'lrg-2': clamp(18px, 2.2431vw, 32.3px),  // original: 38px
+  'lrg-1': clamp(18px, 2.0659vw, 29.75px), // original: 35px
+
+  'reg-5': clamp(21px, 1.8889vw, 27.2px),  // original: 32px
+  'reg-4': clamp(22px, 1.7708vw, 25.5px),  // original: 30px
+  'reg-3': clamp(20px, 1.6528vw, 23.8px),  // original: 28px
+  'reg-2': clamp(16px, 1.5347vw, 22.1px),  // original: 26px
+  'reg-1': clamp(16px, 1.4757vw, 21.25px), // original: 25px
+
+  'sm-4': clamp(16px, 1.3576vw, 19.55px),  // original: 23px
+  'sm-3': clamp(16px, 1.2986vw, 18.7px),   // original: 22px
+  'sm-2': clamp(16px, 1.2695vw, 18.3px),    // original: 21.5px 
+  'sm-1': clamp(13px, 1.1215vw, 16.15px),  // original: 19px
+);
+
+@each $name, $size in $font-sizes {
+  .s-#{$name} {
+    font-size: $size;
+  }
+}
+
+
+// =============================
+// CSS CUSTOM PROPERTIES
+// =============================
+
+:root {
+  --spacing: #{$spacing};
+  --half-spacing: #{$half-spacing};
+  --double-spacing: #{$double-spacing};
+
+  @each $name, $value in $font-sizes {
+    --s-#{$name}: #{$value};
+  }
+
+  --plyr-color-main: #{$primaryColor};
+}
+
+
+// =============================
+// COLUMN SYSTEM (12 grid)
+// =============================
+
+// genera .d-1-twelfth → .d-11-twelfth
+@for $i from 1 through 11 {
+  .d-#{$i}-twelfth {
+    width: calc(#{$col} * #{$i} - #{$double-spacing});
+    margin-right: $spacing;
+    margin-left: $spacing;
+  }
+}
+
+$d-aliases: (
+  one-third: 4,
+  half: 6,
+  two-thirds: 8
+);
+
+@each $name, $val in $d-aliases {
+  .d-#{$name} {
+    width: calc(#{$col} * #{$val} - #{$double-spacing});
+    margin-right: $spacing;
+    margin-left: $spacing;
+  }
+}
+
+.d-whole {
+  width: calc(100% - #{$double-spacing});
+  margin-right: $spacing;
+  margin-left: $spacing;
+}
+
+.d-2half-twelfth {
+  width: calc(#{$col} * 2.4 - #{$double-spacing});
+  margin-right: $spacing;
+  margin-left: $spacing;
+}
+
+
+// =============================
+// SPACING SCALE
+// =============================
+
+$spacing-scale: (
+  0:    0,
+  tiny: calc(#{$half-spacing} / 4),
+  half: calc(#{$half-spacing} / 2),
+  1:    $half-spacing,
+  2:    calc(#{$half-spacing} * 2),
+  3:    calc(#{$half-spacing} * 3),
+  4:    calc(#{$half-spacing} * 4),
+  5:    calc(#{$half-spacing} * 5),
+  6:    calc(#{$half-spacing} * 6),
+  7:    calc(#{$half-spacing} * 7),
+  8:    calc(#{$half-spacing} * 8),
+  9:    calc(#{$half-spacing} * 9),
+  10:   calc(#{$half-spacing} * 10),
+  11:   calc(#{$half-spacing} * 11),
+  12:   calc(#{$half-spacing} * 12),
+);
+
+@mixin generate-spacing($prefix, $property) {
+  @each $key, $value in $spacing-scale {
+    .#{$prefix}-#{$key} {
+      #{$property}: $value;
+    }
+  }
+}
+
+
+// =============================
+// SPACING UTILITIES — DESKTOP
+// =============================
+
+@include generate-spacing("spacing-b",   margin-bottom);
+@include generate-spacing("spacing-t",   margin-top);
+@include generate-spacing("spacing-p-b", padding-bottom);
+@include generate-spacing("spacing-p-t", padding-top);
+
+
+// =============================
+// SPACING UTILITIES — TABLET
+// =============================
+
+@media screen and (max-width: $tablet) {
+  @include generate-spacing("spacing-t-b",   margin-bottom);
+  @include generate-spacing("spacing-t-t",   margin-top);
+  @include generate-spacing("spacing-t-p-b", padding-bottom);
+  @include generate-spacing("spacing-t-p-t", padding-top);
+}
+
+
+// =============================
+// SPACING UTILITIES — MOBILE
+// =============================
+
+@media screen and (max-width: $mobile) {
+  @include generate-spacing("spacing-m-b",   margin-bottom);
+  @include generate-spacing("spacing-m-t",   margin-top);
+  @include generate-spacing("spacing-m-p-b", padding-bottom);
+  @include generate-spacing("spacing-m-p-t", padding-top);
+}

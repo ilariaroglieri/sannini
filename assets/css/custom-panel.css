@@ -1,0 +1,9 @@
+div[data-language="en"],
+div[data-language="en"] .k-header {
+  background-color: lemonchiffon; }
+
+div[data-theme='dark'][data-language="en"],
+div[data-theme='dark'][data-language="en"] .k-header {
+  background-color: #393B07; }
+
+/*# sourceMappingURL=custom-panel.css.map */

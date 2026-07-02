@@ -1,0 +1,284 @@
+/*   
+Theme Name: Grafikens Hus
+Author: Ilaria roglieri
+Version: 1.0
+*/
+
+@import 'common';
+
+*,
+*:after,
+*:before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline:0;
+}
+
+
+//varie & eventuali
+.d-inline-block {
+  display: inline-block;
+}
+
+.t-visible, .m-visible {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+  &.d-row-reverse {
+    flex-flow: row-reverse;
+  }
+  &.d-column {
+    flex-flow: column;
+  }
+  &.center {
+    align-items: center;
+  }
+  &.v-center {
+    justify-content: center;
+  }
+  &.top {
+    align-items: flex-start;
+  }
+  &.baseline {
+    align-items: baseline;
+  }
+  &.flex-end {
+    justify-content: flex-end;
+  }
+  &.space-between {
+    justify-content: space-between;
+  }
+  &.wrap {
+    flex-wrap: wrap;
+  }
+  &.grow {
+    flex: 1;
+  }
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-fixed {
+  position:fixed;
+}
+
+.overall {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  font-size: 0pt;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.t-right {
+  text-align: right;
+}
+
+.t-left {
+  text-align: left;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.primaryColor {
+  color: $primaryColor;
+}
+
+.secColor {
+  color: $secColor;
+}
+
+.wysiwyg {
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+  ul {
+    list-style-type: "•";
+    margin-left: var(--half-spacing);
+    li {
+      padding-left:var(--half-spacing);
+    }
+  }
+  a {
+    text-decoration: underline;
+  }
+  &.s-sm-3 {
+    & > p, ul {
+      margin-bottom: calc(var(--s-sm-3) * 1.3);
+    }
+  }
+  &.s-sm-2 {
+    & > p, ul {
+      margin-bottom: calc(var(--s-sm-2) * 1.3);
+    }
+  }
+  &.s-sm-1 {
+    & > p, ul {
+      margin-bottom: calc(var(--s-sm-1) * 1.3);
+    }
+    &.truncated {
+      max-height: calc(var(--s-sm-1) * 1.3 * 4);
+      overflow: hidden;
+      transition: all .7s;
+      &.expanded {
+        max-height: 100vh;
+        overflow: visible;
+      }
+    }
+  }
+}
+
+.two-columns {
+  columns: 2;
+  column-gap: var(--double-spacing);
+}
+
+.max-width {
+  max-width: 500px;
+}
+
+
+/* basic elements */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'GT Alpina', serif;
+  color: $primaryColor;
+  overflow-x: hidden;
+  line-height: 1.3;
+  text-rendering: geometricPrecision;
+}
+
+p {
+  margin:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+a {
+  color:$primaryColor;
+  text-decoration: none;
+  &:hover {
+    color: $primaryColor;
+    // border-bottom: 1px solid;
+  }
+}
+
+ul {
+  margin:0;
+  padding-left:0;
+  list-style-type: none;
+}
+
+figure {
+  img {
+    object-fit: cover;
+    object-position: var(--focus, center);
+    width: 100%;
+    height: 100%;
+  }
+  &:first-of-type {
+    margin-top: 0;
+  }
+  &.r-landscape {
+    aspect-ratio: 2.36/1;
+  }
+  &.r-rectangle {
+    aspect-ratio: 1.75/1;
+  }
+  &.r-square {
+    aspect-ratio: 1/1;
+  }
+  &.r-none {
+    display: contents;
+  }
+}
+
+img, video {
+  width: 100%;
+  height: auto;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+button {
+  @extend .condensed;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  &.read-more-btn {
+    @extend .normal;
+    color: $primaryColor;
+    @extend .underlined;
+  }
+}
+
+.container {
+  width: calc(100% - var(--spacing) * 8);
+  margin-left: calc(var(--spacing) * 4);
+  margin-right: calc(var(--spacing) * 4);
+}
+
+.container-fluid {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.flex-row{
+  margin-right: calc(var(--spacing) * -1);
+  margin-left: calc(var(--spacing) * -1);
+  position: relative;
+}
+
+header {
+  
+}
+
+main {
+}
+
+section {
+  
+}
+
+
+footer {
+}
+
+@import 'media-queries';
