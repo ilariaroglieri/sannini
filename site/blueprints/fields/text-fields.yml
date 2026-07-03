@@ -1,0 +1,31 @@
+fields:
+  small_title:
+    label: Small title
+    type: text
+
+  text:
+    label: Text
+    extends:
+      fields/writer-basic
+
+  width:
+    label: Width
+    type: select
+    default: full
+    options:
+      - value: full
+        text: Full
+      - value: d-two-thirds
+        text: 2/3
+
+  alignment:
+    label: Alignment
+    type: select
+    default: d-row
+    options:
+      - value: d-row-reverse
+        text: Left
+      - value: d-row
+        text: Right
+    when:
+      width: d-two-thirds

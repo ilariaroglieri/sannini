@@ -86,8 +86,6 @@ $font-sizes: (
   @each $name, $value in $font-sizes {
     --s-#{$name}: #{$value};
   }
-
-  --plyr-color-main: #{$primaryColor};
 }
 
 
@@ -95,12 +93,9 @@ $font-sizes: (
 // COLUMN SYSTEM (12 grid)
 // =============================
 
-// genera .d-1-twelfth → .d-11-twelfth
 @for $i from 1 through 11 {
   .d-#{$i}-twelfth {
-    width: calc(#{$col} * #{$i} - #{$double-spacing});
-    margin-right: $spacing;
-    margin-left: $spacing;
+    grid-column: span #{$i};
   }
 }
 
@@ -112,22 +107,12 @@ $d-aliases: (
 
 @each $name, $val in $d-aliases {
   .d-#{$name} {
-    width: calc(#{$col} * #{$val} - #{$double-spacing});
-    margin-right: $spacing;
-    margin-left: $spacing;
+    grid-column: span #{$val};
   }
 }
 
 .d-whole {
-  width: calc(100% - #{$double-spacing});
-  margin-right: $spacing;
-  margin-left: $spacing;
-}
-
-.d-2half-twelfth {
-  width: calc(#{$col} * 2.4 - #{$double-spacing});
-  margin-right: $spacing;
-  margin-left: $spacing;
+  grid-column: span 12;
 }
 
 

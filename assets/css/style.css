@@ -38,88 +38,52 @@ Version: 1.0
   --s-medium: clamp(24px, 1.4vw, 27px);
   --s-regular: clamp(18px, 1.1vw, 21px);
   --s-small: clamp(12px, 0.7vw, 13px);
-  --s-x-small: clamp(11px, 0.6vw, 12px);
-  --plyr-color-main: #414141; }
+  --s-x-small: clamp(11px, 0.6vw, 12px); }
 
 .d-1-twelfth {
-  width: calc(8.3333% * 1 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  grid-column: span 1; }
 
 .d-2-twelfth {
-  width: calc(8.3333% * 2 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  grid-column: span 2; }
 
 .d-3-twelfth {
-  width: calc(8.3333% * 3 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  grid-column: span 3; }
 
 .d-4-twelfth {
-  width: calc(8.3333% * 4 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  grid-column: span 4; }
 
 .d-5-twelfth {
-  width: calc(8.3333% * 5 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  grid-column: span 5; }
 
 .d-6-twelfth {
-  width: calc(8.3333% * 6 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  grid-column: span 6; }
 
 .d-7-twelfth {
-  width: calc(8.3333% * 7 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  grid-column: span 7; }
 
 .d-8-twelfth {
-  width: calc(8.3333% * 8 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  grid-column: span 8; }
 
 .d-9-twelfth {
-  width: calc(8.3333% * 9 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  grid-column: span 9; }
 
 .d-10-twelfth {
-  width: calc(8.3333% * 10 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  grid-column: span 10; }
 
 .d-11-twelfth {
-  width: calc(8.3333% * 11 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  grid-column: span 11; }
 
 .d-one-third {
-  width: calc(8.3333% * 4 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  grid-column: span 4; }
 
 .d-half {
-  width: calc(8.3333% * 6 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  grid-column: span 6; }
 
 .d-two-thirds {
-  width: calc(8.3333% * 8 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  grid-column: span 8; }
 
 .d-whole {
-  width: calc(100% - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
-
-.d-2half-twelfth {
-  width: calc(8.3333% * 2.4 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  grid-column: span 12; }
 
 .spacing-b-0 {
   margin-bottom: 0; }
@@ -699,6 +663,11 @@ Version: 1.0
     flex-wrap: wrap; }
   .d-flex.grow {
     flex: 1; }
+
+.d-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--spacing); }
 
 .p-absolute {
   position: absolute; }

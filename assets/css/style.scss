@@ -62,6 +62,12 @@ Version: 1.0
   }
 }
 
+.d-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--spacing);
+}
+
 .p-absolute {
   position: absolute;
 }

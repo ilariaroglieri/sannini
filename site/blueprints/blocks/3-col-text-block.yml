@@ -1,33 +1,37 @@
-name: 3 Colonne Testo
-icon: columns
+name: Three Text Columns Block
+icon: text-left
 
+open: true
 fields:
-  titoletto_1:
-    label: Titoletto colonna 1
+  small_title_1:
+    label: Small title 1
     type: text
     width: 1/3
 
-  titoletto_2:
-    label: Titoletto colonna 2
+  small_title_2:
+    label: Small title 2
     type: text
     width: 1/3
 
-  titoletto_3:
-    label: Titoletto colonna 3
+  small_title_3:
+    label: Small title 3
     type: text
     width: 1/3
 
-  testo_1:
-    label: Testo colonna 1
-    type: writer
+  text_1:
+    label: Text 1
+    extends:
+      fields/writer-basic
     width: 1/3
 
-  testo_2:
-    label: Testo colonna 2
-    type: writer
+  text_2:
+    label: Text 2
+    extends:
+      fields/writer-basic
     width: 1/3
 
-  testo_3:
-    label: Testo colonna 3
-    type: writer
+  text_3:
+    label: Text 3
+    extends:
+      fields/writer-basic
     width: 1/3

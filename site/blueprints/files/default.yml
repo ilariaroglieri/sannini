@@ -1,12 +1,5 @@
 fields:
-  alt:
-    label:
-      en: Alt text
-      sv: Alternativ text
+  caption:
+    label: Caption
     type: text
     translate: true
-  focus:
-    label:
-      en: Focus point
-      sv: Fokuspunkt
-    type: focus

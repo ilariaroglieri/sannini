@@ -1,100 +1,93 @@
-name: Blocco Immagini
+name: Images Block
 icon: image
 
+open: true
 fields:
-  larghezza:
-    label: Configurazione layout
+  img_layout:
+    label: Layout
     type: select
     default: full
-    help: "Full = un'immagine a tutta larghezza. M+S = due colonne (media + small). S+S+S = tre colonne uguali (ogni slot può contenere 1 o 2 immagini)."
+    help: "Full = un'immagine a tutta img_layout. M+S = due colonne (media + small). S+S+S = tre colonne uguali. (Lo slot S può contenere 1 o 2 immagini."
     options:
       - value: full
-        text: "Full – 1 immagine"
+        text: "L (Full width)"
       - value: m-s
-        text: "M + S – 2 colonne"
+        text: "M + S"
       - value: s-s-s
-        text: "S + S + S – 3 colonne"
+        text: "S + S + S"
 
   # ── FULL ──────────────────────────────────
-  immagine_full:
-    label: Immagine
+  full_w_img:
+    label: Image L (Full width)
     type: files
     max: 1
     accepts:
       mime: image/*
     when:
-      larghezza: full
+      img_layout: full
 
   # ── M + S ─────────────────────────────────
-  immagine_m:
-    label: Immagine M (grande)
+  medium_img:
+    label: Image M (2/3)
     type: files
     max: 1
     accepts:
       mime: image/*
     when:
-      larghezza: m-s
+      img_layout: m-s
+    width: 2/3
 
-  immagine_s:
-    label: Immagine S (piccola)
+  small_img:
+    label: Image S (1/3)
     type: files
-    max: 1
+    max: 2
     accepts:
       mime: image/*
     when:
-      larghezza: m-s
+      img_layout: m-s
+    width: 1/3
 
   # ── S + S + S ─────────────────────────────
-  immagine_s1:
-    label: "Colonna 1 – immagine A"
+  image_s1:
+    label: "Left image/s"
     type: files
-    max: 1
+    max: 2
     accepts:
       mime: image/*
     when:
-      larghezza: s-s-s
+      img_layout: s-s-s
+    width: 1/3
 
-  immagine_s1b:
-    label: "Colonna 1 – immagine B (opzionale)"
+  image_s2:
+    label: "Center image/s"
     type: files
-    max: 1
+    max: 2
     accepts:
       mime: image/*
     when:
-      larghezza: s-s-s
+      img_layout: s-s-s
+    width: 1/3
 
-  immagine_s2:
-    label: "Colonna 2 – immagine A"
+  image_s3:
+    label: "Right image/s"
     type: files
     max: 1
     accepts:
       mime: image/*
     when:
-      larghezza: s-s-s
+      img_layout: s-s-s
+    width: 1/3
 
-  immagine_s2b:
-    label: "Colonna 2 – immagine B (opzionale)"
-    type: files
-    max: 1
-    accepts:
-      mime: image/*
+  # Alignment
+  alignment:
+    label: Alignment
+    type: select
+    default: full
+    options:
+      - value: d-row
+        text: Image M to the left
+      - value: d-row-reverse
+        text: Image M to the right
     when:
-      larghezza: s-s-s
+      img_layout: m-s
 
-  immagine_s3:
-    label: "Colonna 3 – immagine A"
-    type: files
-    max: 1
-    accepts:
-      mime: image/*
-    when:
-      larghezza: s-s-s
-
-  immagine_s3b:
-    label: "Colonna 3 – immagine B (opzionale)"
-    type: files
-    max: 1
-    accepts:
-      mime: image/*
-    when:
-      larghezza: s-s-s

@@ -1,41 +1,17 @@
 title: Home
 
-tabs:
+sections:
+  blocchi:
+    type: fields
+    fields:
+      blocks:
+        label: Blocks
+        type: blocks
+        fieldsets:
+          - text-block
+          - 3-col-text-block
+          - img-block
+          - special-block
 
-  # ──────────────────────────────────────────
-  # TAB: CONTENUTO
-  # ──────────────────────────────────────────
-  contents:
-    label: Contents
-    icon: home
-    sections:
-      blocchi:
-        type: fields
-        fields:
-          blocks:
-            label: Blocks
-            type: blocks
-            fieldsets:
-              - text-block
-              - 3-col-text-block
-              - img-block
-              - special-block
 
-  # ──────────────────────────────────────────
-  # TAB: SEO
-  # ──────────────────────────────────────────
-  seo:
-    label: SEO
-    icon: search
-    sections:
-      seo_fields:
-        type: fields
-        fields:
-          seo_title:
-            label: Titolo SEO
-            type: text
-          seo_description:
-            label: Descrizione SEO
-            type: textarea
-            rows: 3
 
