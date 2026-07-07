@@ -1,12 +1,23 @@
 <?php
-	$orientation = $img->dimensions()->orientation();
-  $focus = $img->focus();
-  $ratio = $ratio ?? 'r-rectangle';
-  $showCaption = $showCaption ?? true;
+  $width  = $width ?? 'd-whole';
+  $spanMap = [
+    'd-whole'      => ['span' => 3, 'class' => 's-large'],
+    'd-two-thirds' => ['span' => 2, 'class' => 's-regular'],
+  ];
+
+  $span_x    = $spanMap[$width]['span'] ?? 3;
+  $textClass = $spanMap[$width]['class'] ?? '';
 ?>
-<figure class="<?= $ratio; ?>">
-  <img class="<?= $orientation ?>" src="<?= $img->url() ?>" style="object-position: <?= $img->focus()->isNotEmpty() ? $img->focus() : 'center'?>" alt="<?= $img->alt() ?>">
-</figure>
-<?php if ($showCaption !== false && $img->alt()->isNotEmpty()): ?>
-  <figcaption class="spacing-t-2 s-sm-1 t-center"><?= html($img->alt()) ?></figcaption>
-<?php endif ?>
+
+<section class="module text-module" data-span-x="<?= $span_x ?>">
+  <div class="d-flex flex-row m-column <?= $alignment ?>">
+    <div class="element <?= $width ?>">
+      <?php if ($title): ?>
+        <h3 class="mono uppercase s-xsmall spacing-b-2"><?= $title ?></h3>
+      <?php endif; ?>
+      <div class="text <?= $textClass ?>">
+        <?= $text; ?>
+      </div>
+    </div>
+  </div>
+</section>

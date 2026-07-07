@@ -11,9 +11,9 @@ fields:
   width:
     label: Width
     type: select
-    default: full
+    default: d-whole
     options:
-      - value: full
+      - value: d-whole
         text: Full
       - value: d-two-thirds
         text: 2/3
@@ -21,11 +21,11 @@ fields:
   alignment:
     label: Alignment
     type: select
-    default: d-row
+    default: align-right
     options:
-      - value: d-row-reverse
+      - value: align-left
         text: Left
-      - value: d-row
+      - value: align-right
         text: Right
     when:
       width: d-two-thirds

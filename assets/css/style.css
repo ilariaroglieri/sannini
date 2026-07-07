@@ -15,6 +15,9 @@ Version: 1.0
 .uppercase {
   text-transform: uppercase; }
 
+.mono {
+  font-family: 'NB Akademie Mono'; }
+
 .s-large {
   font-size: clamp(24px, 1.5vw, 29px); }
 
@@ -27,7 +30,7 @@ Version: 1.0
 .s-small {
   font-size: clamp(12px, 0.7vw, 13px); }
 
-.s-x-small {
+.s-xsmall {
   font-size: clamp(11px, 0.6vw, 12px); }
 
 :root {
@@ -38,52 +41,82 @@ Version: 1.0
   --s-medium: clamp(24px, 1.4vw, 27px);
   --s-regular: clamp(18px, 1.1vw, 21px);
   --s-small: clamp(12px, 0.7vw, 13px);
-  --s-x-small: clamp(11px, 0.6vw, 12px); }
+  --s-xsmall: clamp(11px, 0.6vw, 12px); }
 
 .d-1-twelfth {
-  grid-column: span 1; }
+  width: calc(8.3333% * 1 - calc(clamp(10px, 0.9vw, 18px) * 2));
+  margin-right: clamp(10px, 0.9vw, 18px);
+  margin-left: clamp(10px, 0.9vw, 18px); }
 
 .d-2-twelfth {
-  grid-column: span 2; }
+  width: calc(8.3333% * 2 - calc(clamp(10px, 0.9vw, 18px) * 2));
+  margin-right: clamp(10px, 0.9vw, 18px);
+  margin-left: clamp(10px, 0.9vw, 18px); }
 
 .d-3-twelfth {
-  grid-column: span 3; }
+  width: calc(8.3333% * 3 - calc(clamp(10px, 0.9vw, 18px) * 2));
+  margin-right: clamp(10px, 0.9vw, 18px);
+  margin-left: clamp(10px, 0.9vw, 18px); }
 
 .d-4-twelfth {
-  grid-column: span 4; }
+  width: calc(8.3333% * 4 - calc(clamp(10px, 0.9vw, 18px) * 2));
+  margin-right: clamp(10px, 0.9vw, 18px);
+  margin-left: clamp(10px, 0.9vw, 18px); }
 
 .d-5-twelfth {
-  grid-column: span 5; }
+  width: calc(8.3333% * 5 - calc(clamp(10px, 0.9vw, 18px) * 2));
+  margin-right: clamp(10px, 0.9vw, 18px);
+  margin-left: clamp(10px, 0.9vw, 18px); }
 
 .d-6-twelfth {
-  grid-column: span 6; }
+  width: calc(8.3333% * 6 - calc(clamp(10px, 0.9vw, 18px) * 2));
+  margin-right: clamp(10px, 0.9vw, 18px);
+  margin-left: clamp(10px, 0.9vw, 18px); }
 
 .d-7-twelfth {
-  grid-column: span 7; }
+  width: calc(8.3333% * 7 - calc(clamp(10px, 0.9vw, 18px) * 2));
+  margin-right: clamp(10px, 0.9vw, 18px);
+  margin-left: clamp(10px, 0.9vw, 18px); }
 
 .d-8-twelfth {
-  grid-column: span 8; }
+  width: calc(8.3333% * 8 - calc(clamp(10px, 0.9vw, 18px) * 2));
+  margin-right: clamp(10px, 0.9vw, 18px);
+  margin-left: clamp(10px, 0.9vw, 18px); }
 
 .d-9-twelfth {
-  grid-column: span 9; }
+  width: calc(8.3333% * 9 - calc(clamp(10px, 0.9vw, 18px) * 2));
+  margin-right: clamp(10px, 0.9vw, 18px);
+  margin-left: clamp(10px, 0.9vw, 18px); }
 
 .d-10-twelfth {
-  grid-column: span 10; }
+  width: calc(8.3333% * 10 - calc(clamp(10px, 0.9vw, 18px) * 2));
+  margin-right: clamp(10px, 0.9vw, 18px);
+  margin-left: clamp(10px, 0.9vw, 18px); }
 
 .d-11-twelfth {
-  grid-column: span 11; }
+  width: calc(8.3333% * 11 - calc(clamp(10px, 0.9vw, 18px) * 2));
+  margin-right: clamp(10px, 0.9vw, 18px);
+  margin-left: clamp(10px, 0.9vw, 18px); }
 
 .d-one-third {
-  grid-column: span 4; }
+  width: calc(8.3333% * 4 - calc(clamp(10px, 0.9vw, 18px) * 2));
+  margin-right: clamp(10px, 0.9vw, 18px);
+  margin-left: clamp(10px, 0.9vw, 18px); }
 
 .d-half {
-  grid-column: span 6; }
+  width: calc(8.3333% * 6 - calc(clamp(10px, 0.9vw, 18px) * 2));
+  margin-right: clamp(10px, 0.9vw, 18px);
+  margin-left: clamp(10px, 0.9vw, 18px); }
 
 .d-two-thirds {
-  grid-column: span 8; }
+  width: calc(8.3333% * 8 - calc(clamp(10px, 0.9vw, 18px) * 2));
+  margin-right: clamp(10px, 0.9vw, 18px);
+  margin-left: clamp(10px, 0.9vw, 18px); }
 
 .d-whole {
-  grid-column: span 12; }
+  width: calc(100% - calc(clamp(10px, 0.9vw, 18px) * 2));
+  margin-right: clamp(10px, 0.9vw, 18px);
+  margin-left: clamp(10px, 0.9vw, 18px); }
 
 .spacing-b-0 {
   margin-bottom: 0; }
@@ -625,6 +658,9 @@ Version: 1.0
 
   .spacing-m-p-t-12 {
     padding-top: calc(calc(clamp(10px, 0.9vw, 18px) / 2) * 12); } }
+:root {
+  --module-h: 0; }
+
 *,
 *:after,
 *:before {
@@ -655,7 +691,7 @@ Version: 1.0
     align-items: flex-start; }
   .d-flex.baseline {
     align-items: baseline; }
-  .d-flex.flex-end {
+  .d-flex.flex-end, .d-flex.align-right {
     justify-content: flex-end; }
   .d-flex.space-between {
     justify-content: space-between; }
@@ -663,11 +699,6 @@ Version: 1.0
     flex-wrap: wrap; }
   .d-flex.grow {
     flex: 1; }
-
-.d-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: var(--spacing); }
 
 .p-absolute {
   position: absolute; }
@@ -778,6 +809,12 @@ img, video {
   width: calc(100% - var(--spacing) * 8);
   margin-left: calc(var(--spacing) * 4);
   margin-right: calc(var(--spacing) * 4); }
+  .container .module {
+    padding: var(--spacing);
+    aspect-ratio: 48/9;
+    overflow: hidden; }
+    .container .module .element {
+      background-color: red; }
 
 .container-fluid {
   margin-left: auto;
