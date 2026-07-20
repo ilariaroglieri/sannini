@@ -782,12 +782,11 @@ figure {
 
 .container {
   width: calc(100% - var(--spacing) * 4);
-  margin-left: calc(var(--spacing) * 2);
-  margin-right: calc(var(--spacing) * 2); }
+  margin: var(--double-spacing) var(--double-spacing) 0; }
   .container .module {
-    aspect-ratio: 48/9;
+    aspect-ratio: 4.93/1;
     overflow: hidden;
-    padding: 0 var(--half-spacing); }
+    padding: var(--half-spacing); }
     .container .module .element {
       padding: var(--spacing);
       padding-bottom: var(--double-spacing); }
