@@ -17,27 +17,12 @@
           'img' => $mediumImg
         ]); ?>
       </div>
-      <div class="element d-one-third"  data-span-x="1">
-        <?php foreach ($smallImg as $img): ?>
-          <?= snippet('image-w-caption', ['img' => $img]) ?>
-        <?php endforeach ?>
-      </div>
+      
+      <?= snippet('images-slot', ['images' => $smallImg]) ?>
     <?php else: ?>
-      <div class="element d-one-third"  data-span-x="1">
-        <?php foreach ($smallImg1 as $img): ?>
-          <?= snippet('image-w-caption', ['img' => $img]) ?>
-        <?php endforeach ?>
-      </div>
-      <div class="element d-one-third"  data-span-x="1">
-        <?php foreach ($smallImg2 as $img): ?>
-          <?= snippet('image-w-caption', ['img' => $img]) ?>
-        <?php endforeach ?>
-      </div>
-      <div class="element d-one-third"  data-span-x="1">
-        <?php foreach ($smallImg3 as $img): ?>
-          <?= snippet('image-w-caption', ['img' => $img]) ?>
-        <?php endforeach ?>
-      </div>
+      <?= snippet('images-slot', ['images' => $smallImg1]) ?>
+      <?= snippet('images-slot', ['images' => $smallImg2]) ?>
+      <?= snippet('images-slot', ['images' => $smallImg2]) ?>
     <?php endif; ?>
   </div>
 </section>

@@ -24,7 +24,7 @@ function updateGrid() {
   const containerW = container.offsetWidth;
   const arm = 4;
   const tileW = containerW / 3 - ((arm/3)*2);
-  const tileH = tileW * 9 / 16;
+  const tileH = tileW * 3 / 5;
 
   document.documentElement.style.setProperty('--module-h', tileH + 'px');
 

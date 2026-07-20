@@ -752,6 +752,10 @@ ul {
   padding-left: 0;
   list-style-type: none; }
 
+figure.landscape {
+  aspect-ratio: 5/3; }
+figure.portrait {
+  aspect-ratio: .78/1; }
 figure img {
   object-fit: cover;
   object-position: var(--focus, center);
@@ -759,18 +763,6 @@ figure img {
   height: 100%; }
 figure:first-of-type {
   margin-top: 0; }
-figure.r-landscape {
-  aspect-ratio: 2.36/1; }
-figure.r-rectangle {
-  aspect-ratio: 1.75/1; }
-figure.r-square {
-  aspect-ratio: 1/1; }
-figure.r-none {
-  display: contents; }
-
-img, video {
-  width: 100%;
-  height: auto; }
 
 .underlined {
   text-decoration: underline; }
@@ -783,16 +775,19 @@ img, video {
     aspect-ratio: 48/9;
     overflow: hidden;
     padding: 0 var(--half-spacing); }
-    .container .module.text-module .text {
-      background-color: #ECEBDD; }
     .container .module .element {
       padding: var(--spacing);
       padding-bottom: var(--double-spacing); }
+    .container .module.text-module .text {
+      background-color: #ECEBDD; }
 
 .container-fluid {
   margin-left: auto;
   margin-right: auto;
   width: 100%; }
+
+.flex-row {
+  gap: var(--double-spacing); }
 
 @media screen and (max-width: 768px) {
   .t-hidden {
