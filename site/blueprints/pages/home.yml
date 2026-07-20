@@ -9,9 +9,9 @@ sections:
         type: blocks
         fieldsets:
           - text-block
-          - 3-col-text-block
           - img-block
           - special-block
+          - 3-col-text-block
 
 
 

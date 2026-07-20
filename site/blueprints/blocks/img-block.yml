@@ -7,7 +7,7 @@ fields:
     label: Layout
     type: select
     default: full
-    help: "Full = un'immagine a tutta img_layout. M+S = due colonne (media + small). S+S+S = tre colonne uguali. (Lo slot S può contenere 1 o 2 immagini."
+    help: "Full = un'immagine a tutta larghezza. M+S = due colonne (media + small). S+S+S = tre colonne uguali. (Lo slot S può contenere 1 o 2 immagini."
     options:
       - value: full
         text: "L (Full width)"
