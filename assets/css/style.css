@@ -44,79 +44,49 @@ Version: 1.0
   --s-xsmall: clamp(11px, 0.6vw, 12px); }
 
 .d-1-twelfth {
-  width: calc(8.3333% * 1 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  width: calc(8.3333% * 1); }
 
 .d-2-twelfth {
-  width: calc(8.3333% * 2 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  width: calc(8.3333% * 2); }
 
 .d-3-twelfth {
-  width: calc(8.3333% * 3 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  width: calc(8.3333% * 3); }
 
 .d-4-twelfth {
-  width: calc(8.3333% * 4 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  width: calc(8.3333% * 4); }
 
 .d-5-twelfth {
-  width: calc(8.3333% * 5 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  width: calc(8.3333% * 5); }
 
 .d-6-twelfth {
-  width: calc(8.3333% * 6 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  width: calc(8.3333% * 6); }
 
 .d-7-twelfth {
-  width: calc(8.3333% * 7 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  width: calc(8.3333% * 7); }
 
 .d-8-twelfth {
-  width: calc(8.3333% * 8 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  width: calc(8.3333% * 8); }
 
 .d-9-twelfth {
-  width: calc(8.3333% * 9 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  width: calc(8.3333% * 9); }
 
 .d-10-twelfth {
-  width: calc(8.3333% * 10 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  width: calc(8.3333% * 10); }
 
 .d-11-twelfth {
-  width: calc(8.3333% * 11 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  width: calc(8.3333% * 11); }
 
 .d-one-third {
-  width: calc(8.3333% * 4 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  width: calc(8.3333% * 4); }
 
 .d-half {
-  width: calc(8.3333% * 6 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  width: calc(8.3333% * 6); }
 
 .d-two-thirds {
-  width: calc(8.3333% * 8 - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  width: calc(8.3333% * 8); }
 
 .d-whole {
-  width: calc(100% - calc(clamp(10px, 0.9vw, 18px) * 2));
-  margin-right: clamp(10px, 0.9vw, 18px);
-  margin-left: clamp(10px, 0.9vw, 18px); }
+  width: 100%; }
 
 .spacing-b-0 {
   margin-bottom: 0; }
@@ -806,25 +776,23 @@ img, video {
   text-decoration: underline; }
 
 .container {
-  width: calc(100% - var(--spacing) * 8);
-  margin-left: calc(var(--spacing) * 4);
-  margin-right: calc(var(--spacing) * 4); }
+  width: calc(100% - var(--spacing) * 4);
+  margin-left: calc(var(--spacing) * 2);
+  margin-right: calc(var(--spacing) * 2); }
   .container .module {
-    padding: var(--spacing);
     aspect-ratio: 48/9;
-    overflow: hidden; }
-    .container .module .element {
+    overflow: hidden;
+    padding: 0 var(--half-spacing); }
+    .container .module.text-module .text {
       background-color: #ECEBDD; }
+    .container .module .element {
+      padding: var(--spacing);
+      padding-bottom: var(--double-spacing); }
 
 .container-fluid {
   margin-left: auto;
   margin-right: auto;
   width: 100%; }
-
-.flex-row {
-  margin-right: calc(var(--spacing) * -1);
-  margin-left: calc(var(--spacing) * -1);
-  position: relative; }
 
 @media screen and (max-width: 768px) {
   .t-hidden {

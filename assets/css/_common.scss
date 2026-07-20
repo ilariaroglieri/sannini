@@ -97,9 +97,7 @@ $font-sizes: (
 
 @for $i from 1 through 11 {
   .d-#{$i}-twelfth {
-    width: calc(#{$col} * #{$i} - #{$double-spacing});
-    margin-right: $spacing;
-    margin-left: $spacing;
+    width: calc(#{$col} * #{$i});
   }
 }
 
@@ -111,16 +109,12 @@ $d-aliases: (
 
 @each $name, $val in $d-aliases {
   .d-#{$name} {
-    width: calc(#{$col} * #{$val} - #{$double-spacing});
-    margin-right: $spacing;
-    margin-left: $spacing;
+    width: calc(#{$col} * #{$val});
   }
 }
 
 .d-whole {
-  width: calc(100% - #{$double-spacing});
-  margin-right: $spacing;
-  margin-left: $spacing;
+  width: 100%;
 }
 
 

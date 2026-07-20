@@ -210,15 +210,21 @@ img, video {
 }
 
 .container {
-  width: calc(100% - var(--spacing) * 8);
-  margin-left: calc(var(--spacing) * 4);
-  margin-right: calc(var(--spacing) * 4);
+  width: calc(100% - var(--spacing) * 4);
+  margin-left: calc(var(--spacing) * 2);
+  margin-right: calc(var(--spacing) * 2);
   .module {
-    padding: var(--spacing);
     aspect-ratio: 48/9;
     overflow:hidden;
+    padding: 0 var(--half-spacing);
+    &.text-module {
+      .text {
+        background-color: $secColor;
+      }
+    }
     .element {
-      background-color: $secColor;
+      padding: var(--spacing);
+      padding-bottom: var(--double-spacing);
     }
   }
 }
@@ -227,12 +233,6 @@ img, video {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-}
-
-.flex-row{
-  margin-right: calc(var(--spacing) * -1);
-  margin-left: calc(var(--spacing) * -1);
-  position: relative;
 }
 
 header {

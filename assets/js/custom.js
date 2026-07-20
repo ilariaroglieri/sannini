@@ -1,6 +1,5 @@
 function snapModules() {
   const moduleH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--module-h'));
-  console.log(moduleH);
 
   document.querySelectorAll('.module').forEach(module => {
   
