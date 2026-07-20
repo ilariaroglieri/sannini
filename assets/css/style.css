@@ -752,17 +752,30 @@ ul {
   padding-left: 0;
   list-style-type: none; }
 
-figure.landscape {
-  aspect-ratio: 5/3; }
-figure.portrait {
-  aspect-ratio: .78/1; }
-figure img {
-  object-fit: cover;
-  object-position: var(--focus, center);
-  width: 100%;
-  height: 100%; }
-figure:first-of-type {
-  margin-top: 0; }
+figure {
+  position: relative;
+  overflow: hidden; }
+  figure.landscape {
+    aspect-ratio: 5/3; }
+  figure.portrait {
+    aspect-ratio: .78/1; }
+  figure img {
+    object-fit: cover;
+    object-position: var(--focus, center);
+    width: 100%;
+    height: 100%; }
+  figure:hover figcaption {
+    opacity: 1;
+    bottom: 0; }
+  figure figcaption {
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    width: 90%;
+    background-color: #ECEBDD;
+    opacity: 0;
+    padding: var(--half-spacing);
+    transition: all .5s; }
 
 .underlined {
   text-decoration: underline; }
