@@ -179,12 +179,6 @@ ul {
 figure {
   position: relative;
   overflow: hidden;
-  &.landscape {
-    aspect-ratio: 5/3;
-  }
-  &.portrait {
-    aspect-ratio: .78/1;
-  }
   img {
     object-fit: cover;
     object-position: var(--focus, center);
@@ -216,14 +210,37 @@ figure {
 
 .container {
   width: calc(100% - var(--spacing) * 4);
-  margin: var(--double-spacing) var(--double-spacing) 0;
+  margin: var(--double-spacing);
   .module {
     aspect-ratio: 4.93/1;
     overflow:hidden;
-    padding: var(--half-spacing);
+    padding: 0 var(--half-spacing);
     .element {
       padding: var(--spacing);
       padding-bottom: var(--double-spacing);
+      &[data-span-x='.5'] {
+        figure.portrait {
+          height: calc(var(--module-h) * 1 - var(--double-spacing)) 
+        }
+      }
+      &[data-span-x='1'] {
+        figure.landscape {
+          height: calc(var(--module-h) * 1 - var(--double-spacing))
+        }
+        figure.portrait {
+          height: calc(var(--module-h) * 2 - var(--double-spacing))
+        }
+      }
+      &[data-span-x='2'] {
+        figure.landscape {
+          height: calc(var(--module-h) * 2 - var(--double-spacing))
+        }
+      }
+      &[data-span-x='3'] {
+        figure.landscape {
+          height: calc(var(--module-h) * 3 - var(--double-spacing))
+        }
+      }
     }
     &.text-module {
       .text {

@@ -15,13 +15,15 @@
 	<?php $topLevel = $page->parent() ? $page->parents()->last() : $page; ?>
 	<body class="<?= $topLevel->slug() ?> <?= $page->parents()->count() ? $page->parent()->uid() . ' ' . $page->uid() : $page->uid(); ?>">
 		<div class="container">
-			<header class="module header-module d-flex space-between" data-span-x="3">
-				<div class="element d-one-third">
-					MENU
-					<?= snippet('menu'); ?>
-				</div>
-				<div class="element d-one-third">
-					LOGO
+			<header class="module header-module" data-span-x="3">
+				<div class="d-flex space-between">
+					<div class="element d-one-third">
+						MENU
+						<?= snippet('menu'); ?>
+					</div>
+					<div class="element d-one-third">
+						LOGO
+					</div>
 				</div>
 			</header>
 			

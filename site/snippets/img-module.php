@@ -3,10 +3,10 @@
   $alignment = $alignment ?? '';
 ?>
 
-<section class="module img-module" data-span-x="3">
+<section class="module img-module">
   <div class="d-flex m-column <?= $alignment ?>">
     <?php if ($imgLayout == 'full'): ?>
-      <div class="element d-whole">
+      <div class="element d-whole" data-span-x="3">
         <?= snippet('image-w-caption', [
           'img' => $fullImg
         ]); ?>

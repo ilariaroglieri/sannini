@@ -755,10 +755,6 @@ ul {
 figure {
   position: relative;
   overflow: hidden; }
-  figure.landscape {
-    aspect-ratio: 5/3; }
-  figure.portrait {
-    aspect-ratio: .78/1; }
   figure img {
     object-fit: cover;
     object-position: var(--focus, center);
@@ -782,14 +778,24 @@ figure {
 
 .container {
   width: calc(100% - var(--spacing) * 4);
-  margin: var(--double-spacing) var(--double-spacing) 0; }
+  margin: var(--double-spacing); }
   .container .module {
     aspect-ratio: 4.93/1;
     overflow: hidden;
-    padding: var(--half-spacing); }
+    padding: 0 var(--half-spacing); }
     .container .module .element {
       padding: var(--spacing);
       padding-bottom: var(--double-spacing); }
+      .container .module .element[data-span-x='.5'] figure.portrait {
+        height: calc(var(--module-h) * 1 - var(--double-spacing)); }
+      .container .module .element[data-span-x='1'] figure.landscape {
+        height: calc(var(--module-h) * 1 - var(--double-spacing)); }
+      .container .module .element[data-span-x='1'] figure.portrait {
+        height: calc(var(--module-h) * 2 - var(--double-spacing)); }
+      .container .module .element[data-span-x='2'] figure.landscape {
+        height: calc(var(--module-h) * 2 - var(--double-spacing)); }
+      .container .module .element[data-span-x='3'] figure.landscape {
+        height: calc(var(--module-h) * 3 - var(--double-spacing)); }
     .container .module.text-module .text {
       background-color: #ECEBDD; }
 
