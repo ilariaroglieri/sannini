@@ -24,7 +24,7 @@
 							  <ul>
 							    <?php foreach ($menu as $item): ?>
 							      <?php if ($menuItem = $item->page()->toPage()): ?>
-							        <li>
+							        <li class='reveal'>
 							          <a class="mono s-small uppercase <?= $menuItem->isOpen() ? 'active' : '' ?>" <?php e($menuItem->isOpen(), 'aria-current="page"') ?> href="<?= $menuItem->url() ?>">
 							            <?= $menuItem->title() ?>
 							          </a>
@@ -33,7 +33,7 @@
 							    <?php endforeach ?>
 
 							    <?php if (kirby()->languages()): ?>
-								    <li>
+								    <li class='reveal'>
 									    <?php foreach (kirby()->languages()->flip() as $language): ?>
 											  <a href="<?= $page->url($language->code()) ?>" 
 											     class="mono s-small uppercase <?= $language->code() === kirby()->language()->code() ? 'lang-active' : '' ?>">
@@ -47,7 +47,7 @@
 							<?php endif ?>
 					</div>
 					<div id="site-logo" class="element p-relative d-1-twelfth d-flex">
-						<a class="d-flex bottom" href="<?= $site->url() ?>">
+						<a class="d-flex bottom reveal" href="<?= $site->url() ?>">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160.642" height="37.378" viewBox="0 0 160.642 37.378">
 							  <defs>
 							    <clipPath id="clip-path">

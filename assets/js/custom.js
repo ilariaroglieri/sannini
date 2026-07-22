@@ -1,3 +1,5 @@
+//--------- background grid
+
 const CROSS_ARM   = 4;   // metà braccio della crocetta
 const CROSS_COLOR = '#414141';
 
@@ -68,3 +70,21 @@ const ro = new ResizeObserver(entries => {
 });
 
 ro.observe(container);
+
+//------- reveal on scroll
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const children = entry.target.querySelectorAll('.reveal');
+      children.forEach((el, i) => {
+        el.style.transitionDelay = `${i * 200}ms`;
+        el.classList.add('is-visible');
+      });
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.d-flex').forEach(el => {
+  revealObserver.observe(el);
+});
