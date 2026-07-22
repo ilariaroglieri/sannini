@@ -1,9 +1,7 @@
 <?php snippet('header') ?>
 
-<main id="default-page">
-	<div class="container">
-		heloooo
-	</div>
+<main>
+	<?= $page->blocks()->toBlocks() ?>
 </main>
 
 <?php snippet('footer') ?>

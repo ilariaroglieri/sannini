@@ -24,12 +24,16 @@ tabs:
   # TAB: PRODOTTI
   # ──────────────────────────────────────────
   products:
-    label: Products
+    label:
+      it: Prodotti 
+      en: Products
     icon: tag
     sections:
       products_parent:
         type: pages
-        label: Products general page
+        label: 
+          it: Pagina generale prodotti
+          en: Products general page
         parent: site
         templates:
           - products
@@ -40,26 +44,34 @@ tabs:
 
       products_list:
         type: pages
-        label: Products
-        parent: site.find("products")
+        label:
+          it: Prodotti 
+          en: Products
+        parent: site.find("prodotti")
         templates:
           - product
         layout: cards
         size: tiny
         image:
           query: page.cover_img.toFile
-        empty: No products. Click "+" to add one.
+        empty: 
+          it: Nessun prodotto. Clicca su "+" per aggiungerne uno.
+          en: No products. Click "+" to add one.
 
   # ──────────────────────────────────────────
   # TAB: SISTEMI DI FACCIATA
   # ──────────────────────────────────────────
   claddingsystems:
-    label: Cladding systems
+    label:
+      it: Sistemi di facciata 
+      en: Cladding systems
     icon: layers
     sections:
       systems_parent:
         type: pages
-        label: Cladding systems general page
+        label:
+          it: Sistemi di facciata (pagina generale) 
+          en: Cladding systems general page
         parent: site
         templates:
           - cladding-systems
@@ -70,33 +82,45 @@ tabs:
 
       systems_list:
         type: pages
-        label: Cladding systems
+        label:
+          it: Sistemi di facciata 
+          en: Cladding systems
         parent: site.find("cladding-systems")
         templates:
           - cladding-system
         layout: list
-        empty: No cladding systems. Click "+" to add one.
+        empty:
+          it: Nessun sistema. Clicca su "+" per aggiungerne uno.
+          en: No cladding systems. Click "+" to add one.
 
   # ──────────────────────────────────────────
   # TAB: REALIZZAZIONI
   # ──────────────────────────────────────────
   realizations:
-    label: Realizations
+    label: 
+      it: Realizzazioni
+      en: Realizations
     icon: images
     sections:
       realizations_list:
         type: pages
-        label: Realizations
-        parent: site.find("realizations")
+        label:
+          it: Realizzazioni 
+          en: Realizations
+        parent: site.find("realizzazioni")
         templates:
           - realization
-        empty: No realizations. Click "+" to add one.
+        empty: 
+          it: Nessuna realizzazione. Clicca su "+" per aggiungerne una.
+          en: No realizations. Click "+" to add one.
 
   # ──────────────────────────────────────────
   # TAB: CONTATTI
   # ──────────────────────────────────────────
   contacts:
-    label: Contacts
+    label:
+      it: Contatti 
+      en: Contacts
     icon: email
     sections:
       contatti_info:
@@ -139,3 +163,22 @@ tabs:
               email:
                 label: Email
                 type: email
+
+  # ──────────────────────────────────────────
+  # TAB: MENU
+  # ──────────────────────────────────────────
+  contacts:
+    label: Menù
+    icon: email
+    sections:
+      menu_section:
+        type: fields
+        fields:
+          menu:
+            type: structure
+            label: Menu
+            fields:
+              page:
+                type: pages
+                label: Pagina
+                max: 1

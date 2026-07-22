@@ -10,10 +10,8 @@ function snapModules() {
 
     if (naturalH > moduleH) {
       const steps = Math.ceil(naturalH / moduleH);
-      module.style.aspectRatio = 'unset';
       module.style.height = (steps * moduleH) + 'px';
     } else {
-      module.style.aspectRatio = '';
       module.style.height = '';
     }
   });

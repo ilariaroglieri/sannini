@@ -212,7 +212,7 @@ figure {
   width: calc(100% - var(--spacing) * 4);
   margin: var(--double-spacing);
   .module {
-    aspect-ratio: 4.93/1;
+    height: var(--module-h);
     overflow:hidden;
     padding: 0 var(--half-spacing);
     .element {
@@ -261,7 +261,15 @@ figure {
 }
 
 header {
-  
+  nav {
+    ul li {
+      padding: var(--half-spacing) 0;
+      border-bottom: 1px solid $primaryColor;
+      &:first-of-type {
+        padding-top: 0;
+      }
+    }
+  }
 }
 
 main {
