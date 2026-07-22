@@ -1,8 +1,13 @@
+const CROSS_ARM   = 4;   // metà braccio della crocetta
+const CROSS_COLOR = '#414141';
+
 function snapModules() {
-  const moduleH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--module-h'));
+  const moduleH = parseFloat(
+    getComputedStyle(document.documentElement).getPropertyValue('--module-h')
+  );
+  if (!moduleH) return;
 
   document.querySelectorAll('.module').forEach(module => {
-  
     const content = module.querySelector('.d-flex');
     if (!content) return;
 
@@ -18,28 +23,42 @@ function snapModules() {
 }
 
 function updateGrid() {
-  const container = document.querySelector('.container');
-  const containerW = container.offsetWidth;
-  const arm = 4;
-  const tileW = containerW / 3 - ((arm/3)*2);
-  const tileH = tileW * 3 / 5;
+  const container  = document.querySelector('.container');
+  const containerW = container.getBoundingClientRect().width;
+  if (!containerW) return;
+
+  const arm    = CROSS_ARM;
+  const gutter = arm;                          // rientro delle crocette esterne
+  const step   = (containerW - gutter * 2) / 3; // larghezza reale di una cella
+  const tileH  = step * 3 / 5;
 
   document.documentElement.style.setProperty('--module-h', tileH + 'px');
 
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${tileW}" height="${tileH}" viewBox="${-arm} ${-arm} ${tileW} ${tileH}">
-    <path d="M${-arm},0 H${arm}" fill="none" stroke="#414141" stroke-width="1"/>
-    <path d="M0,${-arm} V${arm}" fill="none" stroke="#414141" stroke-width="1"/>
+  // una crocetta centrata in (x, arm)
+  const cross = x => `
+    <path d="M${x - arm},${arm} H${x + arm}" fill="none" stroke="${CROSS_COLOR}" stroke-width="1"/>
+    <path d="M${x},0 V${arm * 2}" fill="none" stroke="${CROSS_COLOR}" stroke-width="1"/>`;
+
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${containerW}" height="${tileH}" viewBox="0 0 ${containerW} ${tileH}">
+    ${[0, 1, 2, 3].map(i => cross(gutter + i * step)).join('')}
   </svg>`;
 
-  const encoded = 'data:image/svg+xml,' + encodeURIComponent(svg);
-
-  container.style.backgroundImage = `url("${encoded}")`;
-  container.style.backgroundSize = `${tileW}px ${tileH}px`;
-  container.style.backgroundRepeat = 'repeat';
+  container.style.backgroundImage    = `url("data:image/svg+xml,${encodeURIComponent(svg)}")`;
+  container.style.backgroundSize     = `${containerW}px ${tileH}px`;
+  container.style.backgroundRepeat   = 'repeat-y';
   container.style.backgroundPosition = '0 0';
 
-  snapModules(); 
+  snapModules();
 }
 
-updateGrid();
-window.addEventListener('resize', updateGrid);
+const container = document.querySelector('.container');
+let lastW = 0;
+
+const ro = new ResizeObserver(entries => {
+  const w = entries[0].contentRect.width;
+  if (Math.abs(w - lastW) < 0.5) return; // ignora i cambi di sola altezza
+  lastW = w;
+  updateGrid();
+});
+
+ro.observe(container);
