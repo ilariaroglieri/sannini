@@ -279,6 +279,11 @@ header {
       a {
         &.active {
           color: $accentColor;
+          pointer-events: none;
+        }
+        &.lang-active {
+          opacity: .4;
+          pointer-events: none;
         }
       }
     }

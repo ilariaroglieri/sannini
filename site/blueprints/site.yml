@@ -119,55 +119,27 @@ tabs:
   # ──────────────────────────────────────────
   contacts:
     label:
-      it: Contatti 
+      it: Contatti
       en: Contacts
     icon: email
     sections:
-      contatti_info:
-        type: fields
-        label: Informations
-        fields:
-          indirizzo:
-            label: Address
-            type: textarea
-            rows: 3
-
-          telefono:
-            label: Phone
-            type: textarea
-
-          email:
-            label: Email
-            type: email
-
-          instagram:
-            label: Instagram
-            type: url
-            placeholder: "https://instagram.com/..."
-
-      additional_info:
-        type: fields
-        label: Additional contacts
-        fields:
-          departments:
-            type: structure
-            columns:
-              title:
-                width: 1/2
-              email:
-                width: 1/2
-            fields:
-              title:
-                label: Titolo
-                type: text
-              email:
-                label: Email
-                type: email
+      contacts_page:
+        type: pages
+        label: 
+          it: Pagina Contatti
+          en: Contacts page
+        parent: site
+        templates:
+          - contacts
+        layout: list
+        limit: 1
+        empty: ""
+        options: false
 
   # ──────────────────────────────────────────
   # TAB: MENU
   # ──────────────────────────────────────────
-  contacts:
+  main_menu:
     label: Menù
     icon: email
     sections:

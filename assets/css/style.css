@@ -817,7 +817,11 @@ header nav ul li {
   header nav ul li:first-of-type {
     padding-top: 0; }
   header nav ul li a.active {
-    color: #F01D1D; }
+    color: #F01D1D;
+    pointer-events: none; }
+  header nav ul li a.lang-active {
+    opacity: .4;
+    pointer-events: none; }
 
 @media screen and (max-width: 768px) {
   .t-hidden {

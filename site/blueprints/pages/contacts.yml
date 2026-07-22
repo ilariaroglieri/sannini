@@ -3,8 +3,6 @@ title: Contacts
 columns:
   - width: 1/2
     sections:
-      label: Contacts
-      icon: email
       basic_info:
         type: fields
         label: Informazioni di contatto

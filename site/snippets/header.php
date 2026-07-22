@@ -31,6 +31,17 @@
 							        </li>
 							      <?php endif ?>
 							    <?php endforeach ?>
+
+							    <?php if (kirby()->languages()): ?>
+								    <li>
+									    <?php foreach (kirby()->languages()->flip() as $language): ?>
+											  <a href="<?= $page->url($language->code()) ?>" 
+											     class="mono s-small uppercase <?= $language->code() === kirby()->language()->code() ? 'lang-active' : '' ?>">
+											    <?= $language->code() ?>
+											  </a>
+											<?php endforeach ?>
+										</li>
+									<?php endif; ?>
 							  </ul>
 							</nav>
 							<?php endif ?>
