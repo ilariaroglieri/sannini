@@ -52,6 +52,9 @@ Version: 1.0
   &.baseline {
     align-items: baseline;
   }
+  &.bottom {
+    align-items: flex-end;
+  }
   &.flex-end,
   &.align-right {
     justify-content: flex-end;
@@ -166,7 +169,7 @@ a {
   text-decoration: none;
   transition: color .3s;
   &:hover {
-    color: #F01D1D;
+    color: $accentColor;
   }
 }
 
@@ -261,12 +264,22 @@ figure {
 }
 
 header {
+  #site-logo {
+    svg {
+      width: 100%;
+    }
+  }
   nav {
     ul li {
       padding: var(--half-spacing) 0;
       border-bottom: 1px solid $primaryColor;
       &:first-of-type {
         padding-top: 0;
+      }
+      a {
+        &.active {
+          color: $accentColor;
+        }
       }
     }
   }

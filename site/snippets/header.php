@@ -25,7 +25,7 @@
 							    <?php foreach ($menu as $item): ?>
 							      <?php if ($menuItem = $item->page()->toPage()): ?>
 							        <li>
-							          <a class="mono s-small uppercase" <?php e($menuItem->isOpen(), 'aria-current="page"') ?> href="<?= $menuItem->url() ?>">
+							          <a class="mono s-small uppercase <?= $menuItem->isOpen() ? 'active' : '' ?>" <?php e($menuItem->isOpen(), 'aria-current="page"') ?> href="<?= $menuItem->url() ?>">
 							            <?= $menuItem->title() ?>
 							          </a>
 							        </li>
@@ -35,9 +35,9 @@
 							</nav>
 							<?php endif ?>
 					</div>
-					<div class="element p-relative d-1-twelfth d-flex bottom">
-						<a class="overall p-absolute" href="<?= $site->url() ?>">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 160.642 37.378">
+					<div id="site-logo" class="element p-relative d-1-twelfth d-flex">
+						<a class="d-flex bottom" href="<?= $site->url() ?>">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160.642" height="37.378" viewBox="0 0 160.642 37.378">
 							  <defs>
 							    <clipPath id="clip-path">
 							      <path id="Path_5" data-name="Path 5" d="M0-15.673H160.642V-53.051H0Z" transform="translate(0 53.051)" fill="#414141"/>

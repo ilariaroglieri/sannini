@@ -661,6 +661,8 @@ Version: 1.0
     align-items: flex-start; }
   .d-flex.baseline {
     align-items: baseline; }
+  .d-flex.bottom {
+    align-items: flex-end; }
   .d-flex.flex-end, .d-flex.align-right {
     justify-content: flex-end; }
   .d-flex.space-between {
@@ -807,11 +809,15 @@ figure {
 .flex-row {
   gap: var(--double-spacing); }
 
+header #site-logo svg {
+  width: 100%; }
 header nav ul li {
   padding: var(--half-spacing) 0;
   border-bottom: 1px solid #414141; }
   header nav ul li:first-of-type {
     padding-top: 0; }
+  header nav ul li a.active {
+    color: #F01D1D; }
 
 @media screen and (max-width: 768px) {
   .t-hidden {
