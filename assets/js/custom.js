@@ -7,17 +7,23 @@ function snapModules() {
   );
   if (!moduleH) return;
 
-  document.querySelectorAll('.module').forEach(module => {
-    const content = module.querySelector('.d-flex');
-    if (!content) return;
+  const modules = [...document.querySelectorAll('.module')];
 
-    const naturalH = content.offsetHeight;
+  // 1. reset: tutti tornano all'altezza CSS di base
+  modules.forEach(m => { m.style.height = ''; });
 
+  // 2. misura: ora .d-flex riflette il contenuto reale
+  const heights = modules.map(m => {
+    const content = m.querySelector('.d-flex');
+    return content ? content.offsetHeight : null;
+  });
+
+  // 3. scrittura
+  modules.forEach((m, i) => {
+    const naturalH = heights[i];
+    if (naturalH === null) return;
     if (naturalH > moduleH) {
-      const steps = Math.ceil(naturalH / moduleH);
-      module.style.height = (steps * moduleH) + 'px';
-    } else {
-      module.style.height = '';
+      m.style.height = (Math.ceil(naturalH / moduleH) * moduleH) + 'px';
     }
   });
 }
