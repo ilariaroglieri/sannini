@@ -2,28 +2,28 @@
 
 	<footer class="container">
 		<div class="d-flex space-between m-column">
-			<div class="d-one-third m-whole element reveal">
-				<div class="info reveal spacing-b-8 d-flex">
+			<div class="d-one-third m-whole element reveal-parent">
+				<div class="info reveal-child spacing-b-8 d-flex">
 					<span class="mono uppercase s-xsmall label">Sannini Impruneta</span>
 					<p class="s-xsmall"><?= page('contatti')->address()->kt()->inline() ?></p>
 				</div>
 
-				<div class="info reveal d-flex">
+				<div class="info reveal-child d-flex">
 					<span class="mono uppercase s-xsmall label"><?= t('phone'); ?></span>
 					<p class="s-xsmall"><?= page('contatti')->phone()->kt()->inline() ?></p>
 				</div>
 
-				<div class="info reveal d-flex">
+				<div class="info reveal-child d-flex">
 					<span class="mono uppercase s-xsmall label"><?= t('email'); ?></span>
 					<p class="s-xsmall"><?= page('contatti')->email()->kt()->inline() ?></p>
 				</div>
 
-				<div class="info reveal spacing-b-8 d-flex">
+				<div class="info reveal-child spacing-b-8 d-flex">
 					<span class="mono uppercase s-xsmall label">IG</span>
 					<a class="s-xsmall" href="<?= page('contatti')->email()->toUrl() ?>">Sannini_Impruneta</a>
 				</div>
 
-				<div class="policies reveal d-flex d-column">
+				<div class="policies reveal-child d-flex d-column">
 					<a class="mono uppercase s-xsmall" href="<?= page('privacy-policy')->url() ?>"><?= page('privacy-policy')->title() ?></a>
 					<a class="mono uppercase s-xsmall" href="<?= page('cookie-policy')->url() ?>"><?= page('cookie-policy')->title() ?></a>
 				</div>
@@ -31,9 +31,9 @@
 
 			<div class="d-one-third"></div>
 
-			<div class="d-one-third m-whole element reveal d-flex flex-row m-column">
+			<div class="d-one-third m-whole element reveal-parent d-flex flex-row m-column">
 				<div class="d-half m-whole">
-					<a class="mono uppercase s-xsmall" href="https://www.cottomanetti.com/manetti-gusmano-figli/" target="_blank">MANETTIGUSMANOEFIGLI.COM</a>
+					<a class="mono uppercase s-xsmall" href="https://www.cottomanetti.com/manetti-gusmano-figli/" target="_blank">MANETTIGUSMANOEFIGLI.COM  &#8594;</a>
 				</div>
 				<div class="d-half m-whole d-flex d-column bottom end">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="219.406" height="97.677" viewBox="0 0 219.406 97.677">

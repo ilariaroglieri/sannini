@@ -114,14 +114,38 @@ applyParallax();
 //------- reveal on scroll
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const children = entry.target.querySelectorAll('.reveal');
-      children.forEach((el, i) => {
-        el.style.transitionDelay = `${i * 200}ms`;
+    if (!entry.isIntersecting) return;
+
+    const parents = entry.target.querySelectorAll('.reveal-parent');
+    const COL_BASE_DELAY = 180;  // delay minimo tra parent senza figli
+    const CHILD_DELAY = 100;       // delay tra figli
+
+    parents.forEach((col, colIndex) => {
+      // calcola quando finisce il parent precedente
+      const prevChildren = colIndex > 0 
+        ? parents[colIndex - 1].querySelectorAll('.reveal-child').length 
+        : 0;
+      const prevDuration = colIndex > 0
+        ? Math.max(COL_BASE_DELAY, prevChildren * CHILD_DELAY)
+        : 0;
+
+      // accumula i delay dei parent precedenti
+      const colDelay = Array.from(parents).slice(0, colIndex).reduce((acc, prevCol) => {
+        const n = prevCol.querySelectorAll('.reveal-child').length;
+        return acc + Math.max(COL_BASE_DELAY, n * CHILD_DELAY);
+      }, 0);
+
+      col.style.transitionDelay = `${colDelay}ms`;
+      col.classList.add('is-visible');
+
+      const children = col.querySelectorAll('.reveal-child');
+      children.forEach((el, rowIndex) => {
+        el.style.transitionDelay = `${colDelay + rowIndex * CHILD_DELAY}ms`;
         el.classList.add('is-visible');
       });
-      revealObserver.unobserve(entry.target);
-    }
+    });
+
+    revealObserver.unobserve(entry.target);
   });
 }, { threshold: 0.1 });
 

@@ -18,14 +18,14 @@
 			<div id="grid-markers"></div>
 			<header class="module header-module" data-span-x="3">
 				<div class="d-flex space-between">
-					<div class="element d-one-third">
+					<div class="element reveal-parent d-one-third">
 						<?php $menu = $site->menu()->toStructure() ?>
 							<?php if ($menu->isNotEmpty()): ?>
 							<nav>
 							  <ul>
 							    <?php foreach ($menu as $item): ?>
 							      <?php if ($menuItem = $item->page()->toPage()): ?>
-							        <li class='reveal'>
+							        <li class='reveal-child'>
 							          <a class="mono s-small uppercase <?= $menuItem->isOpen() ? 'active' : '' ?>" <?php e($menuItem->isOpen(), 'aria-current="page"') ?> href="<?= $menuItem->url() ?>">
 							            <?= $menuItem->title() ?>
 							          </a>
@@ -34,7 +34,7 @@
 							    <?php endforeach ?>
 
 							    <?php if (kirby()->languages()): ?>
-								    <li class='reveal'>
+								    <li class='reveal-child'>
 									    <?php foreach (kirby()->languages()->flip() as $language): ?>
 											  <a href="<?= $page->url($language->code()) ?>" 
 											     class="mono s-small uppercase <?= $language->code() === kirby()->language()->code() ? 'lang-active' : '' ?>">
@@ -47,8 +47,8 @@
 							</nav>
 							<?php endif ?>
 					</div>
-					<div id="site-logo" class="element p-relative d-1-twelfth d-flex">
-						<a class="d-flex bottom reveal" href="<?= $site->url() ?>">
+					<div id="site-logo" class="element reveal-parent p-relative d-1-twelfth d-flex">
+						<a class="d-flex bottom reveal-child" href="<?= $site->url() ?>">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160.642" height="37.378" viewBox="0 0 160.642 37.378">
 							  <defs>
 							    <clipPath id="clip-path">

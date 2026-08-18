@@ -11,11 +11,11 @@
 
 <section class="module text-module" data-span-x="<?= $span_x ?>">
   <div class="d-flex flex-row m-column <?= $alignment ?>">
-    <div class="element <?= $width ?>">
+    <div class="element reveal-parent <?= $width ?>">
       <?php if ($title): ?>
-        <h3 class="reveal mono uppercase s-xsmall spacing-b-2"><?= $title ?></h3>
+        <h3 class="reveal-child mono uppercase s-xsmall spacing-b-2"><?= $title ?></h3>
       <?php endif; ?>
-      <div class="reveal text <?= $textClass ?>">
+      <div class="reveal-child text <?= $textClass ?>">
         <?= $text; ?>
       </div>
     </div>
