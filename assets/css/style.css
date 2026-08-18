@@ -765,7 +765,7 @@ Version: 1.0
 .d-flex.bottom {
   align-items: flex-end;
 }
-.d-flex.flex-end, .d-flex.align-right {
+.d-flex.end, .d-flex.align-right {
   justify-content: flex-end;
 }
 .d-flex.space-between {
@@ -1030,6 +1030,9 @@ header nav ul li a.lang-active {
 
 footer .info span, footer .info p {
   width: 41.6665%;
+}
+footer #copyright {
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 820px) {

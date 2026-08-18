@@ -49,7 +49,7 @@
   &.bottom {
     align-items: flex-end;
   }
-  &.flex-end,
+  &.end,
   &.align-right {
     justify-content: flex-end;
   }
@@ -353,5 +353,8 @@ footer {
     span, p {
       width: $col*5;
     }
+  }
+  #copyright {
+    opacity: .5;
   }
 }
