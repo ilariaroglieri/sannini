@@ -1,7 +1,7 @@
 //--------- background grid
 
 const CROSS_ARM   = 4;   // metà braccio della crocetta
-const CROSS_COLOR = '#414141';
+const CROSS_COLOR = '#fff';
 
 function snapModules() {
   const moduleH = parseFloat(
@@ -51,10 +51,11 @@ function updateGrid() {
     ${[0, 1, 2, 3].map(i => cross(gutter + i * step)).join('')}
   </svg>`;
 
-  container.style.backgroundImage    = `url("data:image/svg+xml,${encodeURIComponent(svg)}")`;
-  container.style.backgroundSize     = `${containerW}px ${tileH}px`;
-  container.style.backgroundRepeat   = 'repeat-y';
-  container.style.backgroundPosition = '0 0';
+  const markers = document.querySelector('#grid-markers');
+  markers.style.backgroundImage    = `url("data:image/svg+xml,${encodeURIComponent(svg)}")`;
+  markers.style.backgroundSize     = `${containerW}px ${tileH}px`;
+  markers.style.backgroundRepeat   = 'repeat-y';
+  markers.style.backgroundPosition = '0 0';
 
   snapModules();
 }
