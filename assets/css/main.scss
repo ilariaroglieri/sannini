@@ -276,19 +276,40 @@ figure {
     }
   }
   &.special-img-module {
+    position: relative;
     background-color: #272727;
     width: calc(100% + var(--double-spacing) * 2);
     margin: calc(var(--double-spacing) * -1);
+    margin-bottom: var(--double-spacing);
     padding: var(--double-spacing);
     .d-flex {
-      // padding: var(--double-spacing) calc(var(--spacing) * 3);
       .element {
         padding: var(--double-spacing) calc(var(--double-spacing) * 2);
         figure.portrait, figure.landscape {
-          height: calc(var(--module-h) * 1 - var(--double-spacing) * 2)
+          height: calc(var(--module-h) - var(--double-spacing) * 2)
         }
       }
     }
+    .caption-row {
+      height: var(--module-h);
+      .caption {
+        position: relative;
+        transform: translateY(25%);
+        padding: var(--spacing);
+        figcaption {
+          color: $secColor;
+        }
+      }
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(var(--module-h) - var(--spacing) * 5);
+    background-color: $secColor;
   }
 }
 

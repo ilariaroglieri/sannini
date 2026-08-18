@@ -974,16 +974,38 @@ figure figcaption {
   background-color: #ECEBDD;
 }
 .module.special-img-module {
+  position: relative;
   background-color: #272727;
   width: calc(100% + var(--double-spacing) * 2);
   margin: calc(var(--double-spacing) * -1);
+  margin-bottom: var(--double-spacing);
   padding: var(--double-spacing);
 }
 .module.special-img-module .d-flex .element {
   padding: var(--double-spacing) calc(var(--double-spacing) * 2);
 }
 .module.special-img-module .d-flex .element figure.portrait, .module.special-img-module .d-flex .element figure.landscape {
-  height: calc(var(--module-h) * 1 - var(--double-spacing) * 2);
+  height: calc(var(--module-h) - var(--double-spacing) * 2);
+}
+.module.special-img-module .caption-row {
+  height: var(--module-h);
+}
+.module.special-img-module .caption-row .caption {
+  position: relative;
+  transform: translateY(25%);
+  padding: var(--spacing);
+}
+.module.special-img-module .caption-row .caption figcaption {
+  color: #ECEBDD;
+}
+.module:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(var(--module-h) - var(--spacing) * 5);
+  background-color: #ECEBDD;
 }
 
 header #site-logo svg {
