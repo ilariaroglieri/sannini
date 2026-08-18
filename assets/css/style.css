@@ -980,6 +980,7 @@ figure figcaption {
   margin: calc(var(--double-spacing) * -1);
   margin-bottom: var(--double-spacing);
   padding: var(--double-spacing);
+  will-change: transform;
 }
 .module.special-img-module .d-flex .element {
   padding: var(--double-spacing) calc(var(--double-spacing) * 2);

@@ -80,6 +80,37 @@ const ro = new ResizeObserver(entries => {
 
 ro.observe(container);
 
+
+// parallax animation
+
+function applyParallax() {
+  const SPEED = 300; // ampiezza in px
+  const vh = window.innerHeight;
+
+  document.querySelectorAll('.special-img-module').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.bottom < 0 || rect.top > vh) return;
+
+    const progress = (vh - rect.top) / (vh + rect.height);
+    const clamped  = Math.max(0, Math.min(1, progress));
+    const offset   = (clamped - 0.5) * 2 * SPEED * -1;
+
+    el.style.transform = `translate3d(0, ${offset}px, 0)`;
+  });
+
+  ticking = false;
+}
+
+function onScroll() {
+  if (!ticking) {
+    requestAnimationFrame(applyParallax);
+    ticking = true;
+  }
+}
+
+window.addEventListener('scroll', onScroll, { passive: true });
+applyParallax();
+
 //------- reveal on scroll
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
