@@ -15,8 +15,6 @@ tabs:
         parent: site
         templates:
           - home
-        layout: list
-        limit: 1
         empty: ""
         options: false
 
