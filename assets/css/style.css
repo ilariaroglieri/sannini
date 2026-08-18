@@ -353,7 +353,7 @@ Version: 1.0
   padding-top: calc(calc(clamp(10px, 0.9vw, 18px) / 2) * 12);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
   .spacing-t-b-0 {
     margin-bottom: 0;
   }
@@ -1027,7 +1027,7 @@ header nav ul li a.lang-active {
   pointer-events: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
   .t-hidden {
     display: none;
   }
@@ -1050,6 +1050,11 @@ header nav ul li a.lang-active {
     margin-left: calc(clamp(10px, 0.9vw, 18px) / 2);
     margin-right: calc(clamp(10px, 0.9vw, 18px) / 2);
   }
+  .t-2-twelfth {
+    width: calc(16.6666% - clamp(10px, 0.9vw, 18px));
+    margin-left: calc(clamp(10px, 0.9vw, 18px) / 2);
+    margin-right: calc(clamp(10px, 0.9vw, 18px) / 2);
+  }
 }
 @media screen and (max-width: 640px) {
   .m-hidden {
@@ -1068,13 +1073,11 @@ header nav ul li a.lang-active {
     width: calc(100% - calc(clamp(10px, 0.9vw, 18px) * 2));
     margin-right: clamp(10px, 0.9vw, 18px);
     margin-left: clamp(10px, 0.9vw, 18px);
-    margin-bottom: calc(clamp(10px, 0.9vw, 18px) * 3);
   }
   .m-half {
     width: calc(50% - calc(clamp(10px, 0.9vw, 18px) * 2));
     margin-right: clamp(10px, 0.9vw, 18px);
     margin-left: clamp(10px, 0.9vw, 18px);
-    margin-bottom: calc(clamp(10px, 0.9vw, 18px) * 3);
   }
   main {
     border-width: calc(calc(clamp(10px, 0.9vw, 18px) / 2) + calc(clamp(10px, 0.9vw, 18px) / 2) / 2);

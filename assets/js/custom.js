@@ -23,9 +23,17 @@ function snapModules() {
   // 3. scrittura
   modules.forEach((m, i) => {
     const naturalH = heights[i];
+    const EPS = 2; // tolleranza
+
     if (naturalH === null) return;
-    if (naturalH > moduleH) {
-      m.style.height = (Math.ceil(naturalH / moduleH) * moduleH) + 'px';
+
+    if (m.classList.contains('special-img-module')) {
+      const base = Math.max(1, Math.ceil((naturalH - EPS) / moduleH));
+      m.style.height = ((base + 1) * moduleH) + 'px';
+    } else if (naturalH > moduleH + EPS) {
+      m.style.height = (Math.ceil((naturalH - EPS) / moduleH) * moduleH) + 'px';
+    } else {
+      m.style.height = '';
     }
   });
 }

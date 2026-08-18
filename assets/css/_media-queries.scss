@@ -28,9 +28,14 @@
     margin-right: #{$half-spacing};
   }
 
-
   .t-half {
     width: calc(50% - #{$spacing});
+    margin-left: #{$half-spacing};
+    margin-right: #{$half-spacing};
+  }
+
+  .t-2-twelfth {
+    width: calc($col * 2 - #{$spacing});
     margin-left: #{$half-spacing};
     margin-right: #{$half-spacing};
   }
@@ -58,14 +63,12 @@
     width: calc(100% - #{$double-spacing});
     margin-right:$spacing;
     margin-left:$spacing;
-    margin-bottom: calc(#{$spacing}*3);
   }
 
   .m-half {
     width: calc(50% - #{$double-spacing});
     margin-right:$spacing;
     margin-left:$spacing;
-    margin-bottom: calc(#{$spacing}*3);
   }
 
   main {
