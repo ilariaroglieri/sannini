@@ -7,6 +7,8 @@
 
   $span_x    = $spanMap[$width]['span'] ?? 3;
   $textClass = $spanMap[$width]['class'] ?? '';
+  $alignment = $alignment ?? '';
+  $title = $title ?? '';
 ?>
 
 <section class="module text-module" data-span-x="<?= $span_x ?>">

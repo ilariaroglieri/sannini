@@ -47,7 +47,7 @@
 							</nav>
 							<?php endif ?>
 					</div>
-					<div id="site-logo" class="element reveal-parent p-relative d-1-twelfth d-flex">
+					<div id="site-logo" class="element reveal-parent p-relative d-2-twelfth d-flex">
 						<a class="d-flex bottom reveal-child" href="<?= $site->url() ?>">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160.642" height="37.378" viewBox="0 0 160.642 37.378">
 							  <defs>

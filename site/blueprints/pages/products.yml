@@ -7,6 +7,9 @@ columns:
         headline: Page contents
         type: fields
         fields:
+          page_title:
+            type: text
+            
           intro_text:
             extends: fields/writer-basic
 
@@ -15,11 +18,10 @@ columns:
       products_list:
         type: pages
         label: Products
-        parent: site.find("products")
+        parent: site.find("prodotti")
         templates:
           - product
-        layout: cards
-        size: tiny
+        layout: list
         image:
           query: page.cover_img.toFile
         empty: No products. Click "+" to add one.

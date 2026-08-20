@@ -33,7 +33,7 @@ columns:
           design:
             label: Design
             type: text
-            help: 'If present, this will be displayes inside the main Products page.'
+            help: 'Se presente verrà mostrato nella pagina dei Prodotti.'
 
           measures:
             label: Measures
@@ -46,17 +46,17 @@ columns:
             width: 1/2
 
           finishing:
-            label: Finishing
+            label: Finitura
             type: text
-            help: 'If this field is filled, it will override the following three.'
+            help: 'Se presente avrà priorità sui tre campi sotto.'
 
           finishing_front:
-            label: Finishing front
+            label: Finitura fronte
             type: text
             width: 1/3
 
           finishing_back:
-            label: Finishing back
+            label: Finitura retro
             type: text
             width: 1/3
 
@@ -66,26 +66,22 @@ columns:
             width: 1/3
 
           variables:
-            label: Variables
+            label: Colori
             type: structure
             columns:
-              titolo:
-                width: 1/3
-              immagine:
-                width: 1/3
-              testo:
-                width: 1/3
+              title:
+                width: 1/1
             fields:
-              titolo:
+              title:
                 label: Titolo
                 type: text
-              immagine:
+              image:
                 label: Immagine
                 type: files
                 max: 1
                 accepts:
                   mime: image/*
-              testo:
+              text:
                 label: Breve testo
                 type: textarea
                 rows: 3

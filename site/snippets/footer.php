@@ -1,6 +1,6 @@
   </div>
 
-	<footer class="container">
+	<footer class="container module">
 		<div class="d-flex space-between m-column">
 			<div class="d-one-third m-whole element reveal-parent">
 				<div class="info reveal-child spacing-b-8 d-flex">

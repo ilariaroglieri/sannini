@@ -27,7 +27,8 @@ function snapModules() {
 
     if (naturalH === null) return;
 
-    if (m.classList.contains('special-img-module')) {
+    // add a row if its image module o black special module
+    if (m.classList.contains('special-img-module') || m.classList.contains('img-module')) {
       const base = Math.max(1, Math.ceil((naturalH - EPS) / moduleH));
       m.style.height = ((base + 1) * moduleH) + 'px';
     } else if (naturalH > moduleH + EPS) {

@@ -1,5 +1,5 @@
 <section class="module text-module" data-span-x="3">
-  <div class="d-flex flex-row m-column">
+  <div class="d-flex m-column">
     <div class="element reveal-parent d-one-third m-whole">
       <?php if ($title_1): ?>
         <h3 class="reveal-child mono uppercase s-xsmall spacing-b-2"><?= $title_1 ?></h3>
