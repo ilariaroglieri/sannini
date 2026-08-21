@@ -283,12 +283,12 @@ header {
     padding: var(--spacing) calc(var(--half-spacing) * 3) var(--half-spacing);
     position: relative;
     z-index: 100;
-    &[data-span-x='.5'] {
+    &.d-2-twelfth {
       figure.portrait {
         height: calc(var(--module-h) * 1 - var(--double-spacing)) 
       }
     }
-    &[data-span-x='1'] {
+    &.d-one-third {
       figure.landscape {
         height: calc(var(--module-h) * 1 - var(--double-spacing))
       }
@@ -296,12 +296,12 @@ header {
         height: calc(var(--module-h) * 2 - var(--double-spacing))
       }
     }
-    &[data-span-x='2'] {
+    &.d-two-thirds {
       figure.landscape {
         height: calc(var(--module-h) * 2 - var(--double-spacing))
       }
     }
-    &[data-span-x='3'] {
+    &.d-whole {
       figure.landscape {
         height: calc(var(--module-h) * 3 - var(--double-spacing))
       }
@@ -359,6 +359,7 @@ header {
   }
 }
 
+// products page
 #products-list {
 }
 .product {
@@ -390,6 +391,13 @@ header {
     .product-img {
       background-size: 55%;
     }
+  }
+}
+
+//single-product
+.module {
+  &.tech-info-module {
+
   }
 }
 

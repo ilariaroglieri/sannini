@@ -984,19 +984,19 @@ header nav ul li a.lang-active {
   position: relative;
   z-index: 100;
 }
-.module .element[data-span-x=".5"] figure.portrait {
+.module .element.d-2-twelfth figure.portrait {
   height: calc(var(--module-h) * 1 - var(--double-spacing));
 }
-.module .element[data-span-x="1"] figure.landscape {
+.module .element.d-one-third figure.landscape {
   height: calc(var(--module-h) * 1 - var(--double-spacing));
 }
-.module .element[data-span-x="1"] figure.portrait {
+.module .element.d-one-third figure.portrait {
   height: calc(var(--module-h) * 2 - var(--double-spacing));
 }
-.module .element[data-span-x="2"] figure.landscape {
+.module .element.d-two-thirds figure.landscape {
   height: calc(var(--module-h) * 2 - var(--double-spacing));
 }
-.module .element[data-span-x="3"] figure.landscape {
+.module .element.d-whole figure.landscape {
   height: calc(var(--module-h) * 3 - var(--double-spacing));
 }
 .module.text-module .text {

@@ -6,13 +6,13 @@
 <section class="module img-module">
   <div class="d-flex m-column <?= $alignment ?>">
     <?php if ($imgLayout == 'full'): ?>
-      <div class="element reveal-parent d-whole" data-span-x="3">
+      <div class="element reveal-parent d-whole">
         <?= snippet('image-w-caption', [
           'img' => $fullImg
         ]); ?>
       </div>
     <?php elseif ($imgLayout == 'm-s'): ?>
-      <div class="element reveal-parent d-two-thirds"  data-span-x="2">
+      <div class="element reveal-parent d-two-thirds">
         <?= snippet('image-w-caption', [
           'img' => $mediumImg
         ]); ?>

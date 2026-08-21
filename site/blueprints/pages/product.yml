@@ -12,6 +12,15 @@ columns:
             max: 1
             accepts:
               mime: image/*
+            width: 1/2
+
+          tech_drawing_mobile:
+            label: Disegno tecnico (Mobile)
+            type: files
+            max: 1
+            accepts:
+              mime: image/*
+            width: 1/2
 
           intro_text:
             extends: fields/writer-basic

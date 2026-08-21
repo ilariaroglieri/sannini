@@ -12,6 +12,7 @@
 	      <div class="element reveal-parent d-two-thirds m-whole" data-span-x="2">
 	        <?= snippet('image-w-caption', [
 	          'img' => $page->tech_drawing()->toFile(),
+	          'mobileImg' => $page->tech_drawing_mobile()->toFile(),
 	        ]); ?>
 
 		    	<div class="reveal-child text s-large spacing-t-6">
