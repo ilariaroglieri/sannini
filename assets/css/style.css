@@ -1016,9 +1016,6 @@ header nav ul li a.lang-active {
   position: relative;
   z-index: 100;
 }
-.module .element.d-2-twelfth figure.portrait {
-  height: calc(var(--module-h) * 1 - var(--double-spacing));
-}
 .module .element.d-one-third figure.landscape {
   height: calc(var(--module-h) * 1 - var(--double-spacing));
 }
@@ -1030,6 +1027,9 @@ header nav ul li a.lang-active {
 }
 .module .element.d-whole figure.landscape {
   height: calc(var(--module-h) * 3 - var(--double-spacing));
+}
+.module .element.d-flex figure.portrait {
+  height: calc(var(--module-h) * 1 - var(--double-spacing));
 }
 .module .text {
   background-color: #ECEBDD;

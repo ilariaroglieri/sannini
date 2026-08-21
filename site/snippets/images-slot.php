@@ -1,15 +1,13 @@
 <?php
   $count = count($images);
+  $w = $count === 1 ? '' : 'd-half';
 ?>
 
+<div class="element reveal-parent d-one-third m-whole <?php if ($count > 1): ?>d-flex flex-row m-column<?php endif; ?>">
   <?php foreach ($images as $img): ?>
-    <?php if ($count === 1): ?>
-      <div class="element reveal-parent d-one-third m-whole">
-        <?= snippet('image-w-caption', ['img' => $img]) ?>
-      </div>
-    <?php else: ?>
-      <div class="element reveal-parent d-2-twelfth m-whole d-flex flex-row m-column">
-        <?= snippet('image-w-caption', ['img' => $img]) ?>
-      </div>
-    <?php endif ?>
+    <?= snippet('image-w-caption', [
+      'img' => $img,
+      'classes' => $w . ' reveal-child'
+    ]) ?>
   <?php endforeach ?>
+</div>

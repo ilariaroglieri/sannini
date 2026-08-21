@@ -315,11 +315,6 @@ header {
     padding: var(--spacing) calc(var(--half-spacing) * 3) var(--half-spacing);
     position: relative;
     z-index: 100;
-    &.d-2-twelfth {
-      figure.portrait {
-        height: calc(var(--module-h) * 1 - var(--double-spacing)) 
-      }
-    }
     &.d-one-third {
       figure.landscape {
         height: calc(var(--module-h) * 1 - var(--double-spacing))
@@ -336,6 +331,11 @@ header {
     &.d-whole {
       figure.landscape {
         height: calc(var(--module-h) * 3 - var(--double-spacing))
+      }
+    }
+    &.d-flex { // couple of two vertical images 
+      figure.portrait {
+        height: calc(var(--module-h) * 1 - var(--double-spacing)) 
       }
     }
   }
