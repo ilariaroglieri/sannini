@@ -999,15 +999,15 @@ header nav ul li a.lang-active {
 .module .element.d-whole figure.landscape {
   height: calc(var(--module-h) * 3 - var(--double-spacing));
 }
-.module.text-module .text {
+.module .text {
   background-color: #ECEBDD;
   padding-bottom: var(--spacing);
 }
-.module.text-module .text bold, .module.text-module .text strong {
+.module .text bold, .module .text strong {
   font-weight: normal;
   background-color: white;
 }
-.module.text-module .text.no-title-padding {
+.module .text.no-title-padding {
   padding-top: calc(var(--spacing) + var(--s-xsmall));
 }
 .module.special-img-module {
@@ -1138,22 +1138,14 @@ footer #copyright {
     margin-right: clamp(10px, 0.9vw, 18px);
     margin-left: clamp(10px, 0.9vw, 18px);
   }
-  main {
-    border-width: calc(calc(clamp(10px, 0.9vw, 18px) / 2) + calc(clamp(10px, 0.9vw, 18px) / 2) / 2);
+  .module .element {
+    padding: var(--spacing) var(--half-spacing);
   }
-  .container {
-    width: calc(100% - clamp(10px, 0.9vw, 18px) * 3);
-    margin-left: calc(calc(clamp(10px, 0.9vw, 18px) / 2) * 3);
-    margin-right: calc(calc(clamp(10px, 0.9vw, 18px) / 2) * 3);
+  .module .element.m-whole figure.m-portrait {
+    height: calc(var(--module-h) * 2 - var(--double-spacing));
   }
-  .flex-row {
-    margin-right: calc(clamp(10px, 0.9vw, 18px) * -1);
-    margin-left: calc(clamp(10px, 0.9vw, 18px) * -1);
-    position: relative;
-  }
-  .two-col-layout {
-    grid-template-columns: 1fr;
-    grid-template-areas: "title" "images" "text";
+  .module .element.m-whole figure.m-landscape {
+    height: calc(var(--module-h) - var(--double-spacing));
   }
 }
 

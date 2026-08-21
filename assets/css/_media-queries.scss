@@ -71,28 +71,18 @@
     margin-left:$spacing;
   }
 
-  main {
-    border-width: calc(#{$half-spacing} + #{$half-spacing}/2);
-  }
-
-  .container {
-    width: calc(100% - #{$spacing} * 3);
-    margin-left: calc(#{$half-spacing} * 3);
-    margin-right: calc(#{$half-spacing} * 3);
-  }
-
-  .flex-row{
-    margin-right: calc(#{$spacing} * -1);
-    margin-left: calc(#{$spacing} * -1);
-    position: relative;
-  }
-
-  .two-col-layout {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "title"
-      "images"
-      "text";
+  .module {
+    .element {
+      padding: var(--spacing) var(--half-spacing);
+      &.m-whole {
+        figure.m-portrait {
+          height: calc(var(--module-h) * 2 - var(--double-spacing))
+        }
+        figure.m-landscape {
+          height: calc(var(--module-h) - var(--double-spacing))
+        }
+      }
+    }
   }
 }
 

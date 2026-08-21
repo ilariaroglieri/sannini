@@ -1,4 +1,4 @@
-<section class="module text-module" data-span-x="3">
+<section class="module text-module">
   <div class="d-flex m-column">
     <div class="element reveal-parent d-one-third m-whole">
       <?php if ($title_1): ?>

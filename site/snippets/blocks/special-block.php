@@ -5,14 +5,14 @@
 <section class="module special-img-module">
   <div class="d-flex wrap m-column">
     <?php foreach ($images->slice(0, 3) as $img): ?>
-      <div class="element reveal-parent d-one-third" data-span-x="1">
+      <div class="element reveal-parent d-one-third m-whole">
         <?= snippet('image-w-caption', ['img' => $img, 'showCaption' => false]) ?>
       </div>
     <?php endforeach ?>
 
-    <div class="caption-row d-whole d-flex flex-row v-center">
+    <div class="caption-row d-whole d-flex flex-row v-center m-column">
       <?php foreach ($images as $img): ?>
-      <div class="caption element reveal-parent d-1-twelfth t-2-twelfth">
+      <div class="caption element reveal-parent d-1-twelfth t-2-twelfth m-half">
         <?php if ($img->caption()->isNotEmpty()): ?>
           <figcaption class="s-xsmall"><?= html($img->caption()) ?></figcaption>
         <?php endif ?>
@@ -21,7 +21,7 @@
     </div>
 
     <?php foreach ($images->slice(3, 6) as $img): ?>
-      <div class="element reveal-parent d-one-third" data-span-x="1">
+      <div class="element reveal-parent d-one-third m-whole">
         <?= snippet('image-w-caption', ['img' => $img, 'showCaption' => false]) ?>
       </div>
     <?php endforeach ?>

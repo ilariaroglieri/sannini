@@ -307,17 +307,15 @@ header {
       }
     }
   }
-  &.text-module {
-    .text {
-      background-color: $secColor;
-      padding-bottom: var(--spacing);
-      bold, strong {
-        font-weight: normal;
-        background-color: white;
-      }
-      &.no-title-padding {
-        padding-top: calc(var(--spacing) + var(--s-xsmall));
-      }
+  .text {
+    background-color: $secColor;
+    padding-bottom: var(--spacing);
+    bold, strong {
+      font-weight: normal;
+      background-color: white;
+    }
+    &.no-title-padding {
+      padding-top: calc(var(--spacing) + var(--s-xsmall));
     }
   }
   &.special-img-module {

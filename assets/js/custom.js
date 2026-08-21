@@ -1,32 +1,34 @@
 //--------- background grid
-
 const CROSS_ARM   = 4;   // metà braccio della crocetta
 const CROSS_COLOR = '#fff';
+
+const RATIO_DESKTOP = 3 / 5;      // altezza = larghezza × 0.6
+const RATIO_MOBILE  = 1 / 1.37;   // altezza = larghezza / 1.37
+const MOBILE_BP     = 768;        // soglia mobile in px
+
+// numero di colonne in base alla larghezza del container
+function getCols(containerW) {
+  return containerW <= MOBILE_BP ? 1 : 3;
+}
 
 function snapModules() {
   const moduleH = parseFloat(
     getComputedStyle(document.documentElement).getPropertyValue('--module-h')
   );
   if (!moduleH) return;
-
   const modules = [...document.querySelectorAll('.module')];
-
   // 1. reset: tutti tornano all'altezza CSS di base
   modules.forEach(m => { m.style.height = ''; });
-
   // 2. misura: ora .d-flex riflette il contenuto reale
   const heights = modules.map(m => {
     const content = m.querySelector('.d-flex');
     return content ? content.offsetHeight : null;
   });
-
   // 3. scrittura
   modules.forEach((m, i) => {
     const naturalH = heights[i];
     const EPS = 2; // tolleranza
-
     if (naturalH === null) return;
-
     // add a row if its image module o black special module
     if (m.classList.contains('special-img-module') || m.classList.contains('img-module')) {
       const base = Math.max(1, Math.ceil((naturalH - EPS) / moduleH));
@@ -44,10 +46,12 @@ function updateGrid() {
   const containerW = container.getBoundingClientRect().width;
   if (!containerW) return;
 
+  const cols   = getCols(containerW);
   const arm    = CROSS_ARM;
-  const gutter = arm;                          // rientro delle crocette esterne
-  const step   = (containerW - gutter * 2) / 3; // larghezza reale di una cella
-  const tileH  = step * 3 / 5;
+  const gutter = arm;                                   // rientro delle crocette esterne
+  const step   = (containerW - gutter * 2) / cols;      // larghezza reale di una cella
+  const ratio  = cols === 1 ? RATIO_MOBILE : RATIO_DESKTOP;
+  const tileH  = step * ratio;
 
   document.documentElement.style.setProperty('--module-h', tileH + 'px');
 
@@ -56,8 +60,10 @@ function updateGrid() {
     <path d="M${x - arm},${arm} H${x + arm}" fill="none" stroke="${CROSS_COLOR}" stroke-width="1"/>
     <path d="M${x},0 V${arm * 2}" fill="none" stroke="${CROSS_COLOR}" stroke-width="1"/>`;
 
+  // cols+1 crocette: i due (o quattro) bordi delle colonne
+  const xs  = Array.from({ length: cols + 1 }, (_, i) => i);
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${containerW}" height="${tileH}" viewBox="0 0 ${containerW} ${tileH}">
-    ${[0, 1, 2, 3].map(i => cross(gutter + i * step)).join('')}
+    ${xs.map(i => cross(gutter + i * step)).join('')}
   </svg>`;
 
   const markers = document.querySelector('#grid-markers');
@@ -71,16 +77,13 @@ function updateGrid() {
 
 const container = document.querySelector('.container');
 let lastW = 0;
-
 const ro = new ResizeObserver(entries => {
   const w = entries[0].contentRect.width;
   if (Math.abs(w - lastW) < 0.5) return; // ignora i cambi di sola altezza
   lastW = w;
   updateGrid();
 });
-
 ro.observe(container);
-
 
 // parallax animation
 
