@@ -14,7 +14,7 @@
 	$products = $page->children();
 
 	if ($products): ?>
-		<section class="module" id="products-list">
+		<section id="products-list" class="module">
 			<div class="d-flex wrap">
 				<?php foreach($page->children() as $item): 
 					$productImg = $item->cover_img()->toFile();
@@ -29,7 +29,7 @@
 					  	<div class="product-img reveal-child grow" style="background-image: url('<?= $productImg->url() ?>');">
 					  	</div>
 
-					  	<?php if ($productDesigner): ?>
+					  	<?php if ($productDesigner->isNotEmpty()): ?>
 					  		<div class="product-designer reveal-child p-absolute">
 					  			<p class="s-small mono t-center"><?= $productDesigner; ?></p>
 					  		</div>
@@ -40,6 +40,8 @@
 			</div>
 		</section>
 	<?php endif; ?>
+
+	
 </main>
 
 <?php snippet('footer') ?>

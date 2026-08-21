@@ -63,11 +63,11 @@ $col: 8.3333%; // 12 columns
 }
 
 $font-sizes: (
-  'large':   clamp(24px, 1.5vw, 29px),
-  'medium':  clamp(24px, 1.4vw, 27px),
-  'regular': clamp(18px, 1.1vw, 21px),
-  'small':   clamp(14px, 0.7vw, 13px),
-  'xsmall':  clamp(11px, 0.6vw, 12px),
+  'large':   clamp(18px, 1.5vw, 29px),
+  'medium':  clamp(17px, 1.4vw, 27px),
+  'regular': clamp(14px, 1.1vw, 21px),
+  'small':   clamp(11px, 0.7vw, 13px),
+  'xsmall':  clamp(9px,  0.6vw, 12px),
 );
 
 @each $name, $size in $font-sizes {

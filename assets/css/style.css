@@ -23,34 +23,34 @@ Version: 1.0
 }
 
 .s-large {
-  font-size: clamp(24px, 1.5vw, 29px);
+  font-size: clamp(18px, 1.5vw, 29px);
 }
 
 .s-medium {
-  font-size: clamp(24px, 1.4vw, 27px);
+  font-size: clamp(17px, 1.4vw, 27px);
 }
 
 .s-regular, body {
-  font-size: clamp(18px, 1.1vw, 21px);
+  font-size: clamp(14px, 1.1vw, 21px);
 }
 
 .s-small {
-  font-size: clamp(14px, 0.7vw, 13px);
+  font-size: clamp(11px, 0.7vw, 13px);
 }
 
 .s-xsmall {
-  font-size: clamp(11px, 0.6vw, 12px);
+  font-size: clamp(9px, 0.6vw, 12px);
 }
 
 :root {
   --spacing: clamp(10px, 0.9vw, 18px);
   --half-spacing: calc(clamp(10px, 0.9vw, 18px) / 2);
   --double-spacing: calc(clamp(10px, 0.9vw, 18px) * 2);
-  --s-large: clamp(24px, 1.5vw, 29px);
-  --s-medium: clamp(24px, 1.4vw, 27px);
-  --s-regular: clamp(18px, 1.1vw, 21px);
-  --s-small: clamp(14px, 0.7vw, 13px);
-  --s-xsmall: clamp(11px, 0.6vw, 12px);
+  --s-large: clamp(18px, 1.5vw, 29px);
+  --s-medium: clamp(17px, 1.4vw, 27px);
+  --s-regular: clamp(14px, 1.1vw, 21px);
+  --s-small: clamp(11px, 0.7vw, 13px);
+  --s-xsmall: clamp(9px, 0.6vw, 12px);
 }
 
 .d-1-twelfth {
@@ -944,6 +944,11 @@ figure figcaption {
   pointer-events: none;
   z-index: 5;
   mix-blend-mode: difference;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+#grid-markers.loaded {
+  opacity: 1;
 }
 
 header .module {
@@ -976,6 +981,8 @@ header nav ul li a.lang-active {
 }
 .module .element {
   padding: var(--spacing) calc(var(--half-spacing) * 3) var(--half-spacing);
+  position: relative;
+  z-index: 100;
 }
 .module .element[data-span-x=".5"] figure.portrait {
   height: calc(var(--module-h) * 1 - var(--double-spacing));
@@ -994,9 +1001,14 @@ header nav ul li a.lang-active {
 }
 .module.text-module .text {
   background-color: #ECEBDD;
-  position: relative;
-  z-index: 100;
   padding-bottom: var(--spacing);
+}
+.module.text-module .text bold, .module.text-module .text strong {
+  font-weight: normal;
+  background-color: white;
+}
+.module.text-module .text.no-title-padding {
+  padding-top: calc(var(--spacing) + var(--s-xsmall));
 }
 .module.special-img-module {
   position: relative;
@@ -1044,20 +1056,24 @@ header nav ul li a.lang-active {
 .product .product-inner > div {
   padding: var(--spacing);
 }
-.product .product-title {
+.product .product-inner .product-title {
   border-bottom: 1px solid;
 }
-.product .product-img {
+.product .product-inner .product-img {
   flex-grow: 1;
   background-size: 50%;
   background-position: center 42%;
   background-repeat: no-repeat;
+  transition: all 0.3s;
 }
-.product .product-designer {
+.product .product-inner .product-designer {
   width: 100%;
   bottom: 0;
   border-top: 1px solid;
   background-color: #ECEBDD;
+}
+.product:hover .product-img {
+  background-size: 55%;
 }
 
 footer {

@@ -6,8 +6,8 @@ columns:
       intro_fields:
         type: fields
         fields:
-          cover_img:
-            label: Cover Image
+          tech_drawing:
+            label: Disegno tecnico
             type: files
             max: 1
             accepts:
@@ -26,22 +26,30 @@ columns:
 
   - width: 1/2
     sections:
+
       tech_sheet:
         type: fields
         label: Dati tecnici
         fields:
+          cover_img:
+            label: Immagine di anteprima
+            type: files
+            max: 1
+            accepts:
+              mime: image/*
+
           design:
             label: Design
             type: text
             help: 'Se presente verrà mostrato nella pagina dei Prodotti.'
 
           measures:
-            label: Measures
+            label: Misure
             type: text
             width: 1/2
 
           weight:
-            label: Weight
+            label: Peso
             type: text
             width: 1/2
 
