@@ -451,6 +451,18 @@ header {
       }
     }
   }
+  &.navi-module {
+    padding-top: 0;
+    .element {
+      padding: 0 var(--half-spacing);
+      .navi-item {
+        display: flex;
+        width: 100%;
+        padding: var(--half-spacing) var(--spacing);
+        border: 1px solid;
+      }
+    }
+  }
 }
 
 

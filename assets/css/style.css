@@ -1130,6 +1130,18 @@ header nav ul li a.lang-active {
   position: static;
   max-height: 100%;
 }
+.module.navi-module {
+  padding-top: 0;
+}
+.module.navi-module .element {
+  padding: 0 var(--half-spacing);
+}
+.module.navi-module .element .navi-item {
+  display: flex;
+  width: 100%;
+  padding: var(--half-spacing) var(--spacing);
+  border: 1px solid;
+}
 
 footer {
   padding: 0 calc(var(--half-spacing) * 3);

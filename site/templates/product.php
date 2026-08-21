@@ -90,6 +90,26 @@
 	</section>
 
 	<?= $page->blocks()->toBlocks() ?>
+
+	<?php // navigation 
+		$prevAll = $page->prevAll();
+		$nextAll = $page->nextAll();
+	?>
+
+	<navi class="module navi-module">
+		<div class="d-flex flex-row m-column space-between">
+			<div class="element reveal-parent d-one-third m-whole">
+				<?php foreach ($prevAll as $prevProduct): ?>
+					<a class="navi-item mono uppercase s-xsmall spacing-b-2" href="<?= $prevProduct->url()?>"><?= $prevProduct->title()?></a>
+				<?php endforeach ?>
+			</div>
+			<div class="element reveal-parent d-one-third m-whole">
+				<?php foreach ($nextAll as $nextProduct): ?>
+					<a class="navi-item mono uppercase s-xsmall spacing-b-2" href="<?= $nextProduct->url()?>"><?= $nextProduct->title()?></a>
+				<?php endforeach ?>
+			</div>
+		</div>
+	</navi>
 </main>
 
 <?php snippet('footer') ?>
