@@ -11,6 +11,13 @@ return [
   'translations' => [
     'phone' => 'Phone',
     'email' => 'Informations',
+    'weight' => 'Weight',
+    'finishing' => 'Finishing',
+    'finishing_front' => 'Finishing front',
+    'finishing_back' => 'Finishing back',
+    'coste' => 'Coste',
+    'color' => 'Color',
+    'pdf' => 'Technical sheet',
   ],
   'url' => NULL
 ];

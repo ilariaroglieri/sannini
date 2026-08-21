@@ -11,6 +11,14 @@ return [
   'translations' => [
     'phone' => 'Telefono',
     'email' => 'Informazioni',
+    'measures' => 'Dimensioni',
+    'weight' => 'Peso',
+    'finishing' => 'Finitura',
+    'finishing_front' => 'Finitura fronte',
+    'finishing_back' => 'Finitura retro',
+    'coste' => 'Coste',
+    'color' => 'Colore',
+    'pdf' => 'Scheda tecnica',
   ],
   'url' => NULL
 ];

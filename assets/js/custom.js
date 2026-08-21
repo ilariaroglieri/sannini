@@ -85,8 +85,7 @@ const ro = new ResizeObserver(entries => {
 });
 ro.observe(container);
 
-// parallax animation
-
+//------- parallax animation
 function applyParallax() {
   const SPEED = 300; // ampiezza in px
   const vh = window.innerHeight;
@@ -114,6 +113,20 @@ function onScroll() {
 
 window.addEventListener('scroll', onScroll, { passive: true });
 applyParallax();
+
+//------- color selection
+document.addEventListener('click', e => {
+  const btn = e.target.closest('button[data-color]');
+  if (!btn) return;
+
+  const currCol = btn.dataset.color;
+
+  document.querySelector('button[data-color].active')?.classList.remove('active');
+  document.querySelector('.color-info.active')?.classList.remove('active');
+  document.querySelector('.color-info#' + currCol).classList.add('active');
+
+  btn.classList.add('active');
+});
 
 //------- reveal on scroll
 const revealObserver = new IntersectionObserver((entries) => {

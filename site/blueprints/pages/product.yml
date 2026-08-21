@@ -98,6 +98,7 @@ columns:
                 max: 1
                 accepts:
                   mime: image/*
+                help: 'Caricare una immagine quadrata senza bordo.'
               text:
                 label: Breve testo
                 type: textarea

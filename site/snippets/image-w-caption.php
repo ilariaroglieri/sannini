@@ -2,6 +2,7 @@
   $showCaption = $showCaption ?? true;
   $mobileImg = $mobileImg ?? null;
   $orientationM = '';
+  $classes = $classes ?? '';
 ?>
 
 <?php if ($img !== null):
@@ -13,7 +14,7 @@
   endif;
 ?>
 
-  <figure class="<?= $orientation ?> <?= $orientationM ?>">
+  <figure class="<?= $classes .' '. $orientation .' '. $orientationM ?>">
     <picture>
       <?php if ($mobileImg): ?>
         <source media="(max-width: 768px)" srcset="<?= $mobileImg->url() ?>">

@@ -188,6 +188,15 @@ figure {
       bottom: 0;
     }
   }
+  &.square-thumb {
+    aspect-ratio: 1/1;
+    height: unset !important;
+    border: 1px solid;
+    padding: 4px;
+    img {
+      object-fit: contain;
+    }
+  }
 
   figcaption {
     position: absolute;
@@ -198,6 +207,25 @@ figure {
     opacity: 0;
     padding: var(--half-spacing);
     transition: all .75s;
+  }
+}
+
+button {
+  opacity: 1;
+  font-weight: inherit;
+  text-align: left;
+  color: inherit;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  text-rendering: geometricPrecision;
+  transition: opacity .3s;
+  &:hover, &.active {
+    opacity: .5;
   }
 }
 
@@ -228,6 +256,10 @@ figure {
 
 .flex-row {
   gap: var(--double-spacing);
+}
+
+.flex-row-smaller {
+  gap: var(--spacing);
 }
 
 #grid-markers {
@@ -395,7 +427,29 @@ header {
 //single-product
 .module {
   &.tech-info-module {
+    .tech-info {
+      padding: var(--spacing) 0;
+      border-bottom: 1px solid;
 
+      &:first-of-type {
+        padding-top: 0;
+      }
+      &__label {
+        flex-shrink: 0;
+      }
+    }
+    .color-info {
+      position: absolute;
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      pointer-events: none;
+      &.active {
+        opacity: 1;
+        position: static;
+        max-height: 100%;
+      }
+    }
   }
 }
 

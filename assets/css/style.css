@@ -897,6 +897,15 @@ figure:hover figcaption {
   opacity: 1;
   bottom: 0;
 }
+figure.square-thumb {
+  aspect-ratio: 1/1;
+  height: unset !important;
+  border: 1px solid;
+  padding: 4px;
+}
+figure.square-thumb img {
+  object-fit: contain;
+}
 figure figcaption {
   position: absolute;
   left: 0;
@@ -906,6 +915,25 @@ figure figcaption {
   opacity: 0;
   padding: var(--half-spacing);
   transition: all 0.75s;
+}
+
+button {
+  opacity: 1;
+  font-weight: inherit;
+  text-align: left;
+  color: inherit;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  text-rendering: geometricPrecision;
+  transition: opacity 0.3s;
+}
+button:hover, button.active {
+  opacity: 0.5;
 }
 
 .underlined {
@@ -935,6 +963,10 @@ figure figcaption {
 
 .flex-row {
   gap: var(--double-spacing);
+}
+
+.flex-row-smaller {
+  gap: var(--spacing);
 }
 
 #grid-markers {
@@ -1074,6 +1106,29 @@ header nav ul li a.lang-active {
 }
 .product:hover .product-img {
   background-size: 55%;
+}
+
+.module.tech-info-module .tech-info {
+  padding: var(--spacing) 0;
+  border-bottom: 1px solid;
+}
+.module.tech-info-module .tech-info:first-of-type {
+  padding-top: 0;
+}
+.module.tech-info-module .tech-info__label {
+  flex-shrink: 0;
+}
+.module.tech-info-module .color-info {
+  position: absolute;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.module.tech-info-module .color-info.active {
+  opacity: 1;
+  position: static;
+  max-height: 100%;
 }
 
 footer {
