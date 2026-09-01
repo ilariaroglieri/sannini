@@ -11,7 +11,7 @@ function getCols(containerW) {
   return containerW <= MOBILE_BP ? 1 : 3;
 }
 
-function snapModules() {
+function snapModules(scope = document) {
   const moduleH = parseFloat(
     getComputedStyle(document.documentElement).getPropertyValue('--module-h')
   );
@@ -129,6 +129,8 @@ document.addEventListener('click', e => {
 });
 
 //------- reveal on scroll
+// use data-reveal="parent" and data-reveal="child"
+// use data-reveal-delay="75" for setting different speed
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (!entry.isIntersecting) return;

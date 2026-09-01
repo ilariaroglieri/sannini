@@ -15,8 +15,8 @@
 	$total = $products->count();
 
 	if ($products): ?>
-		<section id="products-list" class="module" data-offset="3" data-total="<?= $total; ?>">
-			<div class="d-flex wrap">
+		<section id="products-list" class="module">
+			<div id="products-list-inner" class="d-flex wrap" data-offset="3" data-total="<?= $total; ?>">
 				<?php foreach($products->slice(0, 3) as $item): 
 					snippet('product-card', [
 						'item' => $item
@@ -38,3 +38,10 @@
 </main>
 
 <?php snippet('footer') ?>
+
+<!-- load more -->
+<script>
+	window.productsEndpoint = '<?= page('prodotti')->url() ?>/more';
+</script>
+
+<script src="<?= url('assets/js/load-more.js') ?>"></script>

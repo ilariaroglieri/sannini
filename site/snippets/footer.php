@@ -113,9 +113,5 @@
 		</div>
 	</footer>
 
-	<script>
-		window.productsEndpoint = '<?= page('prodotti')->url() ?>/more';
-	</script>
-
   <?= js('assets/js/custom.js') ?>
 </body>

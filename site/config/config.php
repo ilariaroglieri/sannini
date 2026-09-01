@@ -11,39 +11,41 @@ return [
     'css' => 'assets/css/custom-panel.css'
   ],
   // load more products
-  [
-    'pattern'  => 'prodotti/more',
-    'language' => '*',
-    'action' => function ($language) {
-      try {
-        $page = page('prodotti'); // page exhibitions
+  'routes' => [
+    [
+      'pattern'  => 'prodotti/more',
+      'language' => '*',
+      'action' => function ($language) {
+        try {
+          $page = page('prodotti'); // prodotti
 
-        $offset = (int) get('offset', 0);
-        $limit  = 3;
+          $offset = (int) get('offset', 0);
+          $limit = (int) get('limit', 3);
 
-        $products = $page->children();
-        $batch = $products->slice($offset, $limit);
+          $products = $page->children();
+          $batch = $products->slice($offset, $limit);
 
-        $hasMore = ($offset + $limit) < $products->count();
+          $hasMore = ($offset + $limit) < $products->count();
 
-        $html = '';
-        
-        foreach ($batch as $item) {
-          $html .= snippet('product-card', ['item' => $item], true);
+          $html = '';
+          
+          foreach ($batch as $item) {
+            $html .= snippet('product-card', ['item' => $item], true);
+          }
+
+          return \Kirby\Http\Response::json([
+            'html'    => $html,
+            'hasMore' => $hasMore,
+          ]);
+
+        } catch (\Throwable $e) {
+          return \Kirby\Http\Response::json([
+            'error' => $e->getMessage(),
+          ]);
         }
-
-        return \Kirby\Http\Response::json([
-          'html'    => $html,
-          'hasMore' => $hasMore,
-        ]);
-
-      } catch (\Throwable $e) {
-        return \Kirby\Http\Response::json([
-          'error' => $e->getMessage(),
-        ]);
       }
-    }
-  ],
+    ],
+  ]
 ];
 
 ?>
