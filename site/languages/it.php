@@ -19,6 +19,7 @@ return [
     'coste' => 'Coste',
     'color' => 'Colore',
     'pdf' => 'Scheda tecnica',
+    'pdf2' => 'Catalogo',
   ],
   'url' => NULL
 ];

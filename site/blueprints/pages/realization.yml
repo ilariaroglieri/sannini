@@ -7,11 +7,11 @@ columns:
         type: fields
         fields:
           subtitle:
-            label: Subtitle
+            label: Sottotitolo
             type: text
 
           intro_text:
-            label: Text introduction
+            label: Testo intro
             extends: fields/writer-basic
           blocks:
             label: Blocchi
@@ -27,7 +27,7 @@ columns:
         type: fields
         fields:
           cover_img:
-            label: Cover Image
+            label: Immagine di anteprima
             type: files
             max: 1
             accepts:

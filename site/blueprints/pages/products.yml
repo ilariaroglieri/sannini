@@ -4,7 +4,6 @@ columns:
   - width: 2/3
     sections:
       contents:
-        headline: Page contents
         type: fields
         fields:
           page_title:
@@ -17,7 +16,7 @@ columns:
     sections:
       products_list:
         type: pages
-        label: Products
+        label: Prodotti
         parent: site.find("prodotti")
         templates:
           - product

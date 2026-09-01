@@ -9,12 +9,12 @@ columns:
         help: "Questi dati vengono usati anche nel footer del sito."
         fields:
           address:
-            label: Address
+            label: Indirizzo
             type: textarea
             rows: 3
 
           phome:
-            label: Phone
+            label: Telefono
             type: textarea
 
           email:
@@ -30,7 +30,7 @@ columns:
     sections:
       additional_info:
         type: fields
-        label: Additional contacts
+        label: Altri contatti
         fields:
           departments:
             type: structure

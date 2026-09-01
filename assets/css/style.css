@@ -1110,6 +1110,7 @@ header nav ul li a.lang-active {
 }
 
 .module.tech-info-module .tech-info {
+  position: relative;
   padding: var(--spacing) 0;
   border-bottom: 1px solid;
 }
@@ -1118,6 +1119,12 @@ header nav ul li a.lang-active {
 }
 .module.tech-info-module .tech-info__label {
   flex-shrink: 0;
+}
+.module.tech-info-module .tech-info.download::after {
+  content: url(../img/arrow.svg);
+  display: flex;
+  width: 12px;
+  height: 12px;
 }
 .module.tech-info-module .color-info {
   position: absolute;
@@ -1142,6 +1149,20 @@ header nav ul li a.lang-active {
   width: 100%;
   padding: var(--half-spacing) var(--spacing);
   border: 1px solid;
+}
+
+#cladding-systems-page .tech-info-module .tech-info {
+  padding-top: var(--spacing);
+  padding-left: var(--double-spacing);
+}
+#cladding-systems-page .tech-info-module .tech-info:first-of-type {
+  border-top: 1px solid;
+}
+#cladding-systems-page .tech-info-module .tech-info.download::after {
+  position: absolute;
+  right: var(--double-spacing);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 footer {

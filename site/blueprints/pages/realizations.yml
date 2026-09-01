@@ -19,7 +19,7 @@ tabs:
         info: "{{ page.didascalia }}"
         image:
           query: page.immagine_copertina.toFile
-        empty: Nessuna realizzazione ancora. Clicca "+" per aggiungere.
+        empty: Nessuna realizzazione. Clicca "+" per aggiungere.
 
   # ──────────────────────────────────────────
   # TAB: SEO

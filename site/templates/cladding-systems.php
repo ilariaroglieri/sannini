@@ -24,7 +24,7 @@
   	foreach ($claddingSystems as $claddingSystem): 
   		$slug = $claddingSystem->slug();
   ?>
-  	<item id="<?= $slug ?>">
+  	<item id="<?= $slug ?>" class="cladding-system">
 	  	<?php snippet('title-module', [
 				'title' => $claddingSystem->title()->fancypants(),
 			]) ?>
@@ -33,6 +33,32 @@
 				'text' => $claddingSystem->intro_text()->fancypants(),
 				'width' => 'd-whole',
 			]) ?>
+
+			<section class="module tech-info-module">
+				<div class="d-flex m-column">
+					<div class="element reveal-parent d-one-third m-whole">
+						<?php 
+						$pdf = $claddingSystem->pdf_1()->toFile();
+						$pdf2 = $claddingSystem->pdf_2()->toFile();
+				    if ($pdf !== null): ?>
+					    <div class="tech-info download reveal-child">
+					      <a href="<?= $pdf->url(); ?>" class="tech-info__label mono uppercase s-xsmall"><?= t('pdf2') ?></a>
+					    </div>
+					  <?php endif; ?>
+
+					  <?php if ($pdf2 !== null): ?>
+					    <div class="tech-info download reveal-child">
+					      <a href="<?= $pdf2->url(); ?>" class="tech-info__label mono uppercase s-xsmall"><?= t('pdf') ?></a>
+					    </div>
+					  <?php endif; ?>
+					</div>
+		      <div class="element reveal-parent d-two-thirds m-whole">
+			    	<div class="reveal-child text s-large">
+		        	<?= $claddingSystem->intro_text_2()->fancypants(); ?>
+		      	</div>
+		      </div>
+		    </div>
+		  </section>
 
 			<?= $claddingSystem->blocks()->toBlocks() ?>
 		</item>

@@ -80,8 +80,8 @@
 		    <?php 
 		    $pdf = $page->pdf()->toFile();
 		    if ($pdf !== null): ?>
-			    <div class="tech-info reveal-child d-flex flex-row-smaller">
-			      <a href="<?= $pdf->url(); ?>" class="tech-info__label mono uppercase s-xsmall"><?= t('pdf') ?> &#8595;</a>
+			    <div class="tech-info download reveal-child d-flex flex-row-smaller">
+			      <a href="<?= $pdf->url(); ?>" class="tech-info__label mono uppercase s-xsmall"><?= t('pdf') ?></a>
 			    </div>
 			  <?php endif ?>
 			</div>

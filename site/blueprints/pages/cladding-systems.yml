@@ -8,10 +8,10 @@ columns:
         type: fields
         fields:
           page_title:
-            label: Page title
+            label: Titolo pagina
             type: text
           cover_img:
-            label: Image
+            label: Immagine
             type: files
             max: 1
             accepts:
@@ -24,11 +24,10 @@ columns:
     sections:
       lista_sistemi:
         type: pages
-        label: Cladding systems
+        label: Sistemi ventilati
         parent: site.find("cladding-systems")
         templates:
           - cladding-system
         layout: list
         info: "{{ page.testo_lv1.excerpt(80) }}"
-        empty: No cladding systems. Click "+" to add one.
 
