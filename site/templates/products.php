@@ -12,11 +12,12 @@
 
 	<?php 
 	$products = $page->children();
+	$total = $products->count();
 
 	if ($products): ?>
-		<section id="products-list" class="module">
+		<section id="products-list" class="module" data-offset="3" data-total="<?= $total; ?>">
 			<div class="d-flex wrap">
-				<?php foreach($page->children() as $item): 
+				<?php foreach($products->slice(0, 3) as $item): 
 					$productImg = $item->cover_img()->toFile();
 					$productDesigner = $item->design(); 
 				?>
@@ -39,6 +40,14 @@
 				<?php endforeach ?>
 			</div>
 		</section>
+		
+		<?php if ($total > 3): ?>
+			<div id="load-more-container" class="module d-flex v-center">
+			  <button id="load-more" class="element s-small mono uppercase">
+			    More
+			  </button>
+			</div>
+		<?php endif ?>
 	<?php endif; ?>
 
 	

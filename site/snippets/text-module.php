@@ -8,6 +8,8 @@
   $textClass = $spanMap[$width]['class'] ?? '';
   $alignment = $alignment ?? '';
   $title = $title ?? '';
+
+  if (empty((string)$text)) return;
 ?>
 
 <section class="module text-module">
