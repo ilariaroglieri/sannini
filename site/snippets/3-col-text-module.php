@@ -1,6 +1,6 @@
 <section class="module text-module">
   <div class="d-flex m-column">
-    <div class="element reveal-parent d-one-third m-whole">
+    <div class="element d-one-third m-whole" data-reveal="parent">
       <?php if ($title_1): ?>
         <h3 class="reveal-child mono uppercase s-xsmall spacing-b-2"><?= $title_1 ?></h3>
       <?php endif; ?>
@@ -9,7 +9,7 @@
       </div>
     </div>
 
-    <div class="element reveal-parent d-one-third m-whole">
+    <div class="element d-one-third m-whole" data-reveal="parent">
       <?php if ($title_2): ?>
         <h3 class="reveal-child mono uppercase s-xsmall spacing-b-2"><?= $title_2 ?></h3>
       <?php endif; ?>
@@ -18,7 +18,7 @@
       </div>
     </div>
 
-    <div class="element reveal-parent d-one-third m-whole">
+    <div class="element d-one-third m-whole" data-reveal="parent">
       <?php if ($title_3): ?>
         <h3 class="reveal-child mono uppercase s-xsmall spacing-b-2"><?= $title_3 ?></h3>
       <?php endif; ?>

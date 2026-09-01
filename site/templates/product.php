@@ -9,13 +9,13 @@
 
 	<section class="module tech-info-module">
 	  <div class="d-flex m-column">
-      <div class="element reveal-parent d-two-thirds m-whole">
+      <div class="element d-two-thirds m-whole" data-reveal="parent">
         <?= snippet('image-w-caption', [
           'img' => $page->tech_drawing()->toFile(),
           'mobileImg' => $page->tech_drawing_mobile()->toFile(),
         ]); ?>
 
-	    	<div class="reveal-child text s-large spacing-t-6">
+	    	<div class="text s-large spacing-t-6" data-reveal="child">
         	<?= $page->intro_text()->fancypants(); ?>
       	</div>
       </div>
@@ -35,10 +35,10 @@
 				}
 			?>
 
-			<div class="element reveal-parent d-one-third m-whole">
+			<div class="element d-one-third m-whole" data-reveal="parent">
 				<?php foreach ($techFields as $field): ?>
 				  <?php if ($field['value']->isNotEmpty()): ?>
-				    <div class="tech-info reveal-child d-flex flex-row-smaller">
+				    <div class="tech-info d-flex flex-row-smaller" data-reveal="child">
 				      <span class="tech-info__label mono uppercase s-xsmall d-3-twelfth"><?= $field['label'] ?>: </span>
 				      <p class="tech-info__value mono s-xsmall"><?= $field['value'] ?></p>
 				    </div>
@@ -50,7 +50,7 @@
 					$variables = $page->variables()->toStructure();
 					if ($variables->isNotEmpty()):
 				?>
-					<div class="tech-info reveal-child">
+					<div class="tech-info" data-reveal="child">
 						<div class="d-flex flex-row-smaller">
 				      <span class="tech-info__label mono uppercase s-xsmall d-3-twelfth"><?= t('color') ?>: </span>
 				      <?php foreach ($variables as $i => $variable): ?>
@@ -80,7 +80,7 @@
 		    <?php 
 		    $pdf = $page->pdf()->toFile();
 		    if ($pdf !== null): ?>
-			    <div class="tech-info download reveal-child d-flex flex-row-smaller">
+			    <div class="tech-info download d-flex flex-row-smaller" data-reveal="child">
 			      <a href="<?= $pdf->url(); ?>" class="tech-info__label mono uppercase s-xsmall"><?= t('pdf') ?></a>
 			    </div>
 			  <?php endif ?>
@@ -98,12 +98,12 @@
 
 	<navi class="module navi-module">
 		<div class="d-flex flex-row m-column space-between">
-			<div class="element reveal-parent d-one-third m-whole">
+			<div class="element d-one-third m-whole" data-reveal="parent">
 				<?php foreach ($prevAll as $prevProduct): ?>
 					<a class="navi-item mono uppercase s-xsmall spacing-b-2" href="<?= $prevProduct->url()?>"><?= $prevProduct->title()?></a>
 				<?php endforeach ?>
 			</div>
-			<div class="element reveal-parent d-one-third m-whole">
+			<div class="element d-one-third m-whole" data-reveal="parent">
 				<?php foreach ($nextAll as $nextProduct): ?>
 					<a class="navi-item mono uppercase s-xsmall spacing-b-2" href="<?= $nextProduct->url()?>"><?= $nextProduct->title()?></a>
 				<?php endforeach ?>

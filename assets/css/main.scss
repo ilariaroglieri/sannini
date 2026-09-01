@@ -133,7 +133,7 @@
   }
 }
 
-.reveal-parent, .reveal-child {
+[data-reveal] {
   opacity: 0;
   transform: translateY(20px);
   transition: all .5s ease;

@@ -138,22 +138,25 @@ const revealObserver = new IntersectionObserver((entries) => {
 
     const container = entry.target;
     const isReversed = container.classList.contains('d-row-reverse');
-    const parents = [...container.querySelectorAll('.reveal-parent')];
+    const parents = [...container.querySelectorAll('[data-reveal="parent"]')];
     const ordered = isReversed ? [...parents].reverse() : parents;
 
     ordered.forEach((col, colIndex) => {
       const colDelay = ordered.slice(0, colIndex).reduce((acc, prevCol) => {
-        const n = prevCol.querySelectorAll('.reveal-child').length;
+        const n = prevCol.querySelectorAll('[data-reveal="child"]').length;
         return acc + Math.max(COL_BASE_DELAY, n * CHILD_DELAY);
       }, 0);
 
       col.style.transitionDelay = `${colDelay}ms`;
       col.classList.add('is-visible');
 
-      col.querySelectorAll('.reveal-child').forEach((el, rowIndex) => {
-        el.style.setProperty('--reveal-delay', `${colDelay + rowIndex * CHILD_DELAY}ms`);
+      col.querySelectorAll('[data-reveal="child"]').forEach((el, rowIndex) => {
+        const customDelay = el.dataset.revealDelay ? parseInt(el.dataset.revealDelay) : CHILD_DELAY;
+        el.style.transitionDelay = `${colDelay + rowIndex * customDelay}ms`;
         el.classList.add('is-visible');
-        el.style.transitionDelay = '0s';
+        setTimeout(() => {
+          el.style.transitionDelay = '';
+        }, customDelay);
       });
     });
 
@@ -163,7 +166,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.d-flex:has(> .reveal-parent)').forEach(el => {
+  document.querySelectorAll('.d-flex:has(> [data-reveal="parent"])').forEach(el => {
     revealObserver.observe(el);
   });
   document.querySelector('#grid-markers').classList.add('loaded');

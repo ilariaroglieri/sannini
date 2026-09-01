@@ -36,24 +36,24 @@
 
 			<section class="module tech-info-module">
 				<div class="d-flex m-column">
-					<div class="element reveal-parent d-one-third m-whole">
+					<div class="element d-one-third m-whole" data-reveal="parent">
 						<?php 
 						$pdf = $claddingSystem->pdf_1()->toFile();
 						$pdf2 = $claddingSystem->pdf_2()->toFile();
 				    if ($pdf !== null): ?>
-					    <div class="tech-info download reveal-child">
+					    <div class="tech-info download" data-reveal="child">
 					      <a href="<?= $pdf->url(); ?>" class="tech-info__label mono uppercase s-xsmall"><?= t('pdf2') ?></a>
 					    </div>
 					  <?php endif; ?>
 
 					  <?php if ($pdf2 !== null): ?>
-					    <div class="tech-info download reveal-child">
+					    <div class="tech-info download" data-reveal="child">
 					      <a href="<?= $pdf2->url(); ?>" class="tech-info__label mono uppercase s-xsmall"><?= t('pdf') ?></a>
 					    </div>
 					  <?php endif; ?>
 					</div>
-		      <div class="element reveal-parent d-two-thirds m-whole">
-			    	<div class="reveal-child text s-large">
+		      <div class="element d-two-thirds m-whole" data-reveal="parent">
+			    	<div class="text s-large" data-reveal="child">
 		        	<?= $claddingSystem->intro_text_2()->fancypants(); ?>
 		      	</div>
 		      </div>

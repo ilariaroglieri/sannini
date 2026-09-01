@@ -14,11 +14,11 @@
 
 <section class="module text-module">
   <div class="d-flex flex-row m-column <?= $alignment ?>">
-    <div class="element reveal-parent <?= $width ?> m-whole">
+    <div class="element <?= $width ?> m-whole" data-reveal="parent">
       <?php if ($title): ?>
-        <h3 class="reveal-child mono uppercase s-xsmall spacing-b-2"><?= $title ?></h3>
+        <h3 class="mono uppercase s-xsmall spacing-b-2" data-reveal="child"><?= $title ?></h3>
       <?php endif; ?>
-      <div class="reveal-child text <?= $textClass ?>">
+      <div class="text <?= $textClass ?>" data-reveal="child">
         <?= $text; ?>
       </div>
     </div>

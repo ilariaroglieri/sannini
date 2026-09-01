@@ -2,28 +2,28 @@
 
 	<footer class="container module">
 		<div class="d-flex space-between m-column">
-			<div class="d-one-third m-whole element reveal-parent">
-				<div class="info reveal-child spacing-b-8 d-flex">
+			<div class="d-one-third m-whole element" data-reveal="parent">
+				<div class="info spacing-b-8 d-flex" data-reveal="child">
 					<span class="mono uppercase s-xsmall label">Sannini Impruneta</span>
 					<p class="s-xsmall"><?= page('contatti')->address()->kt()->inline() ?></p>
 				</div>
 
-				<div class="info reveal-child d-flex">
+				<div class="info d-flex" data-reveal="child">
 					<span class="mono uppercase s-xsmall label"><?= t('phone'); ?></span>
 					<p class="s-xsmall"><?= page('contatti')->phone()->kt()->inline() ?></p>
 				</div>
 
-				<div class="info reveal-child d-flex">
+				<div class="info d-flex" data-reveal="child">
 					<span class="mono uppercase s-xsmall label"><?= t('email'); ?></span>
 					<p class="s-xsmall"><?= page('contatti')->email()->kt()->inline() ?></p>
 				</div>
 
-				<div class="info reveal-child spacing-b-8 d-flex">
+				<div class="info spacing-b-8 d-flex" data-reveal="child">
 					<span class="mono uppercase s-xsmall label">IG</span>
 					<a class="s-xsmall" href="<?= page('contatti')->email()->toUrl() ?>">Sannini_Impruneta</a>
 				</div>
 
-				<div class="policies reveal-child d-flex d-column">
+				<div class="policies d-flex d-column" data-reveal="child">
 					<a class="mono uppercase s-xsmall" href="<?= page('privacy-policy')->url() ?>"><?= page('privacy-policy')->title() ?></a>
 					<a class="mono uppercase s-xsmall" href="<?= page('cookie-policy')->url() ?>"><?= page('cookie-policy')->title() ?></a>
 				</div>
@@ -31,7 +31,7 @@
 
 			<div class="d-one-third"></div>
 
-			<div class="d-one-third m-whole element reveal-parent d-flex flex-row m-column">
+			<div class="d-one-third m-whole element d-flex flex-row m-column" data-reveal="parent">
 				<div class="d-half m-whole">
 					<a class="mono uppercase s-xsmall" href="https://www.cottomanetti.com/manetti-gusmano-figli/" target="_blank">MANETTIGUSMANOEFIGLI.COM  &#8594;</a>
 				</div>
@@ -112,6 +112,10 @@
 			</div>
 		</div>
 	</footer>
+
+	<script>
+		window.productsEndpoint = '<?= page('prodotti')->url() ?>/more';
+	</script>
 
   <?= js('assets/js/custom.js') ?>
 </body>
