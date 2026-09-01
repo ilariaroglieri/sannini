@@ -999,7 +999,6 @@ header nav ul li:first-of-type {
 }
 header nav ul li a.active {
   color: #F01D1D;
-  pointer-events: none;
 }
 header nav ul li a.lang-active {
   opacity: 0.4;
