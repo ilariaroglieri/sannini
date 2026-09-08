@@ -21,6 +21,22 @@ columns:
               - 3-col-text-block
               - img-block
 
+          credits:
+            label: Crediti
+            type: structure
+            columns:
+              title:
+                width: 1/2
+              info:
+                width: 1/2
+            fields:
+              title:
+                label: Titolo
+                type: text
+              info:
+                label: Contenuti
+                extends: fields/writer-basic
+
   - width: 1/3
     sections:
       intro_fields:
@@ -34,6 +50,11 @@ columns:
               mime: image/*
 
           realization_caption:
-            label: Realization caption
+            label: Info realizzazione
             extends: fields/writer-basic
+
+          realization_credits:
+            label: Crediti realizzazione
+            extends: fields/writer-basic
+
 

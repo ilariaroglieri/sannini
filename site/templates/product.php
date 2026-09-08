@@ -8,8 +8,8 @@
 	]) ?>
 
 	<section class="module tech-info-module">
-	  <div class="d-flex m-column">
-      <div class="element d-two-thirds m-whole" data-reveal="parent">
+	  <div class="d-flex t-column">
+      <div class="element d-two-thirds t-whole spacing-t-b-10" data-reveal="parent">
         <?= snippet('image-w-caption', [
           'img' => $page->tech_drawing()->toFile(),
           'mobileImg' => $page->tech_drawing_mobile()->toFile(),
@@ -35,7 +35,7 @@
 				}
 			?>
 
-			<div class="element d-one-third m-whole" data-reveal="parent">
+			<div class="element tech-element d-one-third t-whole" data-reveal="parent">
 				<?php foreach ($techFields as $field): ?>
 				  <?php if ($field['value']->isNotEmpty()): ?>
 				    <div class="tech-info d-flex flex-row-smaller" data-reveal="child">
@@ -91,25 +91,7 @@
 
 	<?= $page->blocks()->toBlocks() ?>
 
-	<?php // navigation 
-		$prevAll = $page->prevAll();
-		$nextAll = $page->nextAll();
-	?>
-
-	<navi class="module navi-module">
-		<div class="d-flex flex-row m-column space-between">
-			<div class="element d-one-third m-whole" data-reveal="parent">
-				<?php foreach ($prevAll as $prevProduct): ?>
-					<a class="navi-item mono uppercase s-xsmall spacing-b-2" href="<?= $prevProduct->url()?>"><?= $prevProduct->title()?></a>
-				<?php endforeach ?>
-			</div>
-			<div class="element d-one-third m-whole" data-reveal="parent">
-				<?php foreach ($nextAll as $nextProduct): ?>
-					<a class="navi-item mono uppercase s-xsmall spacing-b-2" href="<?= $nextProduct->url()?>"><?= $nextProduct->title()?></a>
-				<?php endforeach ?>
-			</div>
-		</div>
-	</navi>
+	<?php snippet('navi-module') ?>
 </main>
 
 <?php snippet('footer') ?>

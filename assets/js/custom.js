@@ -6,31 +6,49 @@ const RATIO_DESKTOP = 3 / 5;      // altezza = larghezza × 0.6
 const RATIO_MOBILE  = 1 / 1.37;   // altezza = larghezza / 1.37
 const MOBILE_BP     = 768;        // soglia mobile in px
 
+// legge variabile con clamp
+function resolveVar(name) {
+  const probe = document.createElement('div');
+  probe.style.cssText = `position:absolute;height:var(${name});visibility:hidden;pointer-events:none`;
+  document.body.appendChild(probe);
+  const v = probe.getBoundingClientRect().height;
+  probe.remove();
+  return v;
+}
+
 // numero di colonne in base alla larghezza del container
 function getCols(containerW) {
   return containerW <= MOBILE_BP ? 1 : 3;
 }
 
 function snapModules(scope = document) {
-  const moduleH = parseFloat(
+  const moduleH  = parseFloat(
     getComputedStyle(document.documentElement).getPropertyValue('--module-h')
   );
   if (!moduleH) return;
+  const paddingH = parseFloat(resolveVar('--double-spacing'));
+  const stacked  = container.getBoundingClientRect().width <= 640;
+  const EPS = 2;
+
   const modules = [...document.querySelectorAll('.module')];
-  // 1. reset: tutti tornano all'altezza CSS di base
   modules.forEach(m => { m.style.height = ''; });
-  // 2. misura: ora .d-flex riflette il contenuto reale
+
   const heights = modules.map(m => {
     const content = m.querySelector('.d-flex');
     return content ? content.offsetHeight : null;
   });
-  // 3. scrittura
+
   modules.forEach((m, i) => {
     const naturalH = heights[i];
-    const EPS = 2; // tolleranza
     if (naturalH === null) return;
-    // add a row if its image module o black special module
-    if (m.classList.contains('special-img-module') || m.classList.contains('img-module')) {
+
+    const isImg      = m.classList.contains('img-module') || m.classList.contains('special-img-module'); // dove aggiungere un modulo bianco sotto
+    const isImgBlock = m.classList.contains('img-module'); // per questi su mobile viene aggiungo un modulo vuoto per ogni immagine
+
+    // su mobile solo img-module avvolge gli element snappati
+    if (isImgBlock && stacked) { m.style.height = 'auto'; return; }
+
+    if (isImg) {
       const base = Math.max(1, Math.ceil((naturalH - EPS) / moduleH));
       m.style.height = ((base + 1) * moduleH) + 'px';
     } else if (naturalH > moduleH + EPS) {
@@ -39,6 +57,20 @@ function snapModules(scope = document) {
       m.style.height = '';
     }
   });
+
+  // ─── mobile: ogni .element-image occupa celle intere + 1 vuota ───
+  const imgEls = [...document.querySelectorAll('.img-module .element-image')];
+  imgEls.forEach(el => { el.style.height = ''; });
+
+  if (stacked) {
+    const elH = imgEls.map(el => el.offsetHeight);
+    imgEls.forEach((el, i) => {
+      const steps = Math.max(1, Math.ceil(elH[i] / moduleH));
+      el.style.height = ((steps + 1) * moduleH - paddingH) + 'px';  // multiplo tondo, niente - paddingH
+    });
+  }
+
+
 }
 
 function updateGrid() {
@@ -87,7 +119,7 @@ ro.observe(container);
 
 //------- parallax animation
 function applyParallax() {
-  const SPEED = 300; // ampiezza in px
+  const SPEED = 200; // ampiezza in px
   const vh = window.innerHeight;
 
   document.querySelectorAll('.special-img-module').forEach(el => {
@@ -132,34 +164,43 @@ document.addEventListener('click', e => {
 // use data-reveal="parent" and data-reveal="child"
 // use data-reveal-delay="75" for setting different speed
 const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
+  const COL_BASE_DELAY = 160;
+  const CHILD_DELAY = 100;
 
-    const COL_BASE_DELAY = 180;
-    const CHILD_DELAY = 100;
+  const sortedEntries = [...entries]
+    .filter(e => e.isIntersecting)
+    .sort((a, b) => a.target.getBoundingClientRect().top - b.target.getBoundingClientRect().top);
 
+  let globalDelay = 0;
+
+  sortedEntries.forEach(entry => {
     const container = entry.target;
     const isReversed = container.classList.contains('d-row-reverse');
-    const parents = [...container.querySelectorAll('[data-reveal="parent"]')];
-    const ordered = isReversed ? [...parents].reverse() : parents;
+    let parents = [...container.querySelectorAll('[data-reveal="parent"]')];
 
-    ordered.forEach((col, colIndex) => {
-      const colDelay = ordered.slice(0, colIndex).reduce((acc, prevCol) => {
-        const n = prevCol.querySelectorAll('[data-reveal="child"]').length;
-        return acc + Math.max(COL_BASE_DELAY, n * CHILD_DELAY);
-      }, 0);
+    if (isReversed) parents = [...parents].reverse();
 
-      col.style.transitionDelay = `${colDelay}ms`;
-      col.classList.add('is-visible');
+    parents = parents.sort((a, b) => {
+      const orderA = parseInt(getComputedStyle(a).order) || 0;
+      const orderB = parseInt(getComputedStyle(b).order) || 0;
+      return orderA - orderB;
+    });
 
-      col.querySelectorAll('[data-reveal="child"]').forEach((el, rowIndex) => {
-        const customDelay = el.dataset.revealDelay ? parseInt(el.dataset.revealDelay) : CHILD_DELAY;
-        el.style.transitionDelay = `${colDelay + rowIndex * customDelay}ms`;
-        el.classList.add('is-visible');
-        setTimeout(() => {
-          el.style.transitionDelay = '';
-        }, customDelay);
-      });
+    parents.forEach(col => {
+      setTimeout(() => {
+        col.classList.add('is-visible');
+
+        col.querySelectorAll('[data-reveal="child"]').forEach((el, rowIndex) => {
+          setTimeout(() => {
+            el.classList.add('is-visible');
+            el.addEventListener('transitionend', () => {
+              el.style.transitionDelay = '0s';
+            }, { once: true });
+          }, rowIndex * CHILD_DELAY);
+        });
+      }, globalDelay);
+
+      globalDelay += COL_BASE_DELAY;
     });
 
     revealObserver.unobserve(container);

@@ -1,6 +1,13 @@
-  </div>
+<?php snippet('header') ?>
 
-	<footer class="container module">
+<main id="contacts">
+	<section class="module empty-module">
+		<div class="d-flex">
+			<div class="d-whole"></div>
+		</div>
+	</section>
+
+	<section class="module contact-module">
 		<div class="d-flex space-between m-column">
 			<div class="d-one-third m-whole element" data-reveal="parent">
 				<div class="info spacing-b-8 d-flex" data-reveal="child">
@@ -13,7 +20,11 @@
 					<p class="s-xsmall"><?= page('contatti')->phone()->kt()->inline() ?></p>
 				</div>
 
-				<div class="info d-flex" data-reveal="child">
+				<p id="copyright" class="s-xsmall spacing-t-6">© All rights reserved <?= date("Y"); ?></p>
+			</div>
+
+			<div class="d-one-third m-whole element" data-reveal="parent">
+				<div class="info d-flex spacing-b-half" data-reveal="child">
 					<span class="mono uppercase s-xsmall label"><?= t('email'); ?></span>
 					<p class="s-xsmall"><?= page('contatti')->email()->kt()->inline() ?></p>
 				</div>
@@ -24,25 +35,23 @@
 				</div>
 
 				<div class="policies d-flex d-column" data-reveal="child">
-					<a class="mono uppercase s-xsmall" href="<?= page('privacy-policy')->url() ?>"><?= page('privacy-policy')->title() ?></a>
+					<a class="mono uppercase s-xsmall spacing-b-half" href="<?= page('privacy-policy')->url() ?>"><?= page('privacy-policy')->title() ?></a>
 					<a class="mono uppercase s-xsmall" href="<?= page('cookie-policy')->url() ?>"><?= page('cookie-policy')->title() ?></a>
 				</div>
 			</div>
 
-			<div class="d-one-third"></div>
-
-			<div class="d-one-third m-whole element d-flex flex-row m-column" data-reveal="parent">
-				<div class="d-half m-whole">
-					<a class="mono uppercase s-xsmall" href="https://www.cottomanetti.com/manetti-gusmano-figli/" target="_blank">MANETTIGUSMANOEFIGLI.COM  &#8594;</a>
-				</div>
-				<div class="d-half m-whole d-flex d-column bottom end">
-					<?php snippet('logo-manetti.php'); ?>
-
-					<p id="copyright" class="s-xsmall spacing-t-1">© All rights reserved <?= date("Y"); ?></p>
-				</div>
+			<div class="d-one-third m-whole element" data-reveal="parent">
+				<?php 
+				$contacts = $page->departments()->toStructure();
+				foreach ($contacts as $item): ?>
+					<div class="info d-flex spacing-b-half" data-reveal="child">
+						<span class="mono uppercase s-xsmall label"><?= $item->title()->smartypants() ?></span>
+					  <a class="s-xsmall" href="mailto:<?= $item->email()->value() ?>"><?= $item->email()->value() ?></a>
+					</div>
+				<?php endforeach ?>
 			</div>
 		</div>
-	</footer>
+	</div>
+</main>
 
-  <?= js('assets/js/custom.js') ?>
-</body>
+<?php snippet('footer') ?>

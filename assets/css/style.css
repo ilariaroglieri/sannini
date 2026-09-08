@@ -39,7 +39,7 @@ Version: 1.0
 }
 
 .s-xsmall {
-  font-size: clamp(9px, 0.6vw, 12px);
+  font-size: clamp(10px, 0.65vw, 12px);
 }
 
 :root {
@@ -50,7 +50,7 @@ Version: 1.0
   --s-medium: clamp(17px, 1.4vw, 27px);
   --s-regular: clamp(14px, 1.1vw, 21px);
   --s-small: clamp(11px, 0.7vw, 13px);
-  --s-xsmall: clamp(9px, 0.6vw, 12px);
+  --s-xsmall: clamp(10px, 0.65vw, 12px);
 }
 
 .d-1-twelfth {
@@ -795,7 +795,7 @@ Version: 1.0
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 10;
+  z-index: 101;
   font-size: 0pt;
 }
 
@@ -831,6 +831,9 @@ Version: 1.0
   color: #ECEBDD;
 }
 
+.wysiwyg p {
+  margin-bottom: clamp(10px, 0.9vw, 18px);
+}
 .wysiwyg p:last-of-type {
   margin-bottom: 0;
 }
@@ -1049,6 +1052,7 @@ header nav ul li a.lang-active {
   margin-bottom: var(--double-spacing);
   padding: var(--double-spacing);
   will-change: transform;
+  z-index: 4;
 }
 .module.special-img-module:after {
   content: "";
@@ -1164,11 +1168,48 @@ header nav ul li a.lang-active {
   transform: translateY(-50%);
 }
 
+#realizations-page .realization:nth-of-type(2n + 1) .module .d-flex .caption-element {
+  order: 2;
+}
+#realizations-page .realization:nth-of-type(2n + 1) .module .d-flex .title-element {
+  order: 1;
+}
+#realizations-page .realization:nth-of-type(2n + 1) .module .d-flex .img-element {
+  order: 3;
+}
+#realizations-page .realization:nth-of-type(2n + 2) .module .d-flex .caption-element {
+  order: 3;
+}
+#realizations-page .realization:nth-of-type(2n + 2) .module .d-flex .title-element {
+  order: 2;
+}
+#realizations-page .realization:nth-of-type(2n + 2) .module .d-flex .img-element {
+  order: 1;
+}
+#realizations-page .realization:nth-of-type(2n + 3) .module .d-flex .caption-element {
+  order: 1;
+}
+#realizations-page .realization:nth-of-type(2n + 3) .module .d-flex .title-element {
+  order: 3;
+}
+#realizations-page .realization:nth-of-type(2n + 3) .module .d-flex .img-element {
+  order: 2;
+}
+
+.info .label {
+  width: 41.6665%;
+}
+
+.contatti {
+  height: 100dvh;
+  overflow: hidden;
+}
+.contatti footer {
+  display: none;
+}
+
 footer {
   padding: 0 calc(var(--half-spacing) * 3);
-}
-footer .info span, footer .info p {
-  width: 41.6665%;
 }
 footer #copyright {
   opacity: 0.5;
@@ -1188,19 +1229,23 @@ footer #copyright {
     flex-flow: column-reverse;
   }
   .t-whole {
-    width: calc(100% - clamp(10px, 0.9vw, 18px));
-    margin-left: calc(clamp(10px, 0.9vw, 18px) / 2);
-    margin-right: calc(clamp(10px, 0.9vw, 18px) / 2);
+    width: 100%;
   }
   .t-half {
-    width: calc(50% - clamp(10px, 0.9vw, 18px));
-    margin-left: calc(clamp(10px, 0.9vw, 18px) / 2);
-    margin-right: calc(clamp(10px, 0.9vw, 18px) / 2);
+    width: 50%;
   }
-  .t-2-twelfth {
-    width: calc(16.6666% - clamp(10px, 0.9vw, 18px));
-    margin-left: calc(clamp(10px, 0.9vw, 18px) / 2);
-    margin-right: calc(clamp(10px, 0.9vw, 18px) / 2);
+  .tech-element {
+    position: relative;
+  }
+  .tech-element::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ECEBDD;
+    z-index: -1;
   }
 }
 @media screen and (max-width: 640px) {
@@ -1217,14 +1262,13 @@ footer #copyright {
     flex-flow: column-reverse;
   }
   .m-whole {
-    width: calc(100% - calc(clamp(10px, 0.9vw, 18px) * 2));
-    margin-right: clamp(10px, 0.9vw, 18px);
-    margin-left: clamp(10px, 0.9vw, 18px);
+    width: 100%;
   }
   .m-half {
-    width: calc(50% - calc(clamp(10px, 0.9vw, 18px) * 2));
-    margin-right: clamp(10px, 0.9vw, 18px);
-    margin-left: clamp(10px, 0.9vw, 18px);
+    width: 50%;
+  }
+  html, body {
+    overflow-x: hidden;
   }
   .module .element {
     padding: var(--spacing) var(--half-spacing);
@@ -1234,6 +1278,9 @@ footer #copyright {
   }
   .module .element.m-whole figure.m-landscape {
     height: calc(var(--module-h) - var(--double-spacing));
+  }
+  .module .element.d-flex figure.portrait {
+    height: calc(var(--module-h) * 2 - var(--double-spacing));
   }
 }
 

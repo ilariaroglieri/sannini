@@ -1,40 +1,16 @@
 title: Realizzazioni
 
-tabs:
-
-  # ──────────────────────────────────────────
-  # TAB: REALIZZAZIONI
-  # ──────────────────────────────────────────
-  realizzazioni:
-    label: Realizzazioni
-    icon: grid
-    sections:
-      lista_realizzazioni:
-        type: pages
-        label: Realizzazioni
-        parent: site.find('realizzazioni')
-        templates:
-          - realizzazione
-        layout: cards
-        info: "{{ page.didascalia }}"
-        image:
-          query: page.immagine_copertina.toFile
-        empty: Nessuna realizzazione. Clicca "+" per aggiungere.
-
-  # ──────────────────────────────────────────
-  # TAB: SEO
-  # ──────────────────────────────────────────
-  seo:
-    label: SEO
-    icon: search
-    sections:
-      seo_fields:
-        type: fields
-        fields:
-          seo_title:
-            label: Titolo SEO
-            type: text
-          seo_description:
-            label: Descrizione SEO
-            type: textarea
-            rows: 3
+sections:
+  realizations_list:
+    type: pages
+    label:
+      it: Realizzazioni 
+      en: Realizations
+    parent: site.find("realizzazioni")
+    templates:
+      - realization
+    image:
+      query: page.cover_img.toFile
+    empty: 
+      it: Nessuna realizzazione. Clicca su "+" per aggiungerne una.
+      en: No realizations. Click "+" to add one.

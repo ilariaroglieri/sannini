@@ -23,21 +23,25 @@
   }
 
   .t-whole {
-    width: calc(100% - #{$spacing});
-    margin-left: #{$half-spacing};
-    margin-right: #{$half-spacing};
+    width: 100%;
   }
 
   .t-half {
-    width: calc(50% - #{$spacing});
-    margin-left: #{$half-spacing};
-    margin-right: #{$half-spacing};
+    width: 50%;
   }
 
-  .t-2-twelfth {
-    width: calc($col * 2 - #{$spacing});
-    margin-left: #{$half-spacing};
-    margin-right: #{$half-spacing};
+  .tech-element {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $secColor;
+      z-index: -1;
+    }
   }
 }
 
@@ -60,15 +64,15 @@
   }
 
   .m-whole {
-    width: calc(100% - #{$double-spacing});
-    margin-right:$spacing;
-    margin-left:$spacing;
+    width: 100%
   }
 
   .m-half {
-    width: calc(50% - #{$double-spacing});
-    margin-right:$spacing;
-    margin-left:$spacing;
+    width: 50%;
+  }
+
+  html, body {
+    overflow-x: hidden;
   }
 
   .module {
@@ -82,7 +86,11 @@
           height: calc(var(--module-h) - var(--double-spacing))
         }
       }
+      &.d-flex { // couple of two vertical images 
+        figure.portrait {
+          height: calc(var(--module-h) * 2 - var(--double-spacing)) 
+        }
+      }
     }
   }
 }
-
