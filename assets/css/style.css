@@ -923,7 +923,7 @@ figure figcaption {
   position: absolute;
   left: 0;
   bottom: -100px;
-  width: 90%;
+  width: 100%;
   background-color: #ECEBDD;
   opacity: 0;
   padding: var(--half-spacing);
@@ -1123,11 +1123,16 @@ header nav ul li a.lang-active {
 .module.tech-info-module .tech-info__label {
   flex-shrink: 0;
 }
-.module.tech-info-module .tech-info.download::after {
+.module.tech-info-module .tech-info.download a {
+  display: flex;
+  align-items: center;
+}
+.module.tech-info-module .tech-info.download a::after {
   content: url(../img/arrow.svg);
   display: flex;
   width: 12px;
   height: 12px;
+  margin-left: var(--half-spacing);
 }
 .module.tech-info-module .color-info {
   position: absolute;

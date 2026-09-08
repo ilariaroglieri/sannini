@@ -12,26 +12,26 @@
 			<div class="d-one-third m-whole element" data-reveal="parent">
 				<div class="info spacing-b-8 d-flex" data-reveal="child">
 					<span class="mono uppercase s-xsmall label">Sannini Impruneta</span>
-					<p class="s-xsmall"><?= page('contatti')->address()->kt()->inline() ?></p>
+					<p class="s-small"><?= page('contatti')->address()->kt()->inline() ?></p>
 				</div>
 
 				<div class="info d-flex" data-reveal="child">
 					<span class="mono uppercase s-xsmall label"><?= t('phone'); ?></span>
-					<p class="s-xsmall"><?= page('contatti')->phone()->kt()->inline() ?></p>
+					<p class="s-small"><?= page('contatti')->phone()->kt()->inline() ?></p>
 				</div>
 
-				<p id="copyright" class="s-xsmall spacing-t-6">© All rights reserved <?= date("Y"); ?></p>
+				<p id="copyright" class="s-small spacing-t-6">© All rights reserved <?= date("Y"); ?></p>
 			</div>
 
 			<div class="d-one-third m-whole element" data-reveal="parent">
 				<div class="info d-flex spacing-b-half" data-reveal="child">
 					<span class="mono uppercase s-xsmall label"><?= t('email'); ?></span>
-					<p class="s-xsmall"><?= page('contatti')->email()->kt()->inline() ?></p>
+					<p class="s-small"><?= page('contatti')->email()->kt()->inline() ?></p>
 				</div>
 
 				<div class="info spacing-b-8 d-flex" data-reveal="child">
 					<span class="mono uppercase s-xsmall label">IG</span>
-					<a class="s-xsmall" href="<?= page('contatti')->email()->toUrl() ?>">Sannini_Impruneta</a>
+					<a class="s-small" href="<?= page('contatti')->email()->toUrl() ?>">Sannini_Impruneta</a>
 				</div>
 
 				<div class="policies d-flex d-column" data-reveal="child">
@@ -46,7 +46,7 @@
 				foreach ($contacts as $item): ?>
 					<div class="info d-flex spacing-b-half" data-reveal="child">
 						<span class="mono uppercase s-xsmall label"><?= $item->title()->smartypants() ?></span>
-					  <a class="s-xsmall" href="mailto:<?= $item->email()->value() ?>"><?= $item->email()->value() ?></a>
+					  <a class="s-small" href="mailto:<?= $item->email()->value() ?>"><?= $item->email()->value() ?></a>
 					</div>
 				<?php endforeach ?>
 			</div>

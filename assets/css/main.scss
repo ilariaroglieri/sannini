@@ -215,7 +215,7 @@ figure {
     position: absolute;
     left: 0;
     bottom: -100px;
-    width: 90%;
+    width: 100%;
     background-color: $secColor;
     opacity: 0;
     padding: var(--half-spacing);
@@ -441,11 +441,16 @@ header {
       &__label {
         flex-shrink: 0;
       }
-      &.download::after {
-        content: url(../img/arrow.svg);
+      &.download a {
         display: flex;
-        width: 12px;
-        height: 12px;
+        align-items: center;
+        &::after {
+          content: url(../img/arrow.svg);
+          display: flex;
+          width: 12px;
+          height: 12px;
+          margin-left: var(--half-spacing);
+        }
       }
     }
     .color-info {

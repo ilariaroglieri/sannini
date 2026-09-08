@@ -49,7 +49,7 @@
 					</div>
 					<div id="site-logo" class="element p-relative d-2-twelfth d-flex m-half" data-reveal="parent">
 						<a class="d-flex bottom reveal-child" href="<?= $site->url() ?>">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160.642" height="37.378" viewBox="0 0 160.642 37.378">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" viewBox="0 0 160.642 37.378">
 							  <defs>
 							    <clipPath id="clip-path">
 							      <path id="Path_5" data-name="Path 5" d="M0-15.673H160.642V-53.051H0Z" transform="translate(0 53.051)" fill="#414141"/>

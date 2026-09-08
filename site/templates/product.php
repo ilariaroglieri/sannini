@@ -40,7 +40,7 @@
 				  <?php if ($field['value']->isNotEmpty()): ?>
 				    <div class="tech-info d-flex flex-row-smaller" data-reveal="child">
 				      <span class="tech-info__label mono uppercase s-xsmall d-3-twelfth"><?= $field['label'] ?>: </span>
-				      <p class="tech-info__value mono s-xsmall"><?= $field['value'] ?></p>
+				      <p class="tech-info__value mono s-small"><?= $field['value'] ?></p>
 				    </div>
 				  <?php endif ?>
 				<?php endforeach ?>
