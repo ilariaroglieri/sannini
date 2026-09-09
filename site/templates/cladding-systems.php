@@ -42,13 +42,13 @@
 						$pdf2 = $claddingSystem->pdf_2()->toFile();
 				    if ($pdf !== null): ?>
 					    <div class="tech-info download" data-reveal="child">
-					      <a href="<?= $pdf->url(); ?>" class="tech-info__label mono uppercase s-regular"><?= t('pdf2') ?></a>
+					      <a href="<?= $pdf->url(); ?>" class="tech-info__label mono uppercase s-reg-small"><?= t('pdf2') ?></a>
 					    </div>
 					  <?php endif; ?>
 
 					  <?php if ($pdf2 !== null): ?>
 					    <div class="tech-info download" data-reveal="child">
-					      <a href="<?= $pdf2->url(); ?>" class="tech-info__label mono uppercase s-regular"><?= t('pdf') ?></a>
+					      <a href="<?= $pdf2->url(); ?>" class="tech-info__label mono uppercase s-reg-small"><?= t('pdf') ?></a>
 					    </div>
 					  <?php endif; ?>
 					</div>

@@ -7,8 +7,8 @@
   $isArchive = $isArchive ?? false;
 ?>
 
-<section class="module title-module">
-  <div class="d-flex m-column p-relative">
+<section class="module title-module-realization">
+  <div class="d-flex m-column-reverse p-relative">
     <?php if ($isArchive): ?>
       <?php if ($url): ?><a class="overall p-absolute" href="<?= $url ?>" aria-label="<?= $title ?>"></a><?php endif; ?>
       <div class="element caption-element d-one-third m-whole d-flex center v-center" data-reveal="parent">
@@ -19,7 +19,7 @@
     <?php endif; ?>
     <div class="element title-element d-one-third m-whole d-flex center v-center" data-reveal="parent">
       <?php if ($title): ?>
-        <<?= $heading; ?> class="uppercase s-medium spacing-b-2" data-reveal="child"><?= $title ?></<?= $heading; ?>>
+        <<?= $heading; ?> class="uppercase s-medium spacing-b-2 spacing-m-b-0" data-reveal="child"><?= $title ?></<?= $heading; ?>>
       <?php endif; ?>
     </div>
     <div class="element img-element d-one-third m-whole" data-reveal="parent">

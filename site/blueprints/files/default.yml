@@ -3,3 +3,8 @@ fields:
     label: Caption
     type: text
     translate: true
+
+  mobileCropVertical:
+    label: "Croppa in verticale su mobile?"
+    type: toggle
+    default: false

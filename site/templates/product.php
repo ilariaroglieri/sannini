@@ -13,7 +13,7 @@
         <?= snippet('image-w-caption', [
           'img' => $page->tech_drawing()->toFile(),
           'mobileImg' => $page->tech_drawing_mobile()->toFile(),
-          'classes' => 'spacing-m-b-2'
+          'classes' => 'spacing-m-b-4'
         ]); ?>
 
 	      <div class="inner-element">

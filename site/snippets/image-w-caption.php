@@ -8,11 +8,19 @@
 <?php if ($img !== null):
 	$orientation = $img->dimensions()->orientation();
   $focus = $img->focus();
+  $mobileCrop = $img->mobileCropVertical()->toBool() ?? false;
 
   if ($mobileImg !== null):
     $orientationM = 'm-' . $mobileImg->dimensions()->orientation();
+  else:
+    if ($mobileCrop === true):
+      $orientationM = 'm-portrait';
+    else: 
+      $orientationM = 'm-' . $img->dimensions()->orientation();
+    endif;
   endif;
 ?>
+
 
   <figure class="<?= $classes .' '. $orientation .' '. $orientationM ?>">
     <picture>

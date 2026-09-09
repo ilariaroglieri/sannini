@@ -317,7 +317,7 @@ header {
   overflow:hidden;
   padding: var(--half-spacing) var(--half-spacing) 0;
   .element {
-    padding: var(--spacing) calc(var(--half-spacing) * 3) var(--half-spacing);
+    padding: var(--spacing) calc(var(--half-spacing) * 3);
     position: relative;
     z-index: 100;
     &.d-one-third {
@@ -346,7 +346,7 @@ header {
   }
   .text {
     background-color: $secColor;
-    padding-bottom: var(--spacing);
+    padding-bottom: var(--double-spacing);
     bold, strong {
       font-weight: normal;
       background-color: white;
@@ -448,11 +448,22 @@ header {
         display: flex;
         align-items: center;
         &::after {
-          content: url(../img/arrow.svg);
+          content: '';
+          mask-image: url(../img/arrow.svg);
           display: flex;
-          width: 12px;
-          height: 12px;
-          margin-left: var(--half-spacing);
+          position: absolute;
+          right: var(--double-spacing);
+          width: 15px;
+          height: 15px;
+          background-image: none;
+          background-color: $primaryColor;
+          mask-position: center;
+          mask-repeat: no-repeat;
+          mask-size: 100%;
+          transition: all .3s;
+        }
+        &:hover::after {
+          background-color: red;
         }
       }
     }

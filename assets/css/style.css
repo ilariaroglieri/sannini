@@ -34,12 +34,16 @@ Version: 1.0
   font-size: clamp(14px, 1.1vw, 21px);
 }
 
+.s-reg-small {
+  font-size: clamp(13px, 0.833vw, 16px);
+}
+
 .s-small, .wysiwyg.s-small p {
   font-size: clamp(11px, 0.7vw, 13px);
 }
 
 .s-xsmall {
-  font-size: clamp(10px, 0.65vw, 12px);
+  font-size: clamp(9px, 0.65vw, 12px);
 }
 
 :root {
@@ -49,8 +53,9 @@ Version: 1.0
   --s-large: clamp(18px, 1.5vw, 29px);
   --s-medium: clamp(17px, 1.4vw, 27px);
   --s-regular: clamp(14px, 1.1vw, 21px);
+  --s-reg-small: clamp(13px, 0.833vw, 16px);
   --s-small: clamp(11px, 0.7vw, 13px);
-  --s-xsmall: clamp(10px, 0.65vw, 12px);
+  --s-xsmall: clamp(9px, 0.65vw, 12px);
 }
 
 .d-1-twelfth {
@@ -1014,7 +1019,7 @@ header nav ul li a.lang-active {
   padding: var(--half-spacing) var(--half-spacing) 0;
 }
 .module .element {
-  padding: var(--spacing) calc(var(--half-spacing) * 3) var(--half-spacing);
+  padding: var(--spacing) calc(var(--half-spacing) * 3);
   position: relative;
   z-index: 100;
 }
@@ -1035,7 +1040,7 @@ header nav ul li a.lang-active {
 }
 .module .text {
   background-color: #ECEBDD;
-  padding-bottom: var(--spacing);
+  padding-bottom: var(--double-spacing);
 }
 .module .text bold, .module .text strong {
   font-weight: normal;
@@ -1128,11 +1133,22 @@ header nav ul li a.lang-active {
   align-items: center;
 }
 .module.tech-info-module .tech-info.download a::after {
-  content: url(../img/arrow.svg);
+  content: "";
+  mask-image: url(../img/arrow.svg);
   display: flex;
-  width: 12px;
-  height: 12px;
-  margin-left: var(--half-spacing);
+  position: absolute;
+  right: var(--double-spacing);
+  width: 15px;
+  height: 15px;
+  background-image: none;
+  background-color: #414141;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  transition: all 0.3s;
+}
+.module.tech-info-module .tech-info.download a:hover::after {
+  background-color: red;
 }
 .module.tech-info-module .color-info {
   position: absolute;
@@ -1275,6 +1291,11 @@ footer #copyright {
   html, body {
     overflow-x: hidden;
   }
+  header #site-logo .inner-element {
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+  }
   .module .element.m-whole figure.m-portrait {
     height: calc(var(--module-h) * 2 - var(--double-spacing));
   }
@@ -1289,6 +1310,23 @@ footer #copyright {
   }
   .tech-element::after {
     display: none;
+  }
+  #realizations-page .realization:nth-of-type(2n + 1) .module .d-flex .caption-element, #realizations-page .realization:nth-of-type(2n + 2) .module .d-flex .caption-element, #realizations-page .realization:nth-of-type(2n + 3) .module .d-flex .caption-element {
+    order: 3;
+    margin-bottom: 50px;
+  }
+  #realizations-page .realization:nth-of-type(2n + 1) .module .d-flex .title-element, #realizations-page .realization:nth-of-type(2n + 2) .module .d-flex .title-element, #realizations-page .realization:nth-of-type(2n + 3) .module .d-flex .title-element {
+    order: 1;
+  }
+  #realizations-page .realization:nth-of-type(2n + 1) .module .d-flex .img-element, #realizations-page .realization:nth-of-type(2n + 2) .module .d-flex .img-element, #realizations-page .realization:nth-of-type(2n + 3) .module .d-flex .img-element {
+    order: 2;
+  }
+  #realizations-page .realization:nth-of-type(2n + 1) .module .d-flex .img-element figure.landscape, #realizations-page .realization:nth-of-type(2n + 2) .module .d-flex .img-element figure.landscape, #realizations-page .realization:nth-of-type(2n + 3) .module .d-flex .img-element figure.landscape {
+    height: calc(var(--module-h) * 1.6 - var(--double-spacing));
+  }
+  #single-realization-page .title-module-realization .title-element {
+    margin-top: 35%;
+    transform: translateY(-50%);
   }
   footer {
     height: auto !important;

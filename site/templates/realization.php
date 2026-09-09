@@ -9,7 +9,8 @@
 
 	<?php snippet('title-module', [
 		'title' => $page->realization_caption()->fancypants(),
-		'titleStyle' => 'mono s-small t-center'
+		'titleStyle' => 'mono s-small t-center',
+		'classes' => 'm-hidden'
 	]) ?>
 
 	<?php snippet('text-module', [

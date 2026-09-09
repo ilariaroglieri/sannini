@@ -21,15 +21,37 @@ function getCols(containerW) {
   return containerW <= MOBILE_BP ? 1 : 3;
 }
 
-function snapModules(scope = document) {
-  const moduleH  = parseFloat(
-    getComputedStyle(document.documentElement).getPropertyValue('--module-h')
-  );
+function snapModules() {
+  const moduleH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--module-h'));
   if (!moduleH) return;
-  const paddingH = parseFloat(resolveVar('--double-spacing'));
+
   const stacked  = container.getBoundingClientRect().width <= 640;
+  const paddingH = parseFloat(resolveVar('--double-spacing'));
   const EPS = 2;
 
+  const imgEls = [...document.querySelectorAll('.img-module .inner-img-element')];
+  const inners = [...document.querySelectorAll('.module .inner-element')];
+
+  // reset sempre
+  imgEls.forEach(el => { el.style.height = ''; });
+  inners.forEach(el => { el.style.height = ''; });
+
+  // ─── FASE 1: snap inner + immagini (PRIMA) ───
+  if (stacked) {
+    const elH = imgEls.map(el => el.offsetHeight);
+    imgEls.forEach((el, i) => {
+      const steps = Math.max(1, Math.ceil((elH[i] - EPS) / moduleH));
+      el.style.height = ((steps + 1) * moduleH - paddingH) + 'px';
+    });
+
+    const innerH = inners.map(el => el.offsetHeight);
+    inners.forEach((el, i) => {
+      const steps = Math.max(1, Math.ceil((innerH[i] - EPS) / moduleH));
+      el.style.height = (steps * moduleH - paddingH) + 'px';
+    });
+  }
+
+  // ─── FASE 2: snap dei moduli (DOPO, misura già assestata) ───
   const modules = [...document.querySelectorAll('.module')];
   modules.forEach(m => { m.style.height = ''; });
 
@@ -42,10 +64,9 @@ function snapModules(scope = document) {
     const naturalH = heights[i];
     if (naturalH === null) return;
 
-    const isImg      = m.classList.contains('img-module') || m.classList.contains('special-img-module'); // dove aggiungere un modulo bianco sotto
-    const isImgBlock = m.classList.contains('img-module'); // per questi su mobile viene aggiungo un modulo vuoto per ogni immagine
+    const isImg      = m.classList.contains('img-module') || m.classList.contains('special-img-module');
+    const isImgBlock = m.classList.contains('img-module');
 
-    // su mobile solo img-module avvolge gli element snappati
     if (isImgBlock && stacked) { m.style.height = 'auto'; return; }
 
     if (isImg) {
@@ -57,28 +78,6 @@ function snapModules(scope = document) {
       m.style.height = '';
     }
   });
-
-  // ─── mobile: ogni img che ha inner-element occupa celle intere + 1 vuota ───
-  const imgEls = [...document.querySelectorAll('.img-module .inner-img-element')];
-  imgEls.forEach(el => { el.style.height = ''; });
-
-  const inners = [...document.querySelectorAll('.module .inner-element')]
-
-  if (stacked) {
-    const elH = imgEls.map(el => el.offsetHeight);
-    imgEls.forEach((el, i) => {
-      const steps = Math.max(1, Math.ceil((elH[i]  - EPS) / moduleH));
-      el.style.height = ((steps + 1) * moduleH - paddingH) + 'px';  // multiplo tondo, niente - paddingH
-    });
-
-    const innerH = inners.map(el => el.offsetHeight);
-
-    inners.forEach(el => { el.style.height = ''; });
-    inners.forEach((el, i) => {
-      const steps = Math.max(1, Math.ceil((innerH[i] - EPS) / moduleH));
-      el.style.height = (steps * moduleH) + 'px';
-    });
-  }
 }
 
 function updateGrid() {
@@ -112,7 +111,7 @@ function updateGrid() {
   markers.style.backgroundRepeat   = 'repeat-y';
   markers.style.backgroundPosition = '0 0';
 
-  snapModules();
+  requestAnimationFrame(snapModules);
 }
 
 const container = document.querySelector('.container');
@@ -121,6 +120,7 @@ const ro = new ResizeObserver(entries => {
   const w = entries[0].contentRect.width;
   if (Math.abs(w - lastW) < 0.5) return; // ignora i cambi di sola altezza
   lastW = w;
+  
   updateGrid();
 });
 ro.observe(container);
