@@ -36,26 +36,30 @@
 
 			<section class="module tech-info-module">
 				<div class="d-flex m-column-reverse">
-					<div class="element d-one-third m-whole spacing-m-t-10" data-reveal="parent">
-						<?php 
-						$pdf = $claddingSystem->pdf_1()->toFile();
-						$pdf2 = $claddingSystem->pdf_2()->toFile();
-				    if ($pdf !== null): ?>
-					    <div class="tech-info download" data-reveal="child">
-					      <a href="<?= $pdf->url(); ?>" class="tech-info__label mono uppercase s-reg-small"><?= t('pdf2') ?></a>
-					    </div>
-					  <?php endif; ?>
+					<div class="element d-one-third m-whole" data-reveal="parent">
+		      	<div class="inner-element">
+							<?php 
+							$pdf = $claddingSystem->pdf_1()->toFile();
+							$pdf2 = $claddingSystem->pdf_2()->toFile();
+					    if ($pdf !== null): ?>
+						    <div class="tech-info download" data-reveal="child">
+						      <a href="<?= $pdf->url(); ?>" class="tech-info__label mono uppercase s-reg-small"><?= t('pdf2') ?></a>
+						    </div>
+						  <?php endif; ?>
 
-					  <?php if ($pdf2 !== null): ?>
-					    <div class="tech-info download" data-reveal="child">
-					      <a href="<?= $pdf2->url(); ?>" class="tech-info__label mono uppercase s-reg-small"><?= t('pdf') ?></a>
-					    </div>
-					  <?php endif; ?>
+						  <?php if ($pdf2 !== null): ?>
+						    <div class="tech-info download" data-reveal="child">
+						      <a href="<?= $pdf2->url(); ?>" class="tech-info__label mono uppercase s-reg-small"><?= t('pdf') ?></a>
+						    </div>
+						  <?php endif; ?>
+						</div>
 					</div>
 		      <div class="element d-two-thirds m-whole" data-reveal="parent">
-			    	<div class="text s-large" data-reveal="child">
-		        	<?= $claddingSystem->intro_text_2()->fancypants(); ?>
-		      	</div>
+		      	<div class="inner-element">
+				    	<div class="text s-large" data-reveal="child">
+			        	<?= $claddingSystem->intro_text_2()->fancypants(); ?>
+			      	</div>
+			      </div>
 		      </div>
 		    </div>
 		  </section>

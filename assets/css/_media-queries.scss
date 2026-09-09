@@ -104,6 +104,15 @@
         display: none;
       }
     }
+    &.img-module {
+      .multi {
+        padding-bottom: var(--spacing);
+        &:last-of-type,
+        &:has(~ .m-hidden):not(:has(~ .multi:not(.m-hidden))){
+          padding-bottom: var(--half-spacing);
+        }
+      }
+    }
   }
 
   .tech-element {

@@ -317,7 +317,7 @@ header {
   overflow:hidden;
   padding: var(--half-spacing) var(--half-spacing) 0;
   .element {
-    padding: var(--spacing) calc(var(--half-spacing) * 3);
+    padding: var(--spacing) calc(var(--half-spacing) * 3) var(--half-spacing);
     position: relative;
     z-index: 100;
     &.d-one-third {

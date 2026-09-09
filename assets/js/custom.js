@@ -120,7 +120,7 @@ const ro = new ResizeObserver(entries => {
   const w = entries[0].contentRect.width;
   if (Math.abs(w - lastW) < 0.5) return; // ignora i cambi di sola altezza
   lastW = w;
-  
+
   updateGrid();
 });
 ro.observe(container);

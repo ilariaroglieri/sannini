@@ -14,7 +14,7 @@
         </div>
       </div>
     <?php elseif ($imgLayout == 'm-s'): ?>
-      <div class="element d-two-thirds m-whole <?= !$mediumImg ? 'm-hidden' : '' ?>" data-reveal="parent">
+      <div class="element multi d-two-thirds m-whole <?= !$mediumImg ? 'm-hidden' : '' ?>" data-reveal="parent">
         <div class="inner-img-element">
           <?php snippet('image-w-caption', [
             'img' => $mediumImg
