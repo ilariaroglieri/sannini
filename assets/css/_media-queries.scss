@@ -113,6 +113,17 @@
         }
       }
     }
+    &.special-img-module {
+      .image {
+        padding: calc(var(--double-spacing)*2) calc(var(--half-spacing) * 3);
+      }
+      .caption-row {
+        align-items: flex-end;
+        .caption:nth-child(n+4) {
+          display: none;
+        }
+      }
+    }
   }
 
   .tech-element {

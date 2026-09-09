@@ -1318,6 +1318,15 @@ footer #copyright {
   .module.img-module .multi:last-of-type, .module.img-module .multi:has(~ .m-hidden):not(:has(~ .multi:not(.m-hidden))) {
     padding-bottom: var(--half-spacing);
   }
+  .module.special-img-module .image {
+    padding: calc(var(--double-spacing) * 2) calc(var(--half-spacing) * 3);
+  }
+  .module.special-img-module .caption-row {
+    align-items: flex-end;
+  }
+  .module.special-img-module .caption-row .caption:nth-child(n+4) {
+    display: none;
+  }
   .tech-element::after {
     display: none;
   }
