@@ -34,7 +34,7 @@ Version: 1.0
   font-size: clamp(14px, 1.1vw, 21px);
 }
 
-.s-small {
+.s-small, .wysiwyg.s-small p {
   font-size: clamp(11px, 0.7vw, 13px);
 }
 
@@ -1275,9 +1275,6 @@ footer #copyright {
   html, body {
     overflow-x: hidden;
   }
-  .module .element {
-    padding: var(--spacing) var(--half-spacing);
-  }
   .module .element.m-whole figure.m-portrait {
     height: calc(var(--module-h) * 2 - var(--double-spacing));
   }
@@ -1286,6 +1283,12 @@ footer #copyright {
   }
   .module .element.d-flex figure.portrait {
     height: calc(var(--module-h) * 2 - var(--double-spacing));
+  }
+  .module .element:empty {
+    display: none;
+  }
+  footer {
+    height: auto !important;
   }
 }
 

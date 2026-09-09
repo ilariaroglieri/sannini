@@ -118,6 +118,9 @@
 }
 
 .wysiwyg {
+  &.s-small p {
+    @extend .s-small;
+  }
   p {
     margin-bottom: $spacing;
     &:last-of-type {

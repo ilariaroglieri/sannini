@@ -35,7 +35,7 @@
 				<div class="d-whole">
 					<a class="mono uppercase s-xsmall" href="https://www.cottomanetti.com/manetti-gusmano-figli/" target="_blank">MANETTIGUSMANOEFIGLI.COM  &#8594;</a>
 				</div>
-				<div class="d-whole d-flex d-column bottom end">
+				<div class="d-whole d-flex d-column bottom end spacing-m-t-10">
 					<?php snippet('logo-manetti'); ?>
 
 					<p id="copyright" class="s-small spacing-t-1">© All rights reserved <?= date("Y"); ?></p>

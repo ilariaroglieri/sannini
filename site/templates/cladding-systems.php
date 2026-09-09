@@ -35,8 +35,8 @@
 			]) ?>
 
 			<section class="module tech-info-module">
-				<div class="d-flex m-column">
-					<div class="element d-one-third m-whole" data-reveal="parent">
+				<div class="d-flex m-column-reverse">
+					<div class="element d-one-third m-whole spacing-m-t-10" data-reveal="parent">
 						<?php 
 						$pdf = $claddingSystem->pdf_1()->toFile();
 						$pdf2 = $claddingSystem->pdf_2()->toFile();

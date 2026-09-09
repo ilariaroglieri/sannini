@@ -77,7 +77,7 @@
 
   .module {
     .element {
-      padding: var(--spacing) var(--half-spacing);
+      // padding: var(--spacing) var(--half-spacing) var(--half-spacing);
       &.m-whole {
         figure.m-portrait {
           height: calc(var(--module-h) * 2 - var(--double-spacing))
@@ -91,6 +91,13 @@
           height: calc(var(--module-h) * 2 - var(--double-spacing)) 
         }
       }
+      &:empty {
+        display: none;
+      }
     }
+  }
+
+  footer {
+    height: auto !important;
   }
 }
