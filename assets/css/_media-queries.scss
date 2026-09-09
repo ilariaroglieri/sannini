@@ -128,11 +128,11 @@
       &:nth-of-type(2n + 2) .module .d-flex,
       &:nth-of-type(2n + 3) .module .d-flex {
         .caption-element {
-          order: 3;
+          order: 1;
           margin-bottom: 50px;
         }
         .title-element {
-          order: 1;
+          order: 3;
         }
         .img-element {
           order: 2;

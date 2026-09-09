@@ -3,7 +3,7 @@
 <main id="single-realization-page">
 	<?php snippet('title-module-realization', [
 		'title' => $page->title()->fancypants(),
-		'img' => $page->cover_img()->toFile(),
+		'img' => $page->hero_img()->toFile(),
 		'isPageTitle' => true
 	]) ?>
 

@@ -6,6 +6,11 @@ columns:
       contents:
         type: fields
         fields:
+          hero_img:
+            label: Immagine di apertura (opzionale)
+            type: files
+            max: 1
+
           subtitle:
             label: Sottotitolo
             type: text
@@ -13,6 +18,7 @@ columns:
           intro_text:
             label: Testo intro
             extends: fields/writer-basic
+
           blocks:
             label: Blocchi
             type: blocks
@@ -46,15 +52,9 @@ columns:
             label: Immagine di anteprima
             type: files
             max: 1
-            accepts:
-              mime: image/*
 
           realization_caption:
             label: Info realizzazione
-            extends: fields/writer-basic
-
-          realization_credits:
-            label: Crediti realizzazione
             extends: fields/writer-basic
 
 
