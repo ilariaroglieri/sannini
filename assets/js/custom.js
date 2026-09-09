@@ -58,19 +58,27 @@ function snapModules(scope = document) {
     }
   });
 
-  // ─── mobile: ogni .element-image occupa celle intere + 1 vuota ───
-  const imgEls = [...document.querySelectorAll('.img-module .element-image')];
+  // ─── mobile: ogni img che ha inner-element occupa celle intere + 1 vuota ───
+  const imgEls = [...document.querySelectorAll('.img-module .inner-img-element')];
   imgEls.forEach(el => { el.style.height = ''; });
+
+  const inners = [...document.querySelectorAll('.module .inner-element')]
 
   if (stacked) {
     const elH = imgEls.map(el => el.offsetHeight);
     imgEls.forEach((el, i) => {
-      const steps = Math.max(1, Math.ceil(elH[i] / moduleH));
+      const steps = Math.max(1, Math.ceil((elH[i]  - EPS) / moduleH));
       el.style.height = ((steps + 1) * moduleH - paddingH) + 'px';  // multiplo tondo, niente - paddingH
     });
+
+    const innerH = inners.map(el => el.offsetHeight);
+
+    inners.forEach(el => { el.style.height = ''; });
+    inners.forEach((el, i) => {
+      const steps = Math.max(1, Math.ceil((innerH[i] - EPS) / moduleH));
+      el.style.height = (steps * moduleH) + 'px';
+    });
   }
-
-
 }
 
 function updateGrid() {

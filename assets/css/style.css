@@ -1287,6 +1287,9 @@ footer #copyright {
   .module .element:empty {
     display: none;
   }
+  .tech-element::after {
+    display: none;
+  }
   footer {
     height: auto !important;
   }
