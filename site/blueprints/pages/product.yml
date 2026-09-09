@@ -96,13 +96,7 @@ columns:
                 label: Immagine
                 type: files
                 max: 1
-                accepts:
-                  mime: image/*
                 help: 'Caricare una immagine quadrata senza bordo.'
-              text:
-                label: Breve testo
-                type: textarea
-                rows: 3
 
       download_section:
         type: fields

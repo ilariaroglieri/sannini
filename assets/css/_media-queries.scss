@@ -31,16 +31,29 @@
   }
 
   .tech-element {
-    position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: $secColor;
-      z-index: -1;
+    .inner-element {
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $secColor;
+        z-index: -1;
+      }
+    }
+  }
+
+  .module {
+    &.tech-info-module {
+      .color-info {
+        grid-template-columns: 1fr;
+        .color-variants {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
     }
   }
 }
@@ -118,9 +131,16 @@
         padding: calc(var(--double-spacing)*2) calc(var(--half-spacing) * 3);
       }
       .caption-row {
-        align-items: flex-end;
+        align-items: flex-endtff;
         .caption:nth-child(n+4) {
           display: none;
+        }
+      }
+    }
+    &.tech-info-module {
+      .color-info {
+        .color-variants {
+          grid-template-columns: repeat(3, 1fr);
         }
       }
     }

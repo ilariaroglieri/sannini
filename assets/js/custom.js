@@ -4,7 +4,7 @@ const CROSS_COLOR = '#fff';
 
 const RATIO_DESKTOP = 3 / 5;      // altezza = larghezza × 0.6
 const RATIO_MOBILE  = 1 / 1.37;   // altezza = larghezza / 1.37
-const MOBILE_BP     = 768;        // soglia mobile in px
+const MOBILE_BP     = 640;        // soglia mobile in px
 
 // legge variabile con clamp
 function resolveVar(name) {

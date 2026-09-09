@@ -25,7 +25,7 @@
   <figure class="<?= $classes .' '. $orientation .' '. $orientationM ?>">
     <picture>
       <?php if ($mobileImg): ?>
-        <source media="(max-width: 768px)" srcset="<?= $mobileImg->url() ?>">
+        <source media="(max-width: 640px)" srcset="<?= $mobileImg->url() ?>">
       <?php endif ?>
       <img src="<?= $img->url() ?>" style="object-position: <?= $img->focus()->isNotEmpty() ? $img->focus() : 'center'?>" alt="<?= $img->alt() ?>">
       <?php if (($showCaption == true) && ($img->caption()->isNotEmpty())): ?>

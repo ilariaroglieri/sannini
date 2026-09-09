@@ -22,10 +22,6 @@
   display: inline-block;
 }
 
-.t-visible, .m-visible {
-  display: none;
-}
-
 .d-flex {
   display: flex;
   &.d-row-reverse {
@@ -62,6 +58,10 @@
   &.grow {
     flex: 1;
   }
+}
+
+.t-visible, .m-visible {
+  display: none ;
 }
 
 .p-absolute {
@@ -440,13 +440,13 @@ header {
   &.tech-info-module {
     .tech-info {
       position: relative;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: var(--spacing);
       padding: var(--spacing) 0;
       border-bottom: 1px solid;
       &:first-of-type {
         padding-top: 0;
-      }
-      &__label {
-        flex-shrink: 0;
       }
       &.download a {
         display: flex;
@@ -472,15 +472,14 @@ header {
       }
     }
     .color-info {
-      position: absolute;
-      opacity: 0;
-      max-height: 0;
-      overflow: hidden;
-      pointer-events: none;
-      &.active {
-        opacity: 1;
-        position: static;
-        max-height: 100%;
+      .tech-info-label {
+        grid-column: 1fr;
+      }
+      .color-variants {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column: 2fr;
+        gap: var(--spacing);
       }
     }
   }

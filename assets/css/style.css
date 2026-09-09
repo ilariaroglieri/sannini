@@ -742,10 +742,6 @@ Version: 1.0
   display: inline-block;
 }
 
-.t-visible, .m-visible {
-  display: none;
-}
-
 .d-flex {
   display: flex;
 }
@@ -781,6 +777,10 @@ Version: 1.0
 }
 .d-flex.grow {
   flex: 1;
+}
+
+.t-visible, .m-visible {
+  display: none;
 }
 
 .p-absolute {
@@ -1123,14 +1123,14 @@ header nav ul li a.lang-active {
 
 .module.tech-info-module .tech-info {
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--spacing);
   padding: var(--spacing) 0;
   border-bottom: 1px solid;
 }
 .module.tech-info-module .tech-info:first-of-type {
   padding-top: 0;
-}
-.module.tech-info-module .tech-info__label {
-  flex-shrink: 0;
 }
 .module.tech-info-module .tech-info.download a {
   display: flex;
@@ -1154,17 +1154,14 @@ header nav ul li a.lang-active {
 .module.tech-info-module .tech-info.download a:hover::after {
   background-color: red;
 }
-.module.tech-info-module .color-info {
-  position: absolute;
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  pointer-events: none;
+.module.tech-info-module .color-info .tech-info-label {
+  grid-column: 1fr;
 }
-.module.tech-info-module .color-info.active {
-  opacity: 1;
-  position: static;
-  max-height: 100%;
+.module.tech-info-module .color-info .color-variants {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: 2fr;
+  gap: var(--spacing);
 }
 .module.navi-module {
   padding-top: 0;
@@ -1259,10 +1256,10 @@ footer #copyright {
   .t-half {
     width: 50%;
   }
-  .tech-element {
+  .tech-element .inner-element {
     position: relative;
   }
-  .tech-element::after {
+  .tech-element .inner-element::after {
     content: "";
     position: absolute;
     top: 0;
@@ -1271,6 +1268,12 @@ footer #copyright {
     height: 100%;
     background-color: #ECEBDD;
     z-index: -1;
+  }
+  .module.tech-info-module .color-info {
+    grid-template-columns: 1fr;
+  }
+  .module.tech-info-module .color-info .color-variants {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media screen and (max-width: 640px) {
@@ -1322,10 +1325,13 @@ footer #copyright {
     padding: calc(var(--double-spacing) * 2) calc(var(--half-spacing) * 3);
   }
   .module.special-img-module .caption-row {
-    align-items: flex-end;
+    align-items: flex-endtff;
   }
   .module.special-img-module .caption-row .caption:nth-child(n+4) {
     display: none;
+  }
+  .module.tech-info-module .color-info .color-variants {
+    grid-template-columns: repeat(3, 1fr);
   }
   .tech-element::after {
     display: none;

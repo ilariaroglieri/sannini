@@ -42,9 +42,9 @@
 				<div class="inner-element">
 					<?php foreach ($techFields as $field): ?>
 					  <?php if ($field['value']->isNotEmpty()): ?>
-					    <div class="tech-info d-flex flex-row-smaller" data-reveal="child">
-					      <span class="tech-info__label mono uppercase s-xsmall d-3-twelfth"><?= $field['label'] ?>: </span>
-					      <p class="tech-info__value mono s-small"><?= $field['value'] ?></p>
+					    <div class="tech-info" data-reveal="child">
+					      <span class="tech-info-label mono uppercase s-xsmall"><?= $field['label'] ?>: </span>
+					      <p class="tech-info__value mono s-xsmall"><?= $field['value'] ?></p>
 					    </div>
 					  <?php endif ?>
 					<?php endforeach ?>
@@ -54,12 +54,12 @@
 						$variables = $page->variables()->toStructure();
 						if ($variables->isNotEmpty()):
 					?>
-						<div class="tech-info" data-reveal="child">
-							<div class="d-flex flex-row-smaller">
-					      <span class="tech-info__label mono uppercase s-xsmall d-3-twelfth"><?= t('color') ?>: </span>
+						<div class="tech-info color-info" data-reveal="child">
+				      <span class="tech-info-label mono uppercase s-xsmall"><?= t('color') ?>: </span>
+				      <div class="color-variants">
 					      <?php foreach ($variables as $i => $variable): ?>
-					      	<div class="color-variant d-3-twelfth d-flex d-column">
-								  	<button class="mono s-xsmall spacing-b-3 <?= $i === 0 ? 'active' : '' ?>" role='button' data-color="<?= $variable->title()->slug() ?>"><?= $variable->title()->fancypants() ?></button>
+					      	<div class="color-variant d-flex d-column spacing-b-1">
+								  	<p class="color-title mono s-xsmall spacing-b-1" data-color="<?= $variable->title()->slug() ?>"><?= $variable->title()->fancypants() ?></p>
 
 								  	<?= snippet('image-w-caption', [
 						          'img' => $variable->image()->toFile(),
@@ -68,25 +68,15 @@
 								  </div>
 								<?php endforeach ?>
 							</div>
-							<?php foreach ($variables as $i => $variable): ?>
-								<div id="<?= $variable->title()->slug() ?>" class="color-info <?= $i === 0 ? 'active' : '' ?> d-flex flex-row-smaller spacing-t-3">
-									<div class="d-3-twelfth m-hidden"></div>
-									<div class="d-9-twelfth">
-										<div class="text mono s-xsmall">
-											<?= $variable->text()->fancypants() ?>
-										</div>
-									</div>
-								</div>
-							<?php endforeach ?>
-				    </div>
+						</div>
 				  <?php endif; ?>
 
 			    <?php 
 			    $pdf = $page->pdf()->toFile();
 			    if ($pdf !== null): ?>
-				    <div class="tech-info d-flex flex-row-smaller" data-reveal="child">
-				      <span class="tech-info__label mono uppercase s-xsmall d-3-twelfth"><?= t('pdf') ?>: </span>
-				      <a href="<?= $pdf->url(); ?>" class="tech-info__value mono s-small">Download</a>
+				    <div class="tech-info" data-reveal="child">
+				      <span class="tech-info-label mono uppercase s-xsmall"><?= t('pdf') ?>: </span>
+				      <a href="<?= $pdf->url(); ?>" class="tech-info__value mono s-xsmall">Download</a>
 				    </div>
 				  <?php endif ?>
 				</div>
