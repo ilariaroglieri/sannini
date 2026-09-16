@@ -10,7 +10,7 @@
       </div>
     <?php endforeach ?>
 
-    <div class="caption-row d-whole d-flex flex-row v-center m-column">
+    <div class="caption-row d-whole d-flex flex-row v-center m-column spacing-m-b-6">
       <?php foreach ($images as $img): ?>
       <div class="caption element d-1-twelfth t-2-twelfth m-half" data-reveal="parent">
         <?php if ($img->caption()->isNotEmpty()): ?>

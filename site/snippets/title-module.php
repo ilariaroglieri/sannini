@@ -10,7 +10,7 @@
   <div class="d-flex flex-row">
     <div class="element d-whole d-flex center" data-reveal="parent">
       <?php if ($title): ?>
-        <<?= $heading; ?> class="uppercase <?= $titleStyle ?> spacing-b-2" data-reveal="child"><?= $title ?></<?= $heading; ?>>
+        <<?= $heading; ?> class="uppercase <?= $titleStyle ?> spacing-b-2 t-center" data-reveal="child"><?= $title ?></<?= $heading; ?>>
       <?php endif; ?>
     </div>
   </div>

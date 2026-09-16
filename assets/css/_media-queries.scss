@@ -64,7 +64,7 @@
   }
 
   .m-visible {
-    display: inline-block;
+    display: flex;
   }
 
   .d-flex {
@@ -96,6 +96,10 @@
         justify-content: flex-end;
       }
     }
+  }
+
+  .height-100 {
+    height: auto;
   }
 
   .module {
@@ -131,7 +135,7 @@
         padding: calc(var(--double-spacing)*2) calc(var(--half-spacing) * 3);
       }
       .caption-row {
-        align-items: flex-endtff;
+        align-items: flex-end;
         .caption:nth-child(n+4) {
           display: none;
         }
@@ -182,6 +186,24 @@
         transform: translateY(-50%); 
       }
     }
+  }
+
+  .contatti {
+    height: auto;
+    #email-info {
+      padding-top: 0;
+    }
+
+    footer {
+      display: block;
+      .footer-info {
+        display: none;
+      }
+    }
+  }
+
+  .info .label {
+    width: 50%;
   }
 
   footer {

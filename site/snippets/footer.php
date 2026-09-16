@@ -2,7 +2,7 @@
 
 	<footer class="container module">
 		<div class="d-flex space-between m-column">
-			<div class="d-one-third m-whole element" data-reveal="parent">
+			<div class="footer-info d-one-third m-whole element" data-reveal="parent">
 				<div class="info spacing-b-8 d-flex" data-reveal="child">
 					<span class="mono uppercase s-xsmall label">Sannini Impruneta</span>
 					<p class="s-small"><?= page('contatti')->address()->kt()->inline() ?></p>

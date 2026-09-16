@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 
 <main id="contacts">
-	<section class="module empty-module">
+	<section class="module empty-module m-hidden">
 		<div class="d-flex">
 			<div class="d-whole"></div>
 		</div>
@@ -20,21 +20,21 @@
 					<p class="s-small"><?= page('contatti')->phone()->kt()->inline() ?></p>
 				</div>
 
-				<p id="copyright" class="s-small spacing-t-6">© All rights reserved <?= date("Y"); ?></p>
+				<p id="copyright" class="s-small spacing-t-6 m-hidden">© All rights reserved <?= date("Y"); ?></p>
 			</div>
 
-			<div class="d-one-third m-whole element" data-reveal="parent">
+			<div id="email-info" class="d-one-third m-whole element" data-reveal="parent">
 				<div class="info d-flex spacing-b-half" data-reveal="child">
 					<span class="mono uppercase s-xsmall label"><?= t('email'); ?></span>
 					<p class="s-small"><?= page('contatti')->email()->kt()->inline() ?></p>
 				</div>
 
-				<div class="info spacing-b-8 d-flex" data-reveal="child">
+				<div class="info spacing-b-8 d-flex spacing-m-t-half" data-reveal="child">
 					<span class="mono uppercase s-xsmall label">IG</span>
 					<a class="s-small" href="<?= page('contatti')->email()->toUrl() ?>">Sannini_Impruneta</a>
 				</div>
 
-				<div class="policies d-flex d-column" data-reveal="child">
+				<div class="policies d-flex d-column m-hidden" data-reveal="child">
 					<a class="mono uppercase s-xsmall spacing-b-half" href="<?= page('privacy-policy')->url() ?>"><?= page('privacy-policy')->title() ?></a>
 					<a class="mono uppercase s-xsmall" href="<?= page('cookie-policy')->url() ?>"><?= page('cookie-policy')->title() ?></a>
 				</div>
@@ -49,6 +49,11 @@
 					  <a class="s-small" href="mailto:<?= $item->email()->value() ?>"><?= $item->email()->value() ?></a>
 					</div>
 				<?php endforeach ?>
+
+				<div class="policies d-flex d-column m-visible spacing-t-8" data-reveal="child">
+					<a class="mono uppercase s-xsmall spacing-b-half" href="<?= page('privacy-policy')->url() ?>"><?= page('privacy-policy')->title() ?></a>
+					<a class="mono uppercase s-xsmall" href="<?= page('cookie-policy')->url() ?>"><?= page('cookie-policy')->title() ?></a>
+				</div>
 			</div>
 		</div>
 	</div>
