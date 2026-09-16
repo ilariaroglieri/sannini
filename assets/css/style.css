@@ -1230,6 +1230,14 @@ header nav ul li a.lang-active {
   display: none;
 }
 
+.privacy-policy p {
+  margin-bottom: var(--spacing);
+}
+.privacy-policy ul {
+  list-style-type: disc;
+  margin-left: var(--spacing);
+}
+
 footer {
   padding: 0 calc(var(--half-spacing) * 3);
 }

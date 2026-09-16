@@ -13,7 +13,7 @@
 	</head>
 
 	<?php $topLevel = $page->parent() ? $page->parents()->last() : $page; ?>
-	<body class="<?= $topLevel->slug() ?> <?= $page->parents()->count() ? $page->parent()->uid() . ' ' . $page->uid() : $page->uid(); ?>">
+	<body class="<?= $topLevel->slug() ?>">
 		<div class="container p-relative">
 			<div id="grid-markers"></div>
 			<header class="module header-module">

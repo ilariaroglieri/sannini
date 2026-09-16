@@ -17,6 +17,7 @@ tabs:
           - home
         empty: ""
         options: false
+        create: false
 
   # ──────────────────────────────────────────
   # TAB: PRODOTTI
@@ -133,6 +134,24 @@ tabs:
         limit: 1
         empty: ""
         options: false
+
+
+  # ──────────────────────────────────────────
+  # TAB: PRIVACY POLICY
+  # ──────────────────────────────────────────
+  privacy:
+    label: Privacy policy
+    icon: home
+    sections:
+      privacy_page:
+        type: pages
+        label: false
+        parent: site
+        templates:
+          - default
+        empty: ""
+        options: false
+        # create: false
 
   # ──────────────────────────────────────────
   # TAB: MENU

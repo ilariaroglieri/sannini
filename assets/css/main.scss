@@ -569,6 +569,16 @@ header {
   }
 }
 
+.privacy-policy {
+  p {
+    margin-bottom: var(--spacing);
+  }
+  ul {
+    list-style-type: disc;
+    margin-left: var(--spacing);
+  }
+}
+
 
 footer {
   padding: 0 calc(var(--half-spacing) * 3);

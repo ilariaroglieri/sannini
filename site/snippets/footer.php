@@ -25,7 +25,6 @@
 
 				<div class="policies d-flex d-column" data-reveal="child">
 					<a class="mono uppercase s-xsmall" href="<?= page('privacy-policy')->url() ?>"><?= page('privacy-policy')->title() ?></a>
-					<a class="mono uppercase s-xsmall" href="<?= page('cookie-policy')->url() ?>"><?= page('cookie-policy')->title() ?></a>
 				</div>
 			</div>
 
