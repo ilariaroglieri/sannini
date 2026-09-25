@@ -1,16 +1,14 @@
-title: Realizzazioni
+title: Realizations
 
 sections:
   realizations_list:
     type: pages
     label:
-      it: Realizzazioni 
+      it: Realizations
       en: Realizations
     parent: site.find("realizzazioni")
     templates:
       - realization
     image:
       query: page.cover_img.toFile
-    empty: 
-      it: Nessuna realizzazione. Clicca su "+" per aggiungerne una.
-      en: No realizations. Click "+" to add one.
+    empty: No realizations. Click "+" to add one.

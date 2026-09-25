@@ -1,4 +1,4 @@
-title: Prodotti
+title: Products
 
 columns:
   - width: 2/3
@@ -16,7 +16,7 @@ columns:
     sections:
       products_list:
         type: pages
-        label: Prodotti
+        label: Products
         parent: site.find("prodotti")
         templates:
           - product

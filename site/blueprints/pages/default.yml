@@ -12,6 +12,6 @@ sections:
     type: fields
     fields:
       seo_description:
-        label: Descrizione SEO
+        label: SEO description
         type: textarea
         rows: 3

@@ -8,23 +8,21 @@ columns:
         type: fields
         fields:
           page_title:
-            label: Titolo pagina
+            label: Page title
             type: text
           cover_img:
-            label: Immagine
+            label: Image
             type: files
             max: 1
-            accepts:
-              mime: image/*
           intro_text:
-            label: Text introduction
+            label: Text intro
             extends: fields/writer-basic
 
   - width: 1/3
     sections:
       lista_sistemi:
         type: pages
-        label: Sistemi ventilati
+        label: Cladding systems
         parent: site.find("cladding-systems")
         templates:
           - cladding-system

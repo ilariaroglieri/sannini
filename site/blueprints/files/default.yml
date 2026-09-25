@@ -5,6 +5,6 @@ fields:
     translate: true
 
   mobileCropVertical:
-    label: "Croppa in verticale su mobile?"
+    label: "Vertical crop on mobile?"
     type: toggle
     default: false

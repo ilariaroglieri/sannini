@@ -5,16 +5,16 @@ columns:
     sections:
       basic_info:
         type: fields
-        label: Informazioni di contatto
-        help: "Questi dati vengono usati anche nel footer del sito."
+        label: Contacts
+        help: "These data are used also inside the footer."
         fields:
           address:
-            label: Indirizzo
+            label: Address
             type: textarea
             rows: 3
 
           phome:
-            label: Telefono
+            label: Telephone
             type: textarea
 
           email:
@@ -30,7 +30,7 @@ columns:
     sections:
       additional_info:
         type: fields
-        label: Altri contatti
+        label: Other info
         fields:
           departments:
             type: structure
@@ -41,7 +41,7 @@ columns:
                 width: 1/2
             fields:
               title:
-                label: Titolo
+                label: Title
                 type: text
               email:
                 label: Email

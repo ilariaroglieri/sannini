@@ -1,4 +1,4 @@
-title: Realizzazione
+title: Realization
 
 columns:
   - width: 2/3
@@ -7,20 +7,20 @@ columns:
         type: fields
         fields:
           hero_img:
-            label: Immagine di apertura (opzionale)
+            label: Hero image (optional)
             type: files
             max: 1
 
           subtitle:
-            label: Sottotitolo
+            label: Subtitle
             type: text
 
           intro_text:
-            label: Testo intro
+            label: Intro text
             extends: fields/writer-basic
 
           blocks:
-            label: Blocchi
+            label: Blocks
             type: blocks
             fieldsets:
               - text-block
@@ -28,7 +28,7 @@ columns:
               - img-block
 
           credits:
-            label: Crediti
+            label: Credits
             type: structure
             columns:
               title:
@@ -37,10 +37,10 @@ columns:
                 width: 1/2
             fields:
               title:
-                label: Titolo
+                label: Title
                 type: text
               info:
-                label: Contenuti
+                label: Contents
                 extends: fields/writer-basic
 
   - width: 1/3
@@ -49,12 +49,12 @@ columns:
         type: fields
         fields:
           cover_img:
-            label: Immagine di anteprima
+            label: Cover image
             type: files
             max: 1
 
           realization_caption:
-            label: Info realizzazione
+            label: Realization info
             extends: fields/writer-basic
 
 

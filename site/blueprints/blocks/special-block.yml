@@ -4,7 +4,7 @@ icon: grid
 open: true
 fields:
   media:
-    label: Immagini
+    label: Images
     type: files
     max: 6
     accepts:
