@@ -1,0 +1,9 @@
+Caption: (2) Una addetta al lavoro all’interno dello stabilimento, tra macchinari e strumenti della produzione
+
+----
+
+Mobilecropvertical: false
+
+----
+
+Uuid: k6w3upvrtrpkvd7w

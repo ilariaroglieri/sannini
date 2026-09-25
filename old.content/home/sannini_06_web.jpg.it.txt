@@ -1,0 +1,9 @@
+Caption: (1) Veduta aerea dello stabilimento Sannini Impruneta, inserito nel paesaggio delle colline toscane
+
+----
+
+Mobilecropvertical: false
+
+----
+
+Uuid: vloikdchc9ehncps

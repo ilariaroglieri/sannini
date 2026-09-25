@@ -3,7 +3,7 @@
 	$nextAll = $page->nextAll();
 ?>
 
-<navi class="module navi-module">
+<section class="module navi-module">
 	<div class="d-flex flex-row m-column space-between">
 		<div class="element d-one-third m-whole" data-reveal="parent">
 			<?php foreach ($prevAll as $prevContent): ?>
@@ -16,4 +16,4 @@
 			<?php endforeach ?>
 		</div>
 	</div>
-</navi>
+</section>

@@ -56,7 +56,7 @@
 					</div>
 		      <div class="element d-two-thirds m-whole" data-reveal="parent">
 		      	<div class="inner-element">
-				    	<div class="text s-large" data-reveal="child">
+				    	<div class="text s-regular" data-reveal="child">
 			        	<?= $claddingSystem->intro_text_2()->fancypants(); ?>
 			      	</div>
 			      </div>

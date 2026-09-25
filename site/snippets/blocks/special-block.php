@@ -12,9 +12,9 @@
 
     <div class="caption-row d-whole d-flex flex-row v-center m-column spacing-m-b-6">
       <?php foreach ($images as $img): ?>
-      <div class="caption element d-1-twelfth t-2-twelfth m-half" data-reveal="parent">
+      <div class="caption element d-1-twelfth th-2-twelfth m-half" data-reveal="parent">
         <?php if ($img->caption()->isNotEmpty()): ?>
-          <figcaption class="s-xsmall"><?= html($img->caption()) ?></figcaption>
+          <figcaption class="s-small"><?= html($img->caption()) ?></figcaption>
         <?php endif ?>
       </div>
       <?php endforeach ?>
@@ -28,9 +28,9 @@
 
     <div class="caption-row d-whole d-flex flex-row v-center m-column m-visible">
       <?php foreach ($images->slice(3, 6) as $img): ?>
-      <div class="caption element d-1-twelfth t-2-twelfth m-half" data-reveal="parent">
+      <div class="caption element d-1-twelfth th-2-twelfth m-half" data-reveal="parent">
         <?php if ($img->caption()->isNotEmpty()): ?>
-          <figcaption class="s-xsmall"><?= html($img->caption()) ?></figcaption>
+          <figcaption class="s-small"><?= html($img->caption()) ?></figcaption>
         <?php endif ?>
       </div>
       <?php endforeach ?>

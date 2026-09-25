@@ -1,0 +1,86 @@
+Title: Piastra a spessore da 25 cm
+
+----
+
+Tech-drawing: - file://ead7eewqkh4skx3u
+
+----
+
+Tech-drawing-mobile: - file://2tssmieqrm0s3uuw
+
+----
+
+Intro-text: <p>&nbsp;Fornitura e posa in opera di rivestimento esterno di tipo “facciata ventilata”, realizzato con sottostruttura metallica e paramento con elementi in cotto Sannini, lavati e trattati.&nbsp;</p>
+
+----
+
+Blocks: [{"content":{"small_title_1":"Sottostruttura metallica di ancoraggio","small_title_2":"Rivestimento","small_title_3":"Posa e Trattamento","text_1":"<p>Struttura secondaria costituita da profili verticali in acciaio inox o in alluminio, posti a interasse di 50 cm circa, vincolati alle solette e trattenuti alle pareti con apposite staffe e tasselli a espansione muniti di distanziatori regolabili e da ancore per il fissaggio degli elementi in cotto.&nbsp;</p>","text_2":"<p>Il rivestimento è costituito da elementi in cotto di tipo “piastra piana sottile” realizzati con terra estratta nel comune di Impruneta delle dimensioni (l × h × s) di 500 × 250 × 25 mm, dotati di kerf nei lati superiore e inferiore, aventi finitura superficiale “Arrotato”; posati con giunti verticali e&nbsp; orizzontali di 6 mm circa.&nbsp;</p>","text_3":"<p>Il paramento dovrà essere posato idoneamente per il superamento di eventuali fuori piombo e imperfezioni degli esistenti intonaci e strutture in cemento armato, così da creare un vuoto di circa 8-10 cm tra il retro del cotto e la muratura di supporto. Il paramento esterno, in cotto Sannini, viene fornito lavato con detergente acido decalcarizzante per la rimozione di eventuali efflorescenze e trattato per la protezione con impregnante a base di microemulsione silossanica.</p>"},"id":"88a386ee-213f-42e4-9afa-86b8bf0a90b8","isHidden":false,"type":"3-col-text-block"},{"content":{"img_layout":"m-s","full_w_img":[],"medium_img":["file://0slkdbpt3f2v8uqd"],"small_img":[],"image_s1":[],"image_s2":[],"image_s3":[],"alignment":"d-row-reverse"},"id":"33dd54a0-c6b2-4fc4-a19d-7800d78a60c7","isHidden":false,"type":"img-block"},{"content":{"small_title":"","text":"<p></p><p><strong>1. Supporto Murario:</strong> la struttura primaria (murature portanti continue; pareti di tamponamento poste a chiusura di telai strutturali in cemento o acciaio, strutture in legno o prefabbricate ecc…) su cui si ancora il sistema.</p><p><strong>2. Strato isolante:</strong> Eventuale sistema di isolamento termico a cappotto costituito da pannelli minerali, vegetali o sintetici che garantiscono la coibentazione.</p><p><strong>3. Intercapedine d’aria:</strong> Uno spazio vuoto (minimo 3-5 cm) fondamentale per la micro-ventilazione.</p><p><strong>4. Sottostruttura Meccanica:</strong> La sotto-struttura secondaria di ancoraggio, un’orditura in acciaio inox o alluminio che sostiene il rivestimento a secco.</p><p><strong>5. Rivestimento Esterno:</strong> Lo “strato di tenuta”, la “pelle / scudo” dell’edificio, declinabile in varie forme e materiali, tra cui il cotto si distingue per l’estetica naturale e l’altissima resistenza al tempo (acquisisce fascino con l’invecchiamento), coniugando tradizione materica e performance contemporanee. </p><p></p>","width":"d-two-thirds","alignment":"align-right"},"id":"d188cd90-4524-48d6-bc88-b5d1f28f5dfe","isHidden":false,"type":"text-block"},{"content":{"img_layout":"m-s","full_w_img":[],"medium_img":[],"small_img":["file://gfpqb46rhabqanym"],"image_s1":[],"image_s2":[],"image_s3":[],"alignment":"d-row-reverse"},"id":"e4efde4a-f9bb-4132-b9e9-213395cbcc7c","isHidden":false,"type":"img-block"}]
+
+----
+
+Cover-img: - file://nngrfjvmxjzkempe
+
+----
+
+Design: Carlo Ferroni
+
+----
+
+Measures: 500 × 250 × 25 mm
+
+----
+
+Weight: 4,5 kg/pz
+
+----
+
+Finishing: Arrotato o Litos
+
+----
+
+Finishing-front: 
+
+----
+
+Finishing-back: 
+
+----
+
+Coste: 
+
+----
+
+Variables:
+
+- 
+  title: Arrotato naturale
+  image:
+    - file://iroid0asegmedsxc
+- 
+  title: Arrotato tabacco
+  image:
+    - file://amu6ehg5nyjc1kjo
+- 
+  title: Arrotato champagne
+  image:
+    - file://xdl8opht2lrfqipc
+- 
+  title: Litos naturale
+  image:
+    - file://xkzo91u0i7tdesgv
+- 
+  title: Litos tabacco
+  image:
+    - file://gbkqfdcfszdh5dw4
+- 
+  title: Litos champagne
+  image:
+    - file://7gyz0nnvnv0cecls
+
+----
+
+Pdf: - file://daahplkkix4dj7xo
+
+----
+
+Uuid: xvv3scs4bjoeknly

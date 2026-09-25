@@ -29,7 +29,7 @@
 				foreach ($info as $item): ?>
 					<div class="info d-flex spacing-b-2" data-reveal="child">
 						<span class="mono uppercase s-xsmall label"><?= $item->title()->smartypants() ?></span>
-						<div class="d-flex d-column wysiwyg s-small">
+						<div class="d-flex d-column wysiwyg s-reg-small">
 					  	<?= $item->info()->kt() ?>
 					  </div>
 					</div>

@@ -1,0 +1,74 @@
+Title: PIASTRA A SPESSORE LISTELLATA
+
+----
+
+Tech-drawing: 
+
+----
+
+Tech-drawing-mobile: 
+
+----
+
+Intro-text: <p>Fornitura e posa in opera di rivestimento esterno di tipo “facciata ventilata”, realizzato con sottostruttura metallica e paramento con elementi in cotto Sannini, lavati e trattati.</p>
+
+----
+
+Blocks: [{"content":{"small_title_1":"Sottostruttura metallica di ancoraggio","small_title_2":"Rivestimento","small_title_3":"Posa e Trattamento","text_1":"<p>Struttura secondaria costituita da profili verticali in acciaio inox o in alluminio posti a interasse di 50 cm circa, vincolati alle solette e trattenuti alle pareti con apposite staffe e tasselli a espansione muniti di distanziatori regolabili, e da ancore per il fissaggio degli elementi in cotto.</p>","text_2":"<p>Rivestimento costituito da elementi in cotto di tipo “piastra a spessore listellata”, realizzati con terra estratta nel comune di Impruneta delle dimensioni (l × h × s) di 500 × 295 × 50 mm, dotati di kerf normali nei lati superiore e inferiore e di angle kerf nel retro del piano, aventi finitura superficiale “Litos”, con fughe di 1x1 cm distanziate di 1 cm, posati con giunti verticali e orizzontali di 6 mm circa.</p>","text_3":"<p>Il paramento dovrà essere posato idoneamente per il superamento di eventuali fuori piombo e imperfezioni degli esistenti intonaci e strutture in cemento armato, così da creare un vuoto di circa 8-10 cm tra il retro del cotto e la muratura di supporto. Il paramento esterno, in cotto Sannini, viene fornito lavato con detergente acido decalcarizzante per la rimozione di eventuali efflorescenze e trattato per la protezione con impregnante a base di microemulsione silossanica.</p>"},"id":"33ef9cba-ff98-46f3-86b3-644d64d6fa58","isHidden":false,"type":"3-col-text-block"}]
+
+----
+
+Cover-img: - file://neboipu2p0qn1nqr
+
+----
+
+Design: Claudio Nardi
+
+----
+
+Measures: 500 × 295 × 50 mm
+
+----
+
+Weight: 10,0 kg/pz
+
+----
+
+Finishing: Litos
+
+----
+
+Finishing-front: 
+
+----
+
+Finishing-back: 
+
+----
+
+Coste: 
+
+----
+
+Variables:
+
+- 
+  title: Naturale
+  image:
+    - file://ehusnt10znrnxvol
+- 
+  title: Tabacco
+  image:
+    - file://jfnojidblqtc9bym
+- 
+  title: Champagne
+  image:
+    - file://hwbws0azazzmbi5x
+
+----
+
+Pdf: 
+
+----
+
+Uuid: agv93otrojtxqjpi

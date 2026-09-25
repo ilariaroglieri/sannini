@@ -1,0 +1,33 @@
+Title: Sistemi di facciata
+
+----
+
+Page-title: L’evoluzione dell’involucro edilizio
+
+----
+
+Cover-img: - file://ekqzox5guxcbqcxf
+
+----
+
+Intro-text: <p>I sistemi di facciata contemporanei rappresentano la sintesi perfetta tra efficienza energetica, protezione strutturale e libertà espressiva. Non più semplice elemento di chiusura, la facciata diventa un “organismo” tecnologico capace di far respirare l’edificio, mentre lo protegge dagli agenti atmosferici e ne migliora altamente il comfort interno. L’impiego di soluzioni a secco e di materiali nobili, come il cotto, permette di combinare la memoria storica dell’architettura con le più avanzate performance tecniche, riducendo i consumi e valorizzando l’estetica urbana.&nbsp;</p><p>I sistemi di facciata possono declinarsi in pareti ventilate, ossia soluzioni tecnologiche avanzate per l’isolamento esterno degli edifici, oppure in schermi frangisole, ossia filtri dinamici che, attraverso un calibrato gioco di pieni e vuoti, agiscono come barriere che mantengono la possibilità di connessione visiva.</p>
+
+----
+
+Immagine: 
+
+----
+
+Testo-introduttivo: 
+
+----
+
+Seo-title: 
+
+----
+
+Seo-description: 
+
+----
+
+Uuid: qnbqjhfie6tjxpwh

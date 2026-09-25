@@ -1,0 +1,9 @@
+Caption: (4) Una fase della lavorazione lungo la linea produttiva, dove materia e tecnologia si incontrano
+
+----
+
+Mobilecropvertical: false
+
+----
+
+Uuid: sigb0olw5urdt9rd

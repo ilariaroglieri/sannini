@@ -1,0 +1,33 @@
+Title: Schermi frangisole
+
+----
+
+Intro-text: <p>Nell’architettura contemporanea, la parete evolve da confine chiuso a filtro dinamico. Attraverso un sapiente gioco di pieni e vuoti, gli schermi frangisole agiscono come diaframmi luminosi: barriere fisiche che mantengono la possibilità di connessione visiva. Questi elementi modulano la luce e la percezione dello spazio, trasformando la facciata in un confine permeabile che separa e connette con eleganza.</p>
+
+----
+
+Pdf-1: - file://6r9yps6dm2vbiq75
+
+----
+
+Intro-text-2: <p>Oltre la semplice chiusura, la parete diventa una superficie permeabile definita da texture e contrasti chiaroscurali. Questi sistemi offrono soluzioni versatili per ogni esigenza progettuale. Installati in sovrapposizione alle superfici vetrate, regolano l’ingresso della luce solare e abbattono l’irraggiamento diretto, senza compromettere il dialogo visivo con l’esterno. Inoltre,&nbsp; possono anche essere intesi e utilizzati come strutture a involucro autonome, utilizzate come paramento di facciate cieche o come barriere autoportanti, contraddistinte da zone d’ombra dal forte carattere espressivo e architettonico.</p><p>Per quanto riguarda la composizione, gli schemi possono essere realizzati con elementi collocati in orizzontale o in verticale e inseriti in strutture fisse oppure mobili. Le soluzioni mobili più complesse utilizzano sistemi meccanici che ne permettono la regolazione e orientabilità in base alle condizioni di soleggiamento. L’utilizzo di elementi frangisole in cotto dal design estremamente innovativo permette di reinterpretare in chiave contemporanea i <em>treillage</em> dell’edilizia storica (come le iconiche pareti a diaframma dei fienili della Pianura Padana). Questa innovazione offre un’alternativa materica ai comuni sistemi metallici, in quanto arricchisce il progetto di quella memoria tattile tipica dei materiali naturali e di un appeal che unisce tradizione e design d’avanguardia.</p>
+
+----
+
+Pdf-2: - file://2ganopcotvurfalk
+
+----
+
+Blocks: [{"content":{"img_layout":"m-s","full_w_img":[],"medium_img":[],"small_img":["file://ruhzy80wmindabqk"],"image_s1":[],"image_s2":[],"image_s3":[],"alignment":"d-row-reverse"},"id":"80c50cb7-6f49-45b4-bb8f-d58fb542e277","isHidden":false,"type":"img-block"}]
+
+----
+
+Testo-lv1: 
+
+----
+
+Testo-lv2: 
+
+----
+
+Uuid: dnbbdwimtlztznyr

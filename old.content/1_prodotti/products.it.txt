@@ -1,0 +1,25 @@
+Title: Prodotti
+
+----
+
+Page-title: Abaco elementi in cotto
+
+----
+
+Intro-text: <p> L’aggiornamento all’uso del cotto ha condotto la Sannini a  sperimentare le potenzialità ancora inespresse della materia. Progressivamente l’abaco degli elementi si è arricchito notevolmente grazie alla ricerca innovativa di prodotto e all’apporto aggiuntivo offerto dai progettisti attraverso le loro opere. L’abaco evidenzia i tratti salienti della serie dove predominano le dimensioni longitudinali e un assetto morfologico prevalentemente volumetrizzato degli elementi. Si afferma, così, il progressivo personalizzarsi della produzione in termini di design degli elementi in cotto con la riscoperta della qualità congenita dell’argilla: la modellabilità.</p>
+
+----
+
+Blocks: 
+
+----
+
+Seo-title: 
+
+----
+
+Seo-description: 
+
+----
+
+Uuid: z1038sext3pa1qv6

@@ -389,7 +389,7 @@ header {
       height: var(--module-h);
       .caption {
         position: relative;
-        transform: translateY(25%);
+        transform: translateY(20%);
         padding: var(--spacing);
         figcaption {
           color: $secColor;
@@ -415,7 +415,7 @@ header {
       }
       .product-img {
         flex-grow: 1;
-        background-size: 50%;
+        background-size: 55%;
         background-position: center 42%;
         background-repeat: no-repeat;
         transition: all .3s;
@@ -484,9 +484,8 @@ header {
     }
   }
   &.navi-module {
-    padding-top: 0;
-    .element {
-      padding: 0 var(--half-spacing);
+   .element {
+      padding: 0 var(--spacing);
       .navi-item {
         display: flex;
         width: 100%;
@@ -519,6 +518,7 @@ header {
 // realizations page
 #realizations-page {
   .realization {
+    width: 100%;
     &:nth-of-type(2n + 1) .module .d-flex {
       .caption-element {
         order: 2;

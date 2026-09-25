@@ -1,7 +1,9 @@
 @use 'common' as *;
 
 @media screen and (max-width: $desktop) {
-
+  .th-2-twelfth {
+    width: $col * 2;
+  }
 }
 
 @media screen and (max-width: $tablet) {
@@ -103,6 +105,13 @@
   }
 
   .module {
+    .product {
+      .product-inner {
+        .product-img {
+          background-size: 70%;
+        }
+      }
+    }
     .element {
       &.m-whole {
         figure.m-portrait {

@@ -1,0 +1,86 @@
+Title: PIASTRA A SPESSORE CON FALSE FUGHE
+
+----
+
+Tech-drawing: - file://djzfyaqp8sfr2kxz
+
+----
+
+Tech-drawing-mobile: - file://bc7jtndgjn2vt3vv
+
+----
+
+Intro-text: <p>Fornitura e posa in opera di rivestimento esterno di tipo “facciata ventilata”, realizzato con sottostruttura metallica e paramento con elementi in cotto Sannini, lavati e trattati.</p>
+
+----
+
+Blocks: [{"content":{"small_title_1":"Sotto-struttura metallica di ancoraggio","small_title_2":"Rivestimento","small_title_3":"","text_1":"<p>Struttura secondaria costituita da profili verticali in acciaio inox o in alluminio posti a interasse di 50 cm circa, vincolati alle solette e trattenuti alle pareti con apposite staffe e tasselli a espansione muniti di distanziatori regolabili, e da ancore per il fissaggio degli elementi in cotto.</p>","text_2":"<p>Rivestimento costituito da elementi in cotto di tipo “piastra a spessore con false fughe” realizzati con terra estratta nel comune di Impruneta delle dimensioni (l × h × s) di 295 × 500 × 50 mm, dotati di kerf nei lati superiore e inferiore, aventi finitura superficiale “Litos” oppure “Arrotato”, posati con giunti verticali e orizzontali di 6 mm.</p>","text_3":"<p>Il paramento dovrà essere posato idoneamente per il superamento di eventuali fuori piombo e imperfezioni degli esistenti intonaci e strutture in cemento armato, così da creare un vuoto di circa 8-10 cm tra il retro del cotto e la muratura di supporto. Il paramento esterno, in cotto Sannini, viene fornito lavato con detergente acido decalcarizzante per la rimozione di eventuali efflorescenze e trattato per la protezione con impregnante a base di microemulsione silossanica.</p>"},"id":"88a386ee-213f-42e4-9afa-86b8bf0a90b8","isHidden":false,"type":"3-col-text-block"},{"content":{"img_layout":"m-s","full_w_img":[],"medium_img":["file://hh1hal5k32rmsd6g"],"small_img":[],"image_s1":[],"image_s2":[],"image_s3":[],"alignment":"d-row-reverse"},"id":"33dd54a0-c6b2-4fc4-a19d-7800d78a60c7","isHidden":false,"type":"img-block"},{"content":{"img_layout":"m-s","full_w_img":[],"medium_img":[],"small_img":["file://1duszmcndrgwmyq5"],"image_s1":[],"image_s2":[],"image_s3":[],"alignment":"d-row-reverse"},"id":"e4efde4a-f9bb-4132-b9e9-213395cbcc7c","isHidden":false,"type":"img-block"}]
+
+----
+
+Cover-img: - file://pyvbm7m6lxikkwmm
+
+----
+
+Design: 
+
+----
+
+Measures: 500  × 292  × 48 mm
+
+----
+
+Weight: 10,5 kg/pz
+
+----
+
+Finishing: Arrotato o Litos
+
+----
+
+Finishing-front: 
+
+----
+
+Finishing-back: 
+
+----
+
+Coste: 
+
+----
+
+Variables:
+
+- 
+  title: Arrotato naturale
+  image:
+    - file://bfxmepbjwgqmkwnk
+- 
+  title: Arrotato tabacco
+  image:
+    - file://zqrgiliu9v2rbkmx
+- 
+  title: Arrotato champagne
+  image:
+    - file://irqzfsuytyks09l5
+- 
+  title: Litos naturale
+  image:
+    - file://zjkojlx1a2tfnwyy
+- 
+  title: Litos tabacco
+  image:
+    - file://bazaeuv49w2ju1jl
+- 
+  title: Litos champagne
+  image:
+    - file://wpxbed7llih0qwcj
+
+----
+
+Pdf: - file://t1xz6i0u4masrchp
+
+----
+
+Uuid: y8vpav1qvp4f9o0k

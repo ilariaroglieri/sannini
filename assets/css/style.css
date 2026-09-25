@@ -39,7 +39,7 @@ Version: 1.0
 }
 
 .s-small, .wysiwyg.s-small p {
-  font-size: clamp(11px, 0.7vw, 13px);
+  font-size: clamp(11px, 0.78vw, 15px);
 }
 
 .s-xsmall {
@@ -54,7 +54,7 @@ Version: 1.0
   --s-medium: clamp(17px, 1.4vw, 27px);
   --s-regular: clamp(15px, 1.1vw, 21px);
   --s-reg-small: clamp(13px, 0.833vw, 16px);
-  --s-small: clamp(11px, 0.7vw, 13px);
+  --s-small: clamp(11px, 0.78vw, 15px);
   --s-xsmall: clamp(10.5px, 0.65vw, 12px);
 }
 
@@ -1083,7 +1083,7 @@ header nav ul li a.lang-active {
 }
 .module.special-img-module .caption-row .caption {
   position: relative;
-  transform: translateY(25%);
+  transform: translateY(20%);
   padding: var(--spacing);
 }
 .module.special-img-module .caption-row .caption figcaption {
@@ -1106,7 +1106,7 @@ header nav ul li a.lang-active {
 }
 .module .product .product-inner .product-img {
   flex-grow: 1;
-  background-size: 50%;
+  background-size: 55%;
   background-position: center 42%;
   background-repeat: no-repeat;
   transition: all 0.3s;
@@ -1163,11 +1163,8 @@ header nav ul li a.lang-active {
   grid-column: 2fr;
   gap: var(--spacing);
 }
-.module.navi-module {
-  padding-top: 0;
-}
 .module.navi-module .element {
-  padding: 0 var(--half-spacing);
+  padding: 0 var(--spacing);
 }
 .module.navi-module .element .navi-item {
   display: flex;
@@ -1190,6 +1187,9 @@ header nav ul li a.lang-active {
   transform: translateY(-50%);
 }
 
+#realizations-page .realization {
+  width: 100%;
+}
 #realizations-page .realization:nth-of-type(2n + 1) .module .d-flex .caption-element {
   order: 2;
 }
@@ -1245,6 +1245,11 @@ footer #copyright {
   opacity: 0.5;
 }
 
+@media screen and (max-width: 1440px) {
+  .th-2-twelfth {
+    width: 16.6666%;
+  }
+}
 @media screen and (max-width: 820px) {
   .t-hidden {
     display: none;
@@ -1313,6 +1318,9 @@ footer #copyright {
   }
   .height-100 {
     height: auto;
+  }
+  .module .product .product-inner .product-img {
+    background-size: 70%;
   }
   .module .element.m-whole figure.m-portrait {
     height: calc(var(--module-h) * 2 - var(--double-spacing));

@@ -1,11 +1,12 @@
 // show more
-function initLoadMore(containerId, btnId, endpoint, limit = 3) {
+function initLoadMore(containerId, btnId, endpoint) {
   const list = document.getElementById(containerId);
   const btn  = document.getElementById(btnId);
 
   if (!list || !btn) return;
   btn.addEventListener('click', async () => {
     const offset = parseInt(list.dataset.offset);
+    const limit = parseInt(list.dataset.limit);
 
     btn.disabled = true;
     try {
@@ -27,12 +28,10 @@ function initLoadMore(containerId, btnId, endpoint, limit = 3) {
 
       const revealItems = [...list.querySelectorAll('[data-reveal]:not(.is-visible)')];
       revealItems.forEach((el, i) => {
-        el.style.transitionDelay = `${i * 150}ms`;
+        el.style.transitionDelay = `${i * 100}ms`;
         requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            el.classList.add('is-visible');
+          el.classList.add('is-visible');
           });
-        });
       });
 
       if (!data.hasMore) {
@@ -49,3 +48,4 @@ function initLoadMore(containerId, btnId, endpoint, limit = 3) {
 
 
 initLoadMore('products-list-inner', 'load-more', window.productsEndpoint);
+initLoadMore('realizations-list-inner', 'load-more', window.realizationsEndpoint);

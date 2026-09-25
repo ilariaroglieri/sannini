@@ -29,7 +29,7 @@
       <?php endif ?>
       <img src="<?= $img->url() ?>" style="object-position: <?= $img->focus()->isNotEmpty() ? $img->focus() : 'center'?>" alt="<?= $img->alt() ?>">
       <?php if (($showCaption == true) && ($img->caption()->isNotEmpty())): ?>
-        <figcaption class="s-xsmall"><?= html($img->caption()) ?></figcaption>
+        <figcaption class="s-small"><?= html($img->caption()) ?></figcaption>
       <?php endif ?>
     </picture>
   </figure>

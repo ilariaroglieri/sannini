@@ -1,0 +1,74 @@
+Title: LAMELLA
+
+----
+
+Tech-drawing: 
+
+----
+
+Tech-drawing-mobile: 
+
+----
+
+Intro-text: <p>Fornitura e posa in opera di rivestimento esterno di tipo “brise soleil”, realizzato con sottostruttura metallica e paramento con elementi in cotto Sannini, lavati e trattati.</p>
+
+----
+
+Blocks: [{"content":{"small_title_1":"Sottostruttura metallica di ancoraggio","small_title_2":"Rivestimento","small_title_3":"Posa e Trattamento","text_1":"<p>Struttura secondaria costituita da profili verticali in acciaio inox o in alluminio posti a interasse di 100 cm circa, vincolati alle solette con staffe e tasselli a espansione, dotati di distanziatori regolabili e di barre orizzontali per il fissaggio degli elementi in cotto.</p>","text_2":"<p>Rivestimento costituito da elementi in cotto di tipo “lamella” realizzati con terra estratta nel comune di Impruneta, delle dimensioni (l × h × s) di 500 × 600 × 32 mm e aventi finitura superficiale “Litos”. Gli elementi sono posati con giunti verticali di 6 mm circa e distanziati nella soluzione di parete frangisole a interasse di 12,5 cm circa (o con opportuno passo previsto da progetto).</p>","text_3":"<p>Il paramento dovrà essere posato idoneamente per il superamento di eventuali fuori piombo e imperfezioni degli esistenti intonaci e strutture in cemento armato, così da creare un vuoto di circa 8-10 cm tra il retro del cotto e la muratura di supporto. Il paramento esterno, in cotto Sannini, viene fornito lavato con detergente acido decalcarizzante per la rimozione di eventuali efflorescenze e trattato per la protezione con impregnante a base di microemulsione silossanica.</p>"},"id":"d60db4ab-8d87-41ad-8289-f275d0a50e31","isHidden":false,"type":"3-col-text-block"}]
+
+----
+
+Cover-img: - file://a5fbntdxpjc2kkvp
+
+----
+
+Design: 
+
+----
+
+Measures: 500x60x32 mm
+
+----
+
+Weight: 1,4 kg/pz
+
+----
+
+Finishing: Litos
+
+----
+
+Finishing-front: 
+
+----
+
+Finishing-back: 
+
+----
+
+Coste: 
+
+----
+
+Variables:
+
+- 
+  title: Naturale
+  image:
+    - file://yggy57tibmwlkyct
+- 
+  title: Tabacco
+  image:
+    - file://0ru6lzgeq0bal49y
+- 
+  title: Champagne
+  image:
+    - file://ku4r888bcxtd57qp
+
+----
+
+Pdf: 
+
+----
+
+Uuid: ujbug5tiy67jbenf

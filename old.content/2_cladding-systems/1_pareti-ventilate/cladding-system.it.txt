@@ -1,0 +1,33 @@
+Title: Pareti Ventilate
+
+----
+
+Intro-text: <p>Nel panorama della tecnica edilizia contemporanea, la parete ventilata è tra le soluzioni tecnologiche più avanzate per l’isolamento esterno degli edifici. Il sistema si basa sulla creazione di un’intercapedine d’aria tra il supporto murario (e l’eventuale strato isolante a esso accoppiato) e il rivestimento esterno (vincolato all’edificio per mezzo di un’apposita struttura di ancoraggio meccanico). Grazie alla differenza di temperatura tra interno ed esterno, l’aria nell’intercapedine si muove verso l’alto naturalmente. Questo “effetto camino” genera benefici costanti: in estate allontana il calore radiante solare e mantiene le pareti fresche; in inverno favorisce l’evacuazione del vapore acqueo, così da eliminare condensa e muffe.</p>
+
+----
+
+Pdf-1: - file://5ajpw4u1s4j5j4gw
+
+----
+
+Intro-text-2: <p>Sebbene sia considerata una tecnica d’avanguardia, la parete ventilata sviluppa concetti radicati nella storia dell’architettura, sperimentati da secoli. Dai rivestimenti in ardesia alle scandole di legno delle aree alpine, l’uomo ha da lungo tempo cercato di separare la “pelle” esterna dal corpo dell’edificio per preservarne la salute. Mentre il muro tradizionale celebra la continuità e la saldatura tra mattone e malta, i sistemi di “rivestimento sottile” sottolineano, al contrario, la disgiunzione delle parti, degli elementi in cotto e di tutto ciò che è costitutivo dell’involucro architettonico. Questa “reinvenzione” del cotto non ne tradisce la natura, ma ne espande gli orizzonti: un materiale d’eccellenza storica viene valorizzato ed enfatizzato nel presente, per offrire nuove opportunità architettoniche dal linguaggio contemporaneo e incredibilmente versatile.</p>
+
+----
+
+Pdf-2: - file://qkxzfozendrhf71t
+
+----
+
+Blocks: [{"content":{"small_title":"","text":"<p>TEST Sebbene sia considerata una tecnica d’avanguardia, la parete ventilata sviluppa concetti radicati nella storia dell’architettura, sperimentati da secoli. Dai rivestimenti in ardesia alle scandole di legno delle aree alpine, l’uomo ha da lungo tempo cercato di separare la “pelle” esterna dal corpo dell’edificio per preservarne la salute. Mentre il muro tradizionale celebra la continuità e la saldatura tra mattone e malta, i sistemi di “rivestimento sottile” sottolineano, al contrario, la disgiunzione delle parti, degli elementi in cotto e di tutto ciò che è costitutivo dell’involucro architettonico. Questa “reinvenzione” del cotto non ne tradisce la natura, ma ne espande gli orizzonti: un materiale d’eccellenza storica viene valorizzato ed enfatizzato nel presente, per offrire nuove opportunità architettoniche dal linguaggio contemporaneo e incredibilmente versatile.</p>","width":"d-two-thirds","alignment":"align-right"},"id":"7dcfcd94-1480-4d3f-9080-6e061f14aec1","isHidden":false,"type":"text-block"},{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":["file://qod1pybznd22bjr1"],"image_s2":["file://n4ut0qlnvce3fecb"],"image_s3":["file://w99tk03v2jft5rwq"],"alignment":""},"id":"80c50cb7-6f49-45b4-bb8f-d58fb542e277","isHidden":false,"type":"img-block"},{"content":{"small_title":"Anatomia del sistema","text":"<p><strong>1. Supporto murario:</strong> la struttura primaria (murature portanti continue; pareti di tamponamento poste a chiusura di telai strutturali in cemento o acciaio; strutture in legno o prefabbricate...) su cui si ancora il sistema.</p><p><strong>2. Strato isolante:</strong> eventuale sistema di isolamento termico a cappotto costituito da pannelli minerali, vegetali o sintetici che garantiscono la coibentazione.</p><p><strong>3. Intercapedine d’aria:</strong> uno spazio vuoto (minimo 3-5 cm) fondamentale per la microventilazione.</p><p><strong>4. Sottostruttura meccanica:</strong> la sottostruttura secondaria di ancoraggio, un’orditura in acciaio inox o alluminio che sostiene il rivestimento a secco.</p><p><strong>5. Rivestimento esterno:</strong> lo “strato di tenuta”, la “pelle”, lo “scudo” dell’edificio, declinabile in varie forme e materiali, tra i quali il cotto si distingue per l’estetica naturale e l’altissima resistenza al tempo (acquisisce fascino con l’invecchiamento).</p>","width":"d-two-thirds","alignment":"align-right"},"id":"a3a5556d-52ca-4fd8-87a8-ec1b83d0690e","isHidden":false,"type":"text-block"},{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":["file://hwhp0kulyjd0ja9e"],"image_s2":[],"image_s3":[],"alignment":""},"id":"5b321e41-0e2b-4991-9f2e-5a724bcf46ee","isHidden":false,"type":"img-block"},{"content":{"img_layout":"m-s","full_w_img":[],"medium_img":["file://qod1pybznd22bjr1"],"small_img":[],"image_s1":[],"image_s2":[],"image_s3":[],"alignment":"d-row-reverse"},"id":"45267ac8-035d-4aaa-94ca-c34728444d2d","isHidden":false,"type":"img-block"},{"content":{"small_title":"Vantaggi del sistema","text":"<p>Le soluzioni tecniche di “pareti ventilate” sono considerate, oggi, tra le migliori soluzioni di isolamento termico disponibili; allo stesso tempo, offrono continue opportunità di evoluzione al linguaggio degli elementi impiegati nella formazione dello strato da lasciare a vista. I sistemi di facciata ventilata offrono indubbi vantaggi.</p><p><strong>Risparmio energetico</strong>, maggior comfort estivo e invernale, significativa riduzione dei costi di climatizzazione.</p><p><strong>Tenuta all’acqua</strong>, protezione della struttura muraria da pioggia battente e shock termici.</p><p><strong>Durabilità</strong>, riduzione dei rischi di fessurazione e distacco, che sono tipici dei rivestimenti applicati direttamente sul supporto murario.</p><p><strong>Posa e manutenzione semplificate:</strong> gli elementi sono indipendenti e facilmente sostituibili.</p><p><strong>Flessibilità estetica</strong>, ampia scelta di formati e illimitate possibilità compositive ed espressive.</p><p><strong>Purezza e inalterabilità della materia.</strong> Il cotto imprunetino è il più nobile e resistente al mondo, e rappresenta l’eccellenza del settore per resistenza meccanica e durabilità: la sua natura viva lo rende capace di invecchiare con eleganza, esaltando la materia in un perfetto equilibrio fra tradizione e innovazione.</p>","width":"d-two-thirds","alignment":"align-right"},"id":"36e51f13-b632-4f85-98f0-1a8488e17dea","isHidden":false,"type":"text-block"}]
+
+----
+
+Testo-lv1: 
+
+----
+
+Testo-lv2: 
+
+----
+
+Uuid: awbr5yanrey9hpmn

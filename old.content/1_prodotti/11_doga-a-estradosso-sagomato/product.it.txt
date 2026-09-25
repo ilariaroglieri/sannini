@@ -1,0 +1,74 @@
+Title: DOGA A ESTRADOSSO SAGOMATO
+
+----
+
+Tech-drawing: 
+
+----
+
+Tech-drawing-mobile: 
+
+----
+
+Intro-text: <p>Fornitura e posa in opera di rivestimento esterno di tipo “brise soleil”, realizzato con sottostruttura metallica e paramento con elementi in cotto Sannini, lavati e trattati.</p>
+
+----
+
+Blocks: [{"content":{"small_title_1":"Sottostruttura metallica di ancoraggio","small_title_2":"Rivestimento","small_title_3":"Posa e Trattamento","text_1":"<p>Struttura secondaria costituita da profili verticali in acciaio inox o in alluminio posti a interasse di 200 cm circa, vincolati alle solette e trattenuti alle pareti con apposite staffe e tasselli a espansione muniti di distanziatori regolabili, e da ancore e profilo a omega per il fissaggio degli elementi in cotto.</p>","text_2":"<p>Rivestimento costituito da elementi in cotto di tipo elemento “doga piana alleggerita” delle dimensioni (l × h × s) di 500 x 145 x 48 mm, aventi finitura superficiale “Litos”, posati con giunti verticali di 6 mm circa, distanziati orizzontalmente di 15 cm (o con opportuno passo previsto da progetto).&nbsp;</p>","text_3":"<p>Il paramento dovrà essere posato idoneamente per il superamento di eventuali fuori piombo e imperfezioni degli esistenti intonaci e strutture in cemento armato, così da creare un vuoto di circa 8-10 cm tra il retro del cotto e la muratura di supporto. Il paramento esterno, in cotto Sannini, viene fornito lavato con detergente acido decalcarizzante per la rimozione di eventuali efflorescenze e trattato per la protezione con impregnante a base di microemulsione silossanica.</p>"},"id":"d84ea65b-7f2c-4477-ae3e-a574294fdd7a","isHidden":false,"type":"3-col-text-block"}]
+
+----
+
+Cover-img: - file://gg2lqkdz0xe3yqju
+
+----
+
+Design: Claudio Nardi
+
+----
+
+Measures: 500 × 145 × 97 mm
+
+----
+
+Weight: 6,0 kg/pz
+
+----
+
+Finishing: Litos
+
+----
+
+Finishing-front: 
+
+----
+
+Finishing-back: 
+
+----
+
+Coste: 
+
+----
+
+Variables:
+
+- 
+  title: Naturale
+  image:
+    - file://g5nor0xwi34cdz5r
+- 
+  title: Tabacco
+  image:
+    - file://3didumbsowidkeol
+- 
+  title: Champagne
+  image:
+    - file://igucfnf36gkrrbxz
+
+----
+
+Pdf: 
+
+----
+
+Uuid: bqskhr4hmjvem3cs

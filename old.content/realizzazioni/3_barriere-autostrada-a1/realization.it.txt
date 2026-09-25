@@ -1,0 +1,53 @@
+Title: Barriere Autostrada A1
+
+----
+
+Subtitle: Bargino, Firenze - Italia
+
+----
+
+Intro-text: <p>Ricercatezza nei materiali, armonia degli elementi e forte contenuto tecnico sono le linee guida del progetto YC KEMPINSKI RESIDENCE un’importante complesso polifunzionale ubicato a Yinchuan (Ningxia) Repubblica Cinese, progettato dallo studio Urbanprojects di Hong Kong.</p><p>Il progetto ha previsto l’utilizzo di pochi materiali, per un linguaggio architettonico semplice ed efficace: rivestimento in cotto con varie applicazioni, pietra e vetro. Nel rivestimento parietale il progettista è riuscito con maestria ad impiegare vari componenti della Sannini Impruneta, coniugando un materiale storico, ma al tempo stesso versatile per l’Architettura contemporanea. Un’applicazione in terracotta che garantisce la resistenza oltre che meccanica anche all’ossidazione e agli agenti atmosferici; in un’area dalle particolari condizioni aggressive.</p>
+
+----
+
+Blocks: [{"content":{"img_layout":"m-s","full_w_img":[],"medium_img":["file://hm2scxjqp4zwsand"],"small_img":["file://kmmiachy2tdgd6kr"],"image_s1":[],"image_s2":[],"image_s3":[],"alignment":"d-row-reverse"},"id":"9045fb34-60f7-425f-8ca3-b6d6aefaa37f","isHidden":false,"type":"img-block"},{"content":{"small_title":"","text":"<p>Le nuove tecniche hanno consentito di realizzare un sistema di facciata dagli indubbi vantaggi. Tra questi, oltre all’affidabilità della tenuta all’acqua, dobbiamo citare: la riduzione dei rischi di fessurazione e distacco, tipici dei rivestimenti applicati direttamente sul supporto murario; la facilità di posa e di manutenzione; la maggiore protezione della struttura muraria dall’azione degli agenti atmosferici; il maggior comfort estivo ed invernale; un significativo risparmio energetico. </p><p>Le soluzioni tecniche di “pareti ventilate” sono considerate oggigiorno, sotto il profilo tecnologico, fra le migliori soluzioni di isolamento termico disponibili; allo stesso tempo stanno offrendo opportunità di evoluzione linguistica degli elementi impiegati nella formazione dello strato da lasciare a vista.</p>","width":"d-two-thirds","alignment":"align-right"},"id":"6d8aaf06-400f-476e-8c52-f08307403384","isHidden":false,"type":"text-block"},{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":["file://tsb9tex5zjbw1p0w"],"image_s2":[],"image_s3":["file://ohiwoyfbwlhxqvfb"],"alignment":""},"id":"576a1e15-823a-45ba-b9d1-54fb2a74a0a7","isHidden":false,"type":"img-block"}]
+
+----
+
+Cover-img: - file://ygeiamoaflhqfdvh
+
+----
+
+Realization-caption: <p>Doga per barriera<br>Finitura litos <br>14,5 × 49,6 × 5,2 cm </p>
+
+----
+
+Realization-credits: 
+
+----
+
+Immagine-copertina: 
+
+----
+
+Titoletto: 
+
+----
+
+Testo-introduttivo: 
+
+----
+
+Didascalia: 
+
+----
+
+Seo-title: 
+
+----
+
+Seo-description: 
+
+----
+
+Uuid: dt9h19tgsojq1y5l

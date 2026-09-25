@@ -1,0 +1,74 @@
+Title: TRIANGOLO GRANDE
+
+----
+
+Tech-drawing: 
+
+----
+
+Tech-drawing-mobile: 
+
+----
+
+Intro-text: <p>Fornitura e posa in opera di rivestimento esterno realizzato con sottostruttura e paramento con elementi in cotto Sannini, lavati e trattati.</p>
+
+----
+
+Blocks: [{"content":{"small_title_1":"Sottostruttura metallica di ancoraggio","small_title_2":"Rivestimento","small_title_3":"Posa e Trattamento","text_1":"<p>Struttura secondaria costituita da profili verticali in acciaio inox o in alluminio posti a interasse massimo di 100 cm per le zone cieche, con piastre con smusso e/o doghe con smusso e/o triangoli grandi, e 150 cm per le zone a frangisole con triangoli piccoli. I profili verticali saranno vincolati alle solette di piano e alle murature sottostanti con staffe portanti e di ritegno, da fissarsi con tasselli a espansione e con ancoraggio chimico. Omega orizzontali e/o tubolari orizzontali in acciaio/estruso di alluminio grezzo da fissarsi ai profili verticali con apposite staffette, per il sostegno degli elementi in cotto.</p>","text_2":"<p>Rivestimento costituito da elementi in cotto di tipo: “piastra con smusso” realizzati con terra estratta nel comune di Impruneta, delle dimensioni (l × h × s) di 500 × 235 × 49 mm e aventi sulla faccia a vista e sui lati laterali finitura “Litos” e grezzo sul retro; “doga con smusso” delle dimensioni di 500 × 110 × 49 mm e aventi sulla faccia a vista e sui lati finitura “Litos” e grezzo sul retro; “triangolo grande” delle dimensioni di 500 x 110 x 96 mm e aventi sui due lati a vista finitura “Litos” e grezzo sul retro; “triangolo piccolo” delle dimensioni di 500 × 59,1 × 59,3 mm e aventi sui due lati a vista finitura “Litos” e grezzo sul retro.</p><p>Il paramento viene posato con giunti verticali di 6 mm e distanziato a interasse di 25 cm per le piastre e di 12,5 cm per le doghe e i triangoli.</p>","text_3":"<p>Il paramento dovrà essere posato idoneamente per il superamento di eventuali fuori piombo e imperfezioni degli esistenti intonaci e strutture in cemento armato, così da creare un vuoto di circa 8-10 cm tra il retro del cotto e la muratura di supporto. Il paramento esterno, in cotto Sannini, viene fornito lavato con detergente acido decalcarizzante per la rimozione di eventuali efflorescenze e trattato per la protezione con impregnante a base di microemulsione silossanica.</p>"},"id":"89245780-f551-4ed1-a1f8-16a75c4b541b","isHidden":false,"type":"3-col-text-block"}]
+
+----
+
+Cover-img: - file://x5n5ctdxz2s5uegn
+
+----
+
+Design: Carlo Farroni
+
+----
+
+Measures: 500 × 110 × 49 mm
+
+----
+
+Weight: 4,90 kg/pz
+
+----
+
+Finishing: Litos
+
+----
+
+Finishing-front: 
+
+----
+
+Finishing-back: 
+
+----
+
+Coste: 
+
+----
+
+Variables:
+
+- 
+  title: Naturale
+  image:
+    - file://3aq3xf1vdilivo72
+- 
+  title: Tabacco
+  image:
+    - file://1xpf5nelrsde1yvc
+- 
+  title: Champagne
+  image:
+    - file://kklwxoojrjnmimcf
+
+----
+
+Pdf: 
+
+----
+
+Uuid: 8hdkfd9s35fyxrl8

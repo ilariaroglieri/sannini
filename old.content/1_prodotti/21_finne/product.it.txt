@@ -1,0 +1,61 @@
+Title: FINNE
+
+----
+
+Tech-drawing: 
+
+----
+
+Tech-drawing-mobile: 
+
+----
+
+Intro-text: 
+
+----
+
+Blocks: 
+
+----
+
+Cover-img: - file://0rjrj8ykojdzyp5j
+
+----
+
+Design: Grimshaw Architects
+
+----
+
+Measures: 500 × 227 × 88 mm
+
+----
+
+Weight: 
+
+----
+
+Finishing: Levigato
+
+----
+
+Finishing-front: 
+
+----
+
+Finishing-back: 
+
+----
+
+Coste: 
+
+----
+
+Variables: 
+
+----
+
+Pdf: 
+
+----
+
+Uuid: voz59aoajcz8qbxi
