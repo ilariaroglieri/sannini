@@ -1,9 +1,0 @@
-Caption: 
-
-----
-
-Mobilecropvertical: false
-
-----
-
-Uuid: zannnm4b5ernydzb

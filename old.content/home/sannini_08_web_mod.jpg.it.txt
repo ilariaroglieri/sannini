@@ -1,9 +1,0 @@
-Caption: Operai al lavoro tra macchinari e materia nelle prime fasi produttive
-
-----
-
-Mobilecropvertical: false
-
-----
-
-Uuid: tk1i8iul9bmwpbcp

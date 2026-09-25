@@ -1,9 +1,0 @@
-Caption: (6) Veduta d’insieme degli impianti produttivi Sannini Impruneta e dell’organizzazione interna dello stabilimento
-
-----
-
-Mobilecropvertical: false
-
-----
-
-Uuid: lbyicluqoy9sd8za

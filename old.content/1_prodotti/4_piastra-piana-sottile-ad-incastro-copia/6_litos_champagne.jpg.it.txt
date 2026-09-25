@@ -1,9 +1,0 @@
-Caption: 
-
-----
-
-Mobilecropvertical: false
-
-----
-
-Uuid: ft3xspswmznf4ice

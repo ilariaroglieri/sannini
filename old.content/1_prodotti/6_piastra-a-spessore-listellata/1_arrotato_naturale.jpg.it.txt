@@ -1,9 +1,0 @@
-Caption: 
-
-----
-
-Mobilecropvertical: false
-
-----
-
-Uuid: ficffj3pgxpjbyq0

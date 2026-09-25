@@ -1,9 +1,0 @@
-Caption: 
-
-----
-
-Mobilecropvertical: false
-
-----
-
-Uuid: pyvbm7m6lxikkwmm

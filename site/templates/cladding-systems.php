@@ -15,6 +15,7 @@
 	<?php snippet('img-module', [
 		'fullImg' => $page->cover_img()->toFile(),
 		'imgLayout' => 'full',
+		'spaceBelow' => $page->space_below()
 	]) ?>
 
 

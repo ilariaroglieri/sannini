@@ -91,3 +91,7 @@ fields:
     when:
       img_layout: m-s
 
+  space_below:
+    type: toggle
+    default: true
+

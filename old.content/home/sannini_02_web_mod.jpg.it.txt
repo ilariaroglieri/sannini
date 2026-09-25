@@ -1,9 +1,0 @@
-Caption: Lavorazione artigianale della terracotta all’interno dello stabilimento Sannini Impruneta
-
-----
-
-Mobilecropvertical: false
-
-----
-
-Uuid: zliv8jyppk9dxxbh

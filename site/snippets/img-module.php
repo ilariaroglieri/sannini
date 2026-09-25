@@ -1,9 +1,11 @@
 <?php
   $imgLayout = $imgLayout ?? 'full';
   $alignment = $alignment ?? '';
+  $isSpaceBelow = ($spaceBelow === null || $spaceBelow?->isEmpty()) ? true : $spaceBelow->isTrue();
+  $spaceBelow = $isSpaceBelow ? 'space-below' : '';
 ?>
 
-<section class="module img-module">
+<section class="module img-module <?= $spaceBelow ?>">
   <div class="d-flex m-column <?= $alignment ?>">
     <?php if ($imgLayout == 'full'): ?>
       <div class="element d-whole m-whole <?= !$fullImg ? 'm-hidden' : '' ?>" data-reveal="parent">

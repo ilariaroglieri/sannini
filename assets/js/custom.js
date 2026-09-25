@@ -64,11 +64,12 @@ function snapModules() {
     const naturalH = heights[i];
     if (naturalH === null) return;
 
-    const isImg      = m.classList.contains('img-module') || m.classList.contains('special-img-module');
+    const isImg      = m.classList.contains('img-module') && m.classList.contains('space-below') || m.classList.contains('special-img-module');
     const isImgBlock = m.classList.contains('img-module');
 
     if (isImgBlock && stacked) { m.style.height = 'auto'; return; }
 
+    // add an empty module below the block
     if (isImg) {
       const base = Math.max(1, Math.ceil((naturalH - EPS) / moduleH));
       m.style.height = ((base + 1) * moduleH) + 'px';
