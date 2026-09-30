@@ -486,6 +486,12 @@ header {
   &.navi-module {
    .element {
       padding: 0 var(--spacing);
+      &#navi-prev {
+        transform: translateX(-1.5px);
+      }
+      &#navi-next {
+        transform: translateX(1.5px);
+      }
       .navi-item {
         display: flex;
         width: 100%;

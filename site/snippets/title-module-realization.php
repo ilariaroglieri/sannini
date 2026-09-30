@@ -19,7 +19,7 @@
     <?php endif; ?>
     <div class="element title-element d-one-third m-whole d-flex center v-center" data-reveal="parent">
       <?php if ($title): ?>
-        <<?= $heading; ?> class="uppercase s-medium spacing-b-2 spacing-m-b-0" data-reveal="child"><?= $title ?></<?= $heading; ?>>
+        <<?= $heading; ?> class="uppercase s-medium t-center spacing-b-2 spacing-m-b-0" data-reveal="child"><?= $title ?></<?= $heading; ?>>
       <?php endif; ?>
     </div>
     <?php if ($img): ?>

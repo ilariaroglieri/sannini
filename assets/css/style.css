@@ -1166,6 +1166,12 @@ header nav ul li a.lang-active {
 .module.navi-module .element {
   padding: 0 var(--spacing);
 }
+.module.navi-module .element#navi-prev {
+  transform: translateX(-1.5px);
+}
+.module.navi-module .element#navi-next {
+  transform: translateX(1.5px);
+}
 .module.navi-module .element .navi-item {
   display: flex;
   width: 100%;
