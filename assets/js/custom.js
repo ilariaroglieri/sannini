@@ -30,14 +30,15 @@ function snapModules() {
   const EPS = 2;
 
   const imgEls = [...document.querySelectorAll('.img-module .inner-img-element')];
-  const inners = [...document.querySelectorAll('.module .inner-element')];
+  const inners = [...document.querySelectorAll('.module .inner-element')]; // elements with this markup will occupy one module on mobile
 
   // reset sempre
   imgEls.forEach(el => { el.style.height = ''; });
   inners.forEach(el => { el.style.height = ''; });
 
-  // ─── FASE 1: snap inner + immagini (PRIMA) ───
+  // ─── FASE 1: snap inner + immagini doppie (PRIMA) ───
   if (stacked) {
+    // add extra space below images
     const elH = imgEls.map(el => el.offsetHeight);
     imgEls.forEach((el, i) => {
       const steps = Math.max(1, Math.ceil((elH[i] - EPS) / moduleH));
@@ -69,7 +70,7 @@ function snapModules() {
 
     if (isImgBlock && stacked) { m.style.height = 'auto'; return; }
 
-    // add an empty module below the block
+    // DESKTOP: aggiungi spazio sotto ogni immagine che contiene spacebelow
     if (isImg) {
       const base = Math.max(1, Math.ceil((naturalH - EPS) / moduleH));
       m.style.height = ((base + 1) * moduleH) + 'px';

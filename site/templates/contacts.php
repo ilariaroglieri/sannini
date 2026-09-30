@@ -15,12 +15,14 @@
 					<p class="s-small"><?= page('contatti')->address()->kt()->inline() ?></p>
 				</div>
 
-				<div class="info d-flex" data-reveal="child">
+				<div class="info spacing-b-8 d-flex" data-reveal="child">
 					<span class="mono uppercase s-xsmall label"><?= t('phone'); ?></span>
 					<p class="s-small"><?= page('contatti')->phone()->kt()->inline() ?></p>
 				</div>
 
-				<p id="copyright" class="s-small spacing-t-6 m-hidden">© All rights reserved <?= date("Y"); ?></p>
+				<div class="policies d-flex d-column m-hidden" data-reveal="child">
+					<a class="mono uppercase s-xsmall spacing-b-half" href="<?= page('privacy-policy')->url() ?>"><?= page('privacy-policy')->title() ?></a>
+				</div>
 			</div>
 
 			<div id="email-info" class="d-one-third m-whole element" data-reveal="parent">
@@ -34,24 +36,26 @@
 					<a class="s-small" href="<?= page('contatti')->email()->toUrl() ?>">Sannini_Impruneta</a>
 				</div>
 
-				<div class="policies d-flex d-column m-hidden" data-reveal="child">
-					<a class="mono uppercase s-xsmall spacing-b-half" href="<?= page('privacy-policy')->url() ?>"><?= page('privacy-policy')->title() ?></a>
-				</div>
+				
 			</div>
 
-			<div class="d-one-third m-whole element" data-reveal="parent">
-				<?php 
-				$contacts = $page->departments()->toStructure();
-				foreach ($contacts as $item): ?>
-					<div class="info d-flex spacing-b-half" data-reveal="child">
-						<span class="mono uppercase s-xsmall label"><?= $item->title()->smartypants() ?></span>
-					  <a class="s-small" href="mailto:<?= $item->email()->value() ?>"><?= $item->email()->value() ?></a>
-					</div>
-				<?php endforeach ?>
+			<div class="d-one-third m-whole element d-flex d-column space-between" data-reveal="parent">
+				<div id="departments">
+					<?php 
+					$contacts = $page->departments()->toStructure();
+					foreach ($contacts as $item): ?>
+						<div class="info d-flex spacing-b-half" data-reveal="child">
+							<span class="mono uppercase s-xsmall label"><?= $item->title()->smartypants() ?></span>
+						  <a class="s-small" href="mailto:<?= $item->email()->value() ?>"><?= $item->email()->value() ?></a>
+						</div>
+					<?php endforeach ?>
+				</div>
 
 				<div class="policies d-flex d-column m-visible spacing-t-8" data-reveal="child">
 					<a class="mono uppercase s-xsmall spacing-b-half" href="<?= page('privacy-policy')->url() ?>"><?= page('privacy-policy')->title() ?></a>
 				</div>
+
+				<p id="copyright" class="s-small spacing-t-6 t-right m-hidden">© All rights reserved <?= date("Y"); ?></p>
 			</div>
 		</div>
 	</div>

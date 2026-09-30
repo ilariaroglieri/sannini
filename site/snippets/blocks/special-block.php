@@ -21,12 +21,12 @@
     </div>
 
     <?php foreach ($images->slice(3, 6) as $img): ?>
-      <div class="image element d-one-third m-whole" data-reveal="parent">
+      <div class="image element d-one-third m-whole m-hidden" data-reveal="parent">
         <?= snippet('image-w-caption', ['img' => $img, 'showCaption' => false]) ?>
       </div>
     <?php endforeach ?>
 
-    <div class="caption-row d-whole d-flex flex-row v-center m-column m-visible">
+    <div class="caption-row d-whole d-flex flex-row v-center m-column m-hidden">
       <?php foreach ($images->slice(3, 6) as $img): ?>
       <div class="caption element d-1-twelfth th-2-twelfth m-half" data-reveal="parent">
         <?php if ($img->caption()->isNotEmpty()): ?>

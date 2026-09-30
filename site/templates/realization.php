@@ -19,6 +19,12 @@
 		'width' => 'd-whole',
 	]) ?>
 
+	<?php snippet('title-module', [
+		'title' => $page->realization_caption()->fancypants(),
+		'titleStyle' => 'mono s-small t-center',
+		'classes' => 'm-visible'
+	]) ?>
+
 	<?= $page->blocks()->toBlocks() ?>
 
 	<section class="module credits-module">

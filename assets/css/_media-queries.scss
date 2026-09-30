@@ -145,15 +145,29 @@
       }
       .caption-row {
         align-items: flex-end;
-        .caption:nth-child(n+4) {
-          display: none;
+        .caption {
+          padding-right: calc(var(--double-spacing)*1.5);
+          &:nth-child(n+4) {
+            display: none;
+          }
         }
       }
     }
+
     &.tech-info-module {
       .color-info {
         .color-variants {
           grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    }
+    &.navi-module {
+     .element {
+        &#navi-prev {
+          transform: translateX(0);
+        }
+        &#navi-next {
+          transform: translateX(0);
         }
       }
     }

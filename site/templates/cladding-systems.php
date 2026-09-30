@@ -37,8 +37,7 @@
 
 			<section class="module tech-info-module">
 				<div class="d-flex m-column-reverse">
-					<div class="element d-one-third m-whole" data-reveal="parent">
-		      	<div class="inner-element">
+					<div class="element d-one-third m-whole spacing-m-t-4" data-reveal="parent">
 							<?php 
 							$pdf = $claddingSystem->pdf_1()->toFile();
 							$pdf2 = $claddingSystem->pdf_2()->toFile();
@@ -53,14 +52,11 @@
 						      <a href="<?= $pdf2->url(); ?>" class="tech-info__label mono uppercase s-reg-small"><?= t('pdf') ?></a>
 						    </div>
 						  <?php endif; ?>
-						</div>
 					</div>
-		      <div class="element d-two-thirds m-whole" data-reveal="parent">
-		      	<div class="inner-element">
-				    	<div class="text s-regular" data-reveal="child">
-			        	<?= $claddingSystem->intro_text_2()->fancypants(); ?>
-			      	</div>
-			      </div>
+		      <div class="element d-two-thirds m-whole " data-reveal="parent">
+			    	<div class="text s-regular" data-reveal="child">
+		        	<?= $claddingSystem->intro_text_2()->fancypants(); ?>
+		      	</div>
 		      </div>
 		    </div>
 		  </section>

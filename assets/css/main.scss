@@ -485,12 +485,12 @@ header {
   }
   &.navi-module {
    .element {
-      padding: 0 var(--spacing);
+      // padding: 0 var(--spacing);
       &#navi-prev {
-        transform: translateX(-1.5px);
+        transform: translateX(0px);
       }
       &#navi-next {
-        transform: translateX(1.5px);
+        transform: translateX(3px);
       }
       .navi-item {
         display: flex;
@@ -585,10 +585,10 @@ header {
   }
 }
 
+#copyright {
+  opacity: .5;
+}
 
 footer {
   padding: 0 calc(var(--half-spacing) * 3);
-  #copyright {
-    opacity: .5;
-  }
 }
