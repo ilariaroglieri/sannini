@@ -116,6 +116,7 @@ function updateGrid() {
   requestAnimationFrame(snapModules);
 }
 
+// update on resize
 const container = document.querySelector('.container');
 let lastW = 0;
 const ro = new ResizeObserver(entries => {
@@ -154,6 +155,7 @@ function onScroll() {
 }
 
 window.addEventListener('scroll', onScroll, { passive: true });
+
 applyParallax();
 
 //------- color selection
@@ -218,9 +220,21 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 
+function goToTop() {
+  const btn = document.querySelector('#back-top');
+  if (!btn) return;
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.d-flex:has(> [data-reveal="parent"])').forEach(el => {
     revealObserver.observe(el);
   });
   document.querySelector('#grid-markers').classList.add('loaded');
+
+  goToTop();
 });

@@ -1,0 +1,9 @@
+Caption: Dettaglio di facciata con frangisole in terracotta
+
+----
+
+Mobilecropvertical: false
+
+----
+
+Uuid: nwakgetti55wfgls

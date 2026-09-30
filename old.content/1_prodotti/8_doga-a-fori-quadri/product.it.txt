@@ -1,0 +1,86 @@
+Title: DOGA PIANA FORI QUADRI
+
+----
+
+Tech-drawing: 
+
+----
+
+Tech-drawing-mobile: 
+
+----
+
+Intro-text: <p>Fornitura e posa in opera di rivestimento esterno, realizzato con sottostruttura metallica e paramento con elementi in cotto Sannini, lavati e trattati.</p>
+
+----
+
+Blocks: [{"content":{"small_title_1":"Sottostruttura metallica di ancoraggio","small_title_2":"Rivestimento","small_title_3":"Posa e Trattamento","text_1":"<p>Struttura secondaria costituita da profili verticali in acciaio inox o in alluminio posti a interasse di 100 cm circa, vincolati alle solette e trattenuti alle pareti con apposite staffe e tasselli a espansione, muniti di distanziatori regolabili e di coppia di staffe a bandiera e tubolari orizzontali per il fissaggio dei componenti in cotto.</p>","text_2":"<p>Rivestimento costituito da elementi in cotto di tipo “doga piana a fori quadri” delle dimensioni (l × h × s) di 150 × 500 × 50 mm con finitura superficiale “Litos” e, sul retro, “Arrotato”. Gli elementi sono posati con giunti verticali di mm 6 a interasse di 20 cm (o con opportuno passo previsto da progetto).</p>","text_3":"<p>Il paramento dovrà essere posato idoneamente per il superamento di eventuali fuori piombo e imperfezioni degli esistenti intonaci e strutture in cemento armato, così da creare un vuoto di circa 8-10 cm tra il retro del cotto e la muratura di supporto. Il paramento esterno, in cotto Sannini, viene fornito lavato con detergente acido decalcarizzante per la rimozione di eventuali efflorescenze e trattato per la protezione con impregnante a base di microemulsione silossanica.</p>"},"id":"878fc202-6a77-443d-bfa5-83fc85e6f182","isHidden":false,"type":"3-col-text-block"}]
+
+----
+
+Cover-img: - file://1aksjt30mchvqauv
+
+----
+
+Design: 
+
+----
+
+Measures: 500 × 150 × 50 mm
+
+----
+
+Weight: 6,0 kg/pz
+
+----
+
+Finishing: Litos arrotato
+
+----
+
+Finishing-front: Arrotato o Litos
+
+----
+
+Finishing-back: Arrotato
+
+----
+
+Coste: Litos
+
+----
+
+Variables:
+
+- 
+  title: Arrotato naturale
+  image:
+    - file://bxvopkb990yjt8ai
+- 
+  title: Arrotato tabacco
+  image:
+    - file://knhhge7vlpnm2kog
+- 
+  title: Arrotato champagne
+  image:
+    - file://ls9oxjd6ixm2zc31
+- 
+  title: Litos naturale
+  image:
+    - file://5efltixdfe8fo6xy
+- 
+  title: Litos tabacco
+  image:
+    - file://0gcco3i51pbucj3b
+- 
+  title: Litos champagne
+  image:
+    - file://zzgh4js8ovb1jd0d
+
+----
+
+Pdf: 
+
+----
+
+Uuid: ukkwj4bdyot7bkx9

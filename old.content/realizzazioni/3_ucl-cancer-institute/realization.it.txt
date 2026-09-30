@@ -1,0 +1,40 @@
+Title: UCL Cancer Institute
+
+----
+
+Hero-img: - file://3mwety1kf6x595kl
+
+----
+
+Subtitle: Londra, Regno Unito
+
+----
+
+Intro-text: <p>La composizione esterna lineare è scandita da un particolare schermo avanzato a frangisole, realizzato con elementi a sezione triangolare denominati Finne, impilati a formare delle aste di altezza di interpiano, fissati con angolazioni libere. La sottostruttura di fissaggio presenta barre a sezione circolare fissate da piano a piano e permette un’apertura totale, creando così un movimento sottolineato dalle ombre che si scandiscono sugli elementi in terracotta.</p>
+
+----
+
+Blocks: [{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":["file://7jwz5ggdurj1kdp4"],"image_s2":[],"image_s3":["file://owmlnzpmjmbt5ejl"],"alignment":""},"id":"c35cd687-ce95-47b5-b7f9-c06ee7681714","isHidden":false,"type":"img-block"},{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":["file://xvsdo9ezdmer1hgn"],"image_s2":["file://yeaw5ng3fp5thlco"],"image_s3":["file://ahsaskni737kiwtq"],"alignment":""},"id":"cbb5ab23-7ed1-4dd3-8f84-24979352c62d","isHidden":false,"type":"img-block"}]
+
+----
+
+Credits:
+
+- 
+  title: 'Progetto:'
+  info: '<p>Grimshaw Architects</p>'
+- 
+  title: 'Fotografie:'
+  info: '<p>Mirko Giorgetti</p>'
+
+----
+
+Cover-img: - file://3mwety1kf6x595kl
+
+----
+
+Realization-caption: <p>Finne levigato<br>50 × 22,7 × 8,5 cm </p>
+
+----
+
+Uuid: je98kvqrmuyfpqce

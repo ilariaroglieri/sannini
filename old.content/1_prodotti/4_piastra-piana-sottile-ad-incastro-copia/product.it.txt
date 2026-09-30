@@ -1,0 +1,96 @@
+Title: Piastra a spessore da 30 cm
+
+----
+
+Tech-drawing: - file://rgyamkatuqlr3smb
+
+----
+
+Tech-drawing-mobile: - file://v06ufpuc9hmxsaqd
+
+----
+
+Intro-text: <p>&nbsp;Fornitura e posa in opera di rivestimento esterno di tipo “facciata ventilata”, realizzato con sottostruttura metallica e paramento con elementi in cotto Sannini, lavati e trattati.&nbsp;</p>
+
+----
+
+Blocks: [{"content":{"small_title_1":"Sottostruttura metallica di ancoraggio","small_title_2":"Rivestimento","small_title_3":"Posa e Trattamento","text_1":"<p>Struttura secondaria costituita da profili verticali in acciaio inox o in alluminio, posti a interasse di 50 cm circa, vincolati alle solette e trattenuti alle pareti con apposite staffe e tasselli a espansione muniti di distanziatori regolabili e da ancore per il fissaggio degli elementi in cotto.&nbsp;</p>","text_2":"<p>Il rivestimento è costituito da elementi in cotto di tipo “piastra piana sottile” realizzati con terra estratta nel comune di Impruneta delle dimensioni (l × h × s) di 500 × 250 × 25 mm, dotati di kerf nei lati superiore e inferiore, aventi finitura superficiale “Arrotato”; posati con giunti verticali e&nbsp; orizzontali di 6 mm circa.&nbsp;</p>","text_3":"<p>Il paramento dovrà essere posato idoneamente per il superamento di eventuali fuori piombo e imperfezioni degli esistenti intonaci e strutture in cemento armato, così da creare un vuoto di circa 8-10 cm tra il retro del cotto e la muratura di supporto. Il paramento esterno, in cotto Sannini, viene fornito lavato con detergente acido decalcarizzante per la rimozione di eventuali efflorescenze e trattato per la protezione con impregnante a base di microemulsione silossanica.</p>"},"id":"5bcb9acd-107b-40f2-bd71-d0c73ca6e1f7","isHidden":false,"type":"3-col-text-block"},{"content":{"img_layout":"m-s","full_w_img":[],"medium_img":["file://b0zss6422p6sr9d4"],"small_img":[],"image_s1":[],"image_s2":[],"image_s3":[],"alignment":"d-row"},"id":"3e03493c-7377-4354-a9ec-b8775d465ea9","isHidden":false,"type":"img-block"},{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":[],"image_s2":["file://ioqwbvbvpwoyikzm"],"image_s3":["file://t3aaoraovibrpiot"],"alignment":""},"id":"a1a55078-ab3b-4242-9d5c-383b5462bee9","isHidden":false,"type":"img-block"}]
+
+----
+
+Cover-img: - file://n4z8r4i0fgolxoki
+
+----
+
+Design: 
+
+----
+
+Measures: 500 × 300 × 50 mm
+
+----
+
+Weight: 4,5 kg/pz
+
+----
+
+Finishing: Arrotato o Litos
+
+----
+
+Finishing-front: 
+
+----
+
+Finishing-back: 
+
+----
+
+Coste: 
+
+----
+
+Variables:
+
+- 
+  title: Arrotato naturale
+  image:
+    - file://nj7kowkjkbaq6pt3
+  text: >
+    Cotto estruso con superficie
+    “arrotato” in pasta “naturale”.
+- 
+  title: Arrotato tabacco
+  image:
+    - file://yrhksyovac1fepfj
+  text: |
+    Cotto estruso con superficie “arrotato” in pasta “tabacco”.
+    La colorazione è ottenuta attraverso la miscelazione di una composizione di ossidi nell’impasto dell’argilla, per permettere una penetrazione uniformemente distribuita.
+    Restano invariate le caratteristiche fisico-meccaniche del cotto.
+- 
+  title: Arrotato champagne
+  image:
+    - file://hqsw9l6gwvuol994
+  text: |
+    Cotto estruso con superficie “arrotato” in pasta “champagne”.
+    La colorazione è ottenuta attraverso la miscelazione di una composizione di ossidi nell’impasto dell’argilla, per permettere una penetrazione uniformemente distribuita.
+- 
+  title: Litos naturale
+  image:
+    - file://klez2o47ncyxyv5s
+- 
+  title: Litos tabacco
+  image:
+    - file://qojsda7nytlrvqyd
+- 
+  title: Litos champagne
+  image:
+    - file://ft3xspswmznf4ice
+
+----
+
+Pdf: - file://zkl7ybceybumiy0p
+
+----
+
+Uuid: rccg7eoz9uh4fy6o

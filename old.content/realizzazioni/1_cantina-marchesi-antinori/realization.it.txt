@@ -1,0 +1,68 @@
+Title: Cantina Marchesi Antinori
+
+----
+
+Hero-img: - file://yf1hz928qxscbhfa
+
+----
+
+Subtitle: Bargino (Firenze), Italia
+
+----
+
+Intro-text: <p>L’area di intervento si inserisce nel contesto vinicolo-collinare del Chianti, tra Firenze e Siena. La costruzione fisica e concettuale della cantina è incentrata sul legame profondo e radicato con la terra: il progetto, infatti, integra il costruito al paesaggio agreste. La facciata è distesa orizzontalmente sul pendio naturale esistente, scandito dai filari delle viti che ne costituiscono, con la terra, il “sistema di rivestimento”. I materiali e le tecnologie impiegate evocano la tradizione locale ed esprimono con coerenza il tema della naturalità, ricercata sia nell’uso del cotto – qui con finitura “Litos” – sia nell’opportunità di utilizzare l’energia prodotta dalla terra per raffrescare e coibentare la cantina, realizzando così le condizioni ambientali necessarie per la produzione del vino.</p>
+
+----
+
+Blocks: [{"content":{"img_layout":"m-s","full_w_img":[],"medium_img":["file://r43keqgyeyefdatz"],"small_img":["file://ucprxygyxpxoxst8"],"image_s1":[],"image_s2":[],"image_s3":[],"alignment":"d-row-reverse"},"id":"9045fb34-60f7-425f-8ca3-b6d6aefaa37f","isHidden":false,"type":"img-block"},{"content":{"small_title":"","text":"<p>Le nuove tecniche hanno consentito di realizzare un sistema di facciata dagli indubbi vantaggi. Tra questi, oltre all’affidabilità della tenuta all’acqua, dobbiamo citare: la riduzione dei rischi di fessurazione e distacco, tipici dei rivestimenti applicati direttamente sul supporto murario; la facilità di posa e di manutenzione; la maggiore protezione della struttura muraria dall’azione degli agenti atmosferici; il maggior comfort estivo ed invernale; un significativo risparmio energetico. </p><p>Le soluzioni tecniche di “pareti ventilate” sono considerate oggigiorno, sotto il profilo tecnologico, fra le migliori soluzioni di isolamento termico disponibili; allo stesso tempo stanno offrendo opportunità di evoluzione linguistica degli elementi impiegati nella formazione dello strato da lasciare a vista.</p>","width":"d-two-thirds","alignment":"align-right"},"id":"6d8aaf06-400f-476e-8c52-f08307403384","isHidden":false,"type":"text-block"},{"content":{"img_layout":"m-s","full_w_img":[],"medium_img":["file://l86hjfnkfdkurkqv"],"small_img":["file://omsw3ao9hccnmdr4"],"image_s1":[],"image_s2":["file://l86hjfnkfdkurkqv"],"image_s3":["file://omsw3ao9hccnmdr4"],"alignment":""},"id":"576a1e15-823a-45ba-b9d1-54fb2a74a0a7","isHidden":false,"type":"img-block"}]
+
+----
+
+Credits:
+
+- 
+  title: 'Progetto:'
+  info: '<p>ARCHEA ASSOCIATI</p><p>Arch. Laura Andreini<br>Arch. Marco Casamonti<br>Arch. Silvia Fabi<br>Arch. Giovanni Polazzi</p>'
+- 
+  title: 'Fotografie:'
+  info: '<p>Pietro Savorelli</p>'
+
+----
+
+Cover-img: - file://ps1ekg6mappgpdcq
+
+----
+
+Realization-caption: <p>Doga per barriera<br>Finitura litos <br>14,5 × 49,6 × 5,2 cm </p>
+
+----
+
+Realization-credits: 
+
+----
+
+Immagine-copertina: 
+
+----
+
+Titoletto: 
+
+----
+
+Testo-introduttivo: 
+
+----
+
+Didascalia: 
+
+----
+
+Seo-title: 
+
+----
+
+Seo-description: 
+
+----
+
+Uuid: brdta9blfpkpmxf3

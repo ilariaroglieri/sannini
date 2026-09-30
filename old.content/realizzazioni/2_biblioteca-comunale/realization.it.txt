@@ -1,0 +1,40 @@
+Title: Biblioteca comunale
+
+----
+
+Hero-img: - file://uznndmekixd8j8rg
+
+----
+
+Subtitle: Nembro (Bergamo), Italia
+
+----
+
+Intro-text: <p>Il nuovo volume, progettato nel contesto del restauro e dell’ampliamento del manufatto originario, è contenuto in un involucro completamente trasparente, schermato dalla luce naturale attraverso una “pelle” di elementi in cotto di 40 × 40 cm, smaltati in color rosso carminio, che sono ancorati a una struttura portante composta da profili in acciaio. Tale struttura appare articolata dal libero movimento degli elementi in cotto – che si presentano come dei libri, nella forma – e si pone come elemento che definisce simbolicamente il carattere e il significato della biblioteca.</p>
+
+----
+
+Blocks: [{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":["file://zzzt6aydecd4nret"],"image_s1":["file://ff6wa4t5ss64almc"],"image_s2":[],"image_s3":["file://zzzt6aydecd4nret"],"alignment":"d-row-reverse"},"id":"cc9b06a2-4843-400c-a9c8-fa80fceccb28","isHidden":false,"type":"img-block"},{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":["file://n3czunnbcoqnrwlv"],"image_s2":["file://wacmaadrdrbrdizk"],"image_s3":["file://zm9dy1hj3gqe4azr"],"alignment":""},"id":"689fe2f6-ba0b-4bb2-829a-eee861d2996a","isHidden":false,"type":"img-block"}]
+
+----
+
+Credits:
+
+- 
+  title: 'Progetto:'
+  info: '<p>ARCHEA ASSOCIATI<br><br>Arch. Laura Andreini<br>Arch. Marco Casamonti<br>Arch. Silvia Fabi<br>Arch. Massimiliano Giberti<br>Arch. Giovanni Polazzi</p>'
+- 
+  title: 'Fotografie:'
+  info: '<p>Pietro Savorelli</p>'
+
+----
+
+Cover-img: - file://uznndmekixd8j8rg
+
+----
+
+Realization-caption: <p>Litos smaltato<br>36 × 36 × 5 cm </p>
+
+----
+
+Uuid: 0gm5awlgqwldvuve

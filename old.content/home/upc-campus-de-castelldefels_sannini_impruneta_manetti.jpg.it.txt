@@ -1,0 +1,9 @@
+Caption: Dettaglio di una facciata con elementi frangisole orizzontali in terracotta
+
+----
+
+Mobilecropvertical: false
+
+----
+
+Uuid: augbfcmhaajao4fx

@@ -1,0 +1,40 @@
+Title: Leeum Museum of Art
+
+----
+
+Hero-img: - file://akdm4entogxoxa9t
+
+----
+
+Subtitle: Seoul, Corea del Sud
+
+----
+
+Intro-text: <p>L’esterno del museo Leuum è completamente ricoperto in terracotta, con un involucro caratterizzato da un elemento triangolare a cuspide la cui forma permette alla luce di giocare con la materia e rivelare diversi toni di colore. Sono combinati due elementi, uno completamente piatto e l’altro “aggettante”: l’elemento triangolare a cuspide è stato applicato a tutta la facciata, che è un semplice volume parallelepipedo affiancato a un cono rovesciato.</p>
+
+----
+
+Blocks: [{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":["file://bdflownc5werzrpp"],"small_img":["file://vv1kbd3g2t31qoaq"],"image_s1":["file://vv1kbd3g2t31qoaq"],"image_s2":[],"image_s3":["file://vc6meys0t1gmpxnj"],"alignment":""},"id":"70982da0-811c-4866-8be1-8bb84606b6e0","isHidden":false,"type":"img-block"},{"content":{"img_layout":"m-s","full_w_img":[],"medium_img":["file://vb3a3x649hgmosde"],"small_img":["file://bdflownc5werzrpp"],"image_s1":["file://vc6meys0t1gmpxnj"],"image_s2":[],"image_s3":["file://vb3a3x649hgmosde"],"alignment":""},"id":"173d6e32-9dee-4103-90da-3b64624f9f92","isHidden":false,"type":"img-block"}]
+
+----
+
+Credits:
+
+- 
+  title: 'Progetto:'
+  info: '<p>Arch. Mario Botta</p>'
+- 
+  title: 'Fotografie:'
+  info: '<p>Pietro Savorelli</p>'
+
+----
+
+Cover-img: - file://h1o11qqlrfxyu3cu
+
+----
+
+Realization-caption: <p>Cuspide (finitura litos)<br>50 × 16,4 × 9,5 cm </p><p>Piastra a spessore (finitura litos)<br>50 × 25 × 5 cm </p>
+
+----
+
+Uuid: ie6q983jpbzrgq9h

@@ -1,0 +1,9 @@
+Caption: 
+
+----
+
+Mobilecropvertical: false
+
+----
+
+Uuid: ff6wa4t5ss64almc

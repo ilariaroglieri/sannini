@@ -1,0 +1,68 @@
+Title: Shanghai World Expo
+
+----
+
+Hero-img: - file://xefwxhydsb4dhvw0
+
+----
+
+Subtitle: Shanghai, Cina
+
+----
+
+Intro-text: <p>Il progetto dei padiglioni B2 e C1 per Shanghai World Expo 2010 nasce dalla volontà di recuperare e valorizzare i padiglioni industriali esistenti, creando un nuovo rivestimento parietale che recuperi la tradizione del cocciopesto: una novità italiana contemporanea. Le costruzioni sono completamente rivestite da grandi pannelli in Cottostone, di misura 120 × 120 cm, traforati con macchine water jet per creare disegni che si ispirano allo stile delle ceramiche di Vietri. Lo studio mOa – Mario Occhiuto architetture – ha realizzato un progetto della facciata che combina quattro disegni a decoro in una calibrata alternanza di pieni e vuoti.</p>
+
+----
+
+Blocks: [{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":["file://abfdvizf4jd6w4xf"],"small_img":["file://9d1mkynumrebss1z"],"image_s1":["file://9wghgpt7jzqjhssw"],"image_s2":["file://cwui6pcvg0ak19t4"],"image_s3":[],"alignment":"d-row-reverse"},"id":"9045fb34-60f7-425f-8ca3-b6d6aefaa37f","isHidden":false,"type":"img-block"}]
+
+----
+
+Credits:
+
+- 
+  title: 'Progetto:'
+  info: '<p>Mario Occhiuto Architetture</p>'
+- 
+  title: 'Fotografie:'
+  info: '<p>Charlie Xia<br>Giorgio De Finis</p>'
+
+----
+
+Cover-img: - file://xefwxhydsb4dhvw0
+
+----
+
+Realization-caption: <p>Lastre Cottostone<br>Finitura tecnostone<br>12 × 12 × 2 cm </p>
+
+----
+
+Realization-credits: 
+
+----
+
+Immagine-copertina: 
+
+----
+
+Titoletto: 
+
+----
+
+Testo-introduttivo: 
+
+----
+
+Didascalia: 
+
+----
+
+Seo-title: 
+
+----
+
+Seo-description: 
+
+----
+
+Uuid: rsshv96yadyzhde2

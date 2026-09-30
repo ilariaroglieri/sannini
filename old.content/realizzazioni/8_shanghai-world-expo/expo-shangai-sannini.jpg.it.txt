@@ -1,0 +1,13 @@
+Caption: 
+
+----
+
+Mobilecropvertical: false
+
+----
+
+Uuid: cwui6pcvg0ak19t4
+
+----
+
+Focus: 52.4% 65.6%

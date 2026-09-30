@@ -1,0 +1,86 @@
+Title: DOGA CON KERF
+
+----
+
+Tech-drawing: 
+
+----
+
+Tech-drawing-mobile: 
+
+----
+
+Intro-text: <p>Fornitura e posa in opera di rivestimento esterno, realizzato con sottostruttura metallica e paramento con elementi in cotto Sannini, lavati e trattati.</p>
+
+----
+
+Blocks: [{"content":{"small_title_1":"Sottostruttura metallica di ancoraggio","small_title_2":"Rivestimento","small_title_3":"Posa e Trattamento","text_1":"<p>Struttura secondaria costituita da profili verticali in acciaio inox o in alluminio posti a interasse di 50 cm circa, vincolati alle solette e trattenuti alle pareti con staffe e tasselli a espansione, muniti di distanziatori regolabili e di ancore per il fissaggio dei componenti in cotto.</p>","text_2":"<p>Rivestimento costituito da elementi in cotto di tipo “doga piana con kerf“ delle dimensioni (l × h × s) di 500 × 145 × 50 mm, finitura superficiale “Litos” o “Arrotato”, posati con giunti verticali e orizzontali di 6 mm circa.&nbsp;</p>","text_3":"<p>Il paramento dovrà essere posato idoneamente per il superamento di eventuali fuori piombo e imperfezioni degli esistenti intonaci e strutture in cemento armato, così da creare un vuoto di circa 8-10 cm tra il retro del cotto e la muratura di supporto. Il paramento esterno, in cotto Sannini, viene fornito lavato con detergente acido decalcarizzante per la rimozione di eventuali efflorescenze e trattato per la protezione con impregnante a base di microemulsione silossanica.</p>"},"id":"6b63ef29-a604-4c1c-8e41-38fd0d988f3d","isHidden":false,"type":"3-col-text-block"}]
+
+----
+
+Cover-img: - file://n8j7ovvjquivt0be
+
+----
+
+Design: 
+
+----
+
+Measures: 500 × 145 × 50 mm
+
+----
+
+Weight: 6,0 kg/pz
+
+----
+
+Finishing: 
+
+----
+
+Finishing-front: Arrotato o Litos
+
+----
+
+Finishing-back: Grezzo o Arrotato
+
+----
+
+Coste: Litos
+
+----
+
+Variables:
+
+- 
+  title: Arrotato naturale
+  image:
+    - file://f0ucgi1jknlwek2i
+- 
+  title: Arrotato tabacco
+  image:
+    - file://ypltyybdp6wesxhu
+- 
+  title: Arrotato champagne
+  image:
+    - file://cmomrloc8s4laojz
+- 
+  title: Litos naturale
+  image:
+    - file://c5mqnbjz0tbhvph0
+- 
+  title: Litos tabacco
+  image:
+    - file://zpkn2jtxovjv89kl
+- 
+  title: Litos champagne
+  image:
+    - file://nbnlo1eechaj0yum
+
+----
+
+Pdf: 
+
+----
+
+Uuid: taqfjtwhu1lymgxk

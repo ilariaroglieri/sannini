@@ -1,0 +1,9 @@
+Caption: 
+
+----
+
+Mobilecropvertical: false
+
+----
+
+Uuid: 3ki24atoic977jnu

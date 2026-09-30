@@ -1,0 +1,40 @@
+Title: Centro direzionale
+
+----
+
+Hero-img: - file://hieycvpv6o55imnn
+
+----
+
+Subtitle: Roma, Italia
+
+----
+
+Intro-text: <p>Rivestimento esterno in cotto a protezione e decorazione del fabbricato, definito con quattro tipologie su disegno specifico di Carlo Farroni, combinate e articolate tra di loro. I quattro componenti permettono il passaggio da elementi più oscuranti a elementi più trasparenti, ancorati su pareti cieche e pareti frangisole con sistemi meccanici in acciaio inox AISI 304 lavorati al laser.</p>
+
+----
+
+Blocks: [{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":["file://76wecw614zj3ynev"],"image_s2":["file://qbaoa70awkknpx1u"],"image_s3":["file://hcjqm9z5i2hhjgim"],"alignment":""},"id":"6e5f484f-54ed-46e4-9176-cf45d2c06875","isHidden":false,"type":"img-block"}]
+
+----
+
+Credits:
+
+- 
+  title: 'Progetto:'
+  info: '<p>Tecton Studio Associati<br>Arch. Carlo Farroni<br>Arch. Ciro Cozzolino<br>Arch. Renato Lambiase<br>Arch. Stefania Ferraiuolo<br>Arch. Gaetano Valente<br>Arch. Marco Scarpato</p>'
+- 
+  title: 'Fotografie:'
+  info: '<p>Mirko Giorgetti</p>'
+
+----
+
+Cover-img: - file://lk8n9yy7z8mqnenb
+
+----
+
+Realization-caption: <p>Triangolo piccolo (litos)<br>50 × 5,9 × 5,9 cm<br>Triangolo grande (litos)<br>50 × 11 × 9,6 cm<br>Piastra con smusso (litos)<br>50 × 23,5 × 4,9 cm<br>Doga con smusso (litos)<br>50 × 11 × 4,9 cm</p>
+
+----
+
+Uuid: fpfbfdfjdjxgbibq

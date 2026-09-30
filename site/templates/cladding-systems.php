@@ -65,6 +65,8 @@
 		</item>
 
   <?php endforeach; ?>
+
+  <?php snippet('back-top-module'); ?>
 </main>
 
 <?php snippet('footer') ?>

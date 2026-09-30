@@ -1,0 +1,40 @@
+Title: How more international center
+
+----
+
+Hero-img: - file://qgckd3giwnqydhdv
+
+----
+
+Subtitle: Shanghai, Cina
+
+----
+
+Intro-text: <p>La struttura presenta un involucro di terracotta con finitura “Arrotato”, caratterizzato da porzioni cieche con elementi piani rettangolari dalle dimensioni di 25 × 50 × 2,5 cm e porzioni frangisole con listelli a sezione quadrata, denominati quadrelli, di 5 × 5 × 50 cm. Questo progetto&nbsp; garantisce sia risparmio energetico sia riduzione dell’afflusso diretto della luce dall’esterno verso l’interno, aumentando il comfort dell’edificio. I due sistemi che formano l’involucro sono ancorati con applicazioni meccaniche tramite profili in alluminio.</p><p></p>
+
+----
+
+Blocks: [{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":["file://pmh6yvdebj04d2ww"],"image_s2":["file://n9obtnihoabsqehk"],"image_s3":[],"alignment":""},"id":"e1459f13-1f4f-4114-a469-11af5ee4f981","isHidden":false,"type":"img-block"}]
+
+----
+
+Credits:
+
+- 
+  title: 'Progetto:'
+  info: '<p>Arch. Guido Giacomo Bondielli<br>Arch. Zhang Ying</p>'
+- 
+  title: 'Fotografie:'
+  info: '<p>Courtesy by Be New Form Building Material Co. Ltd</p>'
+
+----
+
+Cover-img: - file://tdd2ynp2vqi4l1cs
+
+----
+
+Realization-caption: <p>Quadrello (arrotato)<br>50 × 5 × 5 cm<br>Piastra piana sottile (arrotato)<br>25 × 50 × 2,5 cm<br></p>
+
+----
+
+Uuid: ad7iddaf1et6hcq0

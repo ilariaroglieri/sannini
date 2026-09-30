@@ -29,7 +29,7 @@
 		
 		<?php if ($total > $limit): ?>
 			<div id="load-more-container" class="module d-flex v-center">
-			  <button id="load-more" class="element s-small mono uppercase" data-reveal="parent">
+			  <button id="load-more" class="element s-small mono uppercase" arial-label="Load more">
 			    More
 			  </button>
 			</div>

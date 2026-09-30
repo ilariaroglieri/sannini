@@ -11,8 +11,11 @@
 		<section id="realizations-list">
 			<div id="realizations-list-inner" class="d-flex wrap" data-limit="<?= $limit ?>" data-offset="<?= $offset ?>" data-total="<?= $total; ?>">
 
-		  	<?php foreach ($realizations->slice(0, $limit) as $realization): 
+		  	<?php $index = 0;
+		  		foreach ($realizations->slice(0, $limit) as $realization): 
 		  		$slug = $realization->slug();
+		  		$index++;
+		  		$isLast = ($index === $total);
 		  	?>
 			  	<div id="<?= $slug ?>" class="realization">
 				  	<?php snippet('title-module-realization', [
@@ -29,11 +32,15 @@
 
 		<?php if ($total > $limit): ?>
 			<div id="load-more-container" class="module d-flex v-center">
-			  <button id="load-more" class="element s-small mono uppercase" data-reveal="parent">
+			  <button id="load-more" class="element s-small mono uppercase" arial-label="Load more">
 			    More
 			  </button>
 			</div>
 		<?php endif ?>
+
+		<?php if ($isLast): ?>
+	    <div class="module spacer-module"></div>
+	  <?php endif ?>
 	<?php endif; ?>
 </main>
 

@@ -1,0 +1,40 @@
+Title: Nuovo Teatro dell’Opera
+
+----
+
+Hero-img: - file://wt8fjylsyf82drhf
+
+----
+
+Subtitle: Firenze, Italia
+
+----
+
+Intro-text: <p>Per il Nuovo Teatro dell’Opera di Firenze, lo studio ABDR ha disegnato una “pelle” di rivestimento, pensata per mettere in evidenza il concetto di leggerezza in un equilibrio architettonico tra pieni e vuoti. Si tratta di una parete – posata a secco con sistemi meccanici di ancoraggio – il cui rivestimento è caratterizzato da formelle in cotto di 15 × 32 × 5 cm, smaltate cangianti con fondo azzurro-verde: è interessante rilevare le diverse sfumature di colore che il materiale assume durante il giorno.</p>
+
+----
+
+Blocks: [{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":["file://tgfncvgxpyvvheop"],"image_s2":[],"image_s3":["file://suootgmitbbd66ie"],"alignment":""},"id":"599c88c3-87d8-44ed-a29b-5390d4111fa4","isHidden":false,"type":"img-block"},{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":["file://xqkggyg4yqkecscv"],"image_s2":["file://ipfmgvyezhu1ttf5"],"image_s3":["file://abzzyfgg4gfbjhyu"],"alignment":""},"id":"714890fe-5775-46c3-a344-e4224d8542b7","isHidden":false,"type":"img-block"}]
+
+----
+
+Credits:
+
+- 
+  title: 'Progetto:'
+  info: '<p>ABDR</p><p><br>Arch. Laura Arlotti<br>Arch. Michele Beccu<br>Arch. Paolo Desideri<br>Arch. Filippo Raimondo</p>'
+- 
+  title: 'Fotografie:'
+  info: '<p>Courtesy of ABDR</p>'
+
+----
+
+Cover-img: - file://4o2pzquykk1fnuft
+
+----
+
+Realization-caption: <p>Doga piana a tre fori quadri smaltata<br>32 × 15 × 5 cm</p>
+
+----
+
+Uuid: fr2pk3loye3fhxea

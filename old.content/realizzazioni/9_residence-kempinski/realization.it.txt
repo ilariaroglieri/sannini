@@ -1,0 +1,40 @@
+Title: Residence Kempinski
+
+----
+
+Hero-img: - file://5x57szny2ywnx90y
+
+----
+
+Subtitle: Yinchuan, Cina
+
+----
+
+Intro-text: <p>Ricercatezza nei materiali, armonia degli elementi e forte contenuto tecnico sono le linee guida del progetto Yc Kempinski Residence, un complesso polifunzionale ubicato a Yinchuan (Ningxia), in Cina, progettato dallo studio Urbanprojects di Hong Kong.Il progetto ha previsto l’utilizzo di pochi materiali: rivestimento in cotto con varie applicazioni e più componenti, pietra e vetro. In quest’area geografica, dalle condizioni climatiche particolarmente aggressive, l’applicazione della terracotta garantisce la resistenza, oltre che meccanica, anche all’ossidazione e agli agenti atmosferici. Nella costruzione risultano impiegati oltre 20.000 mq di superficie, che il cotto, con il caratteristico colore rosso, ordina con la geometria del disegno.</p>
+
+----
+
+Blocks: [{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":["file://8wtjmrqrmr2zgisx"],"image_s2":["file://wnkb3fmwrw2uuyct"],"image_s3":["file://htibcbr9z4gmsekr"],"alignment":""},"id":"a5e5df6b-97c7-4dab-b6c2-8da0b713323d","isHidden":false,"type":"img-block"}]
+
+----
+
+Credits:
+
+- 
+  title: 'Progetto:'
+  info: '<p>Urbanprojects Ltd </p>'
+- 
+  title: 'Fotografie:'
+  info: '<p>Courtesy of Urbanprojects Ltd </p>'
+
+----
+
+Cover-img: - file://37gycuzp9jtoierc
+
+----
+
+Realization-caption: <p>Piastra ad incastro piana sottile<br>50 × 30 × 2,5 cm<br>Doga a estradosso sagomato (litos)<br>50 × 14,5 × 9,7 cm<br>Lamella (litos)<br>50 × 6 × 3,2 cm</p>
+
+----
+
+Uuid: udz9yh12utpipd6n

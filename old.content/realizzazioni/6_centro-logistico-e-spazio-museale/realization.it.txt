@@ -1,0 +1,40 @@
+Title: Centro logistico e spazio museale
+
+----
+
+Hero-img: - file://ckznkxdhy2898pix
+
+----
+
+Subtitle: Capena (Roma), Italia
+
+----
+
+Intro-text: <p>Lo schermo frangisole è costituito da elementi a sezione triangolare, realizzati su disegno dell’architetto Vincenzo Melluso e denominati “Melvin”. La peculiarità dell’elemento in cotto è costituita dal trattamento della superficie con finitura “Litos” che, attraverso una procedura inedita sperimentata per la prima volta in occasione di questo progetto, rivela un tono di colore bianco e garantisce, al contempo, la matericità classica del cotto. La facciata si sviluppa su un fronte dell’edificio scandendo pieni e vuoti, evidenziati dalla sezione a cuspide dell’elemento in cotto. L’ancoraggio è effettuato con sistemi “a doppio omega”, per barre orizzontali lunghe circa 250 cm, vincolate a strutture portanti. Il sistema riduce l’afflusso diretto della luce esterna e ne agevola una più efficace distribuzione all’interno.</p>
+
+----
+
+Blocks: [{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":["file://s1np7csmajqjc59c"],"image_s2":["file://ckznkxdhy2898pix"],"image_s3":["file://aflksm26k8nskscv"],"alignment":""},"id":"c1195f51-0f03-4840-b7ae-142a76b3e18c","isHidden":false,"type":"img-block"},{"content":{"img_layout":"m-s","full_w_img":[],"medium_img":["file://srzelbtinpghb67j"],"small_img":["file://b9cqvfovv5zowdj5"],"image_s1":[],"image_s2":[],"image_s3":[],"alignment":"d-row"},"id":"bcb65af6-ebd1-4a8b-a89c-6cb79118cc2b","isHidden":false,"type":"img-block"}]
+
+----
+
+Credits:
+
+- 
+  title: 'Progetto:'
+  info: '<p>Società Politecnica Srl<br>Elemento in cotto: Arch. Vincenzo Melluso</p>'
+- 
+  title: 'Fotografie:'
+  info: '<p>Alberto Muciaccia<br>Archivio Würth</p>'
+
+----
+
+Cover-img: - file://ckznkxdhy2898pix
+
+----
+
+Realization-caption: <p>Piastra Melvin<br>50 × 20 × 8 cm </p>
+
+----
+
+Uuid: tzofhqbbzcqknljg

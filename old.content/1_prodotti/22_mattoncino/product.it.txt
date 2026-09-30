@@ -1,0 +1,61 @@
+Title: MATTONCINO
+
+----
+
+Tech-drawing: 
+
+----
+
+Tech-drawing-mobile: 
+
+----
+
+Intro-text: 
+
+----
+
+Blocks: 
+
+----
+
+Cover-img: - file://dsao3omwdomqembw
+
+----
+
+Design: 
+
+----
+
+Measures: 300 × 63 × 25 mm
+
+----
+
+Weight: 
+
+----
+
+Finishing: Litos o Arrotato
+
+----
+
+Finishing-front: 
+
+----
+
+Finishing-back: 
+
+----
+
+Coste: 
+
+----
+
+Variables: 
+
+----
+
+Pdf: 
+
+----
+
+Uuid: fikkadlbomxzagb9

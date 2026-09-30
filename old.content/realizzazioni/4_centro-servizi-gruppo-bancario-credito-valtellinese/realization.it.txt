@@ -1,0 +1,40 @@
+Title: Centro servizi Credito Valtellinese
+
+----
+
+Hero-img: - file://pajnyqw3ppnszhav
+
+----
+
+Subtitle: Milano, Italia
+
+----
+
+Intro-text: <p>Nel progetto della nuova sede milanese del centro servizi del gruppo bancario Credito Valtellines, il concetto di leggerezza è cruciale perché la morfologia dell’edificio è particolarmente compatta e complessa. La proposta dell’architetto Rudy Masella prevede l’uso di un materiale tradizionale reinterpretato in maniera contemporanea. Sono stati utilizzati due elementi in cotto naturale: nelle pareti cieche le doghe a T – a estradosso sagomato – posate con fughe orizzontali di 5 cm; nelle zone del frangisole la doga piana, ossia la doga alleggerita, che evidenzia una sottostruttura molto snella così da valorizzare le caratteristiche architettoniche dell’edificio.</p>
+
+----
+
+Blocks: [{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":["file://a6czcziwysulhthx"],"image_s2":[],"image_s3":["file://oll4mgycsqrrwola"],"alignment":""},"id":"249e384f-a1c1-4c5c-adcf-4573114f5ae6","isHidden":false,"type":"img-block"}]
+
+----
+
+Credits:
+
+- 
+  title: 'Progetto:'
+  info: '<p>Studio Architetto Papa</p><p><br>Arch. Riccardo Papa<br>Arch. Enrica Calloni<br>Arch. Marcella Draghi</p>'
+- 
+  title: 'Fotografie:'
+  info: '<p>Mirko Giorgetti</p>'
+
+----
+
+Cover-img: - file://pajnyqw3ppnszhav
+
+----
+
+Realization-caption: <p>Doga estradosso sagomato (litos)<br>50 × 14 × 9,7 cm <br>Doga piana (litos)<br>60 × 15 × 4,8 cm <br>Piastra a spessore (litos)<br>60 × 30 × 4,8 cm </p>
+
+----
+
+Uuid: pkcwkoxlhlpd0ylc
