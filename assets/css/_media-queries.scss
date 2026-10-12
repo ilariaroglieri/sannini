@@ -148,6 +148,7 @@
         justify-content: flex-start;
         .caption {
           padding-right: calc(var(--double-spacing)*1.5);
+          padding-bottom: var(--double-spacing);
           transform: translateY(40%);
           &:nth-child(n+4) {
             display: none;

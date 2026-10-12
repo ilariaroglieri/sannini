@@ -39,7 +39,7 @@ Version: 1.0
 }
 
 .s-small, .wysiwyg.s-small p {
-  font-size: clamp(11px, 0.78vw, 15px);
+  font-size: clamp(12px, 0.78vw, 15px);
 }
 
 .s-xsmall {
@@ -54,7 +54,7 @@ Version: 1.0
   --s-medium: clamp(17px, 1.4vw, 27px);
   --s-regular: clamp(15px, 1.1vw, 21px);
   --s-reg-small: clamp(13px, 0.833vw, 16px);
-  --s-small: clamp(11px, 0.78vw, 15px);
+  --s-small: clamp(12px, 0.78vw, 15px);
   --s-xsmall: clamp(10.5px, 0.65vw, 12px);
 }
 
@@ -1357,6 +1357,7 @@ footer {
   }
   .module.special-img-module .caption-row .caption {
     padding-right: calc(var(--double-spacing) * 1.5);
+    padding-bottom: var(--double-spacing);
     transform: translateY(40%);
   }
   .module.special-img-module .caption-row .caption:nth-child(n+4) {
