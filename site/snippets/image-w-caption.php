@@ -9,6 +9,7 @@
 	$orientation = $img->dimensions()->orientation();
   $focus = $img->focus();
   $mobileCrop = $img->mobileCropVertical()->toBool() ?? false;
+  $mobileSpaceBelow = $img->addSpaceBelowMobile()->toBool() === true ? 'm-space-below' : '';
 
   if ($mobileImg !== null):
     $orientationM = 'm-' . $mobileImg->dimensions()->orientation();
@@ -21,8 +22,7 @@
   endif;
 ?>
 
-
-  <figure class="<?= $classes .' '. $orientation .' '. $orientationM ?>">
+  <figure class="<?= $classes .' '. $orientation .' '. $orientationM . ' ' . $mobileSpaceBelow ?>">
     <picture>
       <?php if ($mobileImg): ?>
         <source media="(max-width: 640px)" srcset="<?= $mobileImg->url() ?>">

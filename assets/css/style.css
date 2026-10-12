@@ -958,6 +958,10 @@ button:hover, button.active {
   opacity: 0.5;
 }
 
+.o-hidden {
+  overflow: hidden;
+}
+
 .underlined {
   text-decoration: underline;
 }
@@ -1246,7 +1250,7 @@ header nav ul li a.lang-active {
 }
 
 footer {
-  padding: 0 calc(var(--half-spacing) * 3);
+  padding: 0 calc(var(--half-spacing) * 3) var(--half-spacing);
 }
 
 @media screen and (max-width: 1440px) {
@@ -1312,13 +1316,13 @@ footer {
   .m-half {
     width: 50%;
   }
-  html, body {
-    overflow-x: hidden;
-  }
   header #site-logo .inner-element {
     width: 100%;
     align-items: center;
     justify-content: flex-end;
+  }
+  .home-container {
+    overflow-x: hidden;
   }
   .height-100 {
     height: auto;
@@ -1349,9 +1353,11 @@ footer {
   }
   .module.special-img-module .caption-row {
     align-items: flex-end;
+    justify-content: flex-start;
   }
   .module.special-img-module .caption-row .caption {
     padding-right: calc(var(--double-spacing) * 1.5);
+    transform: translateY(40%);
   }
   .module.special-img-module .caption-row .caption:nth-child(n+4) {
     display: none;

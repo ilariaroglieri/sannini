@@ -29,7 +29,8 @@ function snapModules() {
   const paddingH = parseFloat(resolveVar('--double-spacing'));
   const EPS = 2;
 
-  const imgEls = [...document.querySelectorAll('.img-module .inner-img-element')];
+  // select inner-img-element with images with class m-below-mobile
+  const imgEls = [...document.querySelectorAll('.img-module .inner-img-element')].filter(el => el.querySelector('figure.m-space-below'));
   const inners = [...document.querySelectorAll('.module .inner-element')]; // elements with this markup will occupy one module on mobile
 
   // reset sempre
@@ -38,7 +39,7 @@ function snapModules() {
 
   // ─── FASE 1: snap inner + immagini doppie (PRIMA) ───
   if (stacked) {
-    // add extra space below images
+    // add extra space below images on mobile
     const elH = imgEls.map(el => el.offsetHeight);
     imgEls.forEach((el, i) => {
       const steps = Math.max(1, Math.ceil((elH[i] - EPS) / moduleH));
@@ -130,7 +131,7 @@ ro.observe(container);
 
 //------- parallax animation
 function applyParallax() {
-  const SPEED = 200; // ampiezza in px
+  const SPEED = 100; // ampiezza in px
   const vh = window.innerHeight;
 
   document.querySelectorAll('.special-img-module').forEach(el => {

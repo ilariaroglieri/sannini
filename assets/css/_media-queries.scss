@@ -86,10 +86,6 @@
     width: 50%;
   }
 
-  html, body {
-    overflow-x: hidden;
-  }
-
   header {
     #site-logo {
       .inner-element {
@@ -98,6 +94,10 @@
         justify-content: flex-end;
       }
     }
+  }
+
+  .home-container {
+    overflow-x: hidden;
   }
 
   .height-100 {
@@ -145,8 +145,10 @@
       }
       .caption-row {
         align-items: flex-end;
+        justify-content: flex-start;
         .caption {
           padding-right: calc(var(--double-spacing)*1.5);
+          transform: translateY(40%);
           &:nth-child(n+4) {
             display: none;
           }

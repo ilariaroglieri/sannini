@@ -8,3 +8,8 @@ fields:
     label: "Vertical crop on mobile?"
     type: toggle
     default: false
+
+  addSpaceBelowMobile:
+    label: "Add space below image on mobile?"
+    type: toggle
+    default: false

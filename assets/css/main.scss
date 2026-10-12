@@ -249,6 +249,10 @@ button {
   }
 }
 
+.o-hidden {
+  overflow: hidden;
+}
+
 .underlined {
   text-decoration: underline;
 }
@@ -590,5 +594,5 @@ header {
 }
 
 footer {
-  padding: 0 calc(var(--half-spacing) * 3);
+  padding: 0 calc(var(--half-spacing) * 3) var(--half-spacing);
 }
