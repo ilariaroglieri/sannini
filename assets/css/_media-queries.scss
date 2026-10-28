@@ -158,6 +158,12 @@
     }
 
     &.tech-info-module {
+      .tech-info {
+        grid-template-columns: 1.2fr 1.8fr;
+        &.color-info {
+          grid-template-columns: 1fr;
+        }
+      }
       .color-info {
         .color-variants {
           grid-template-columns: repeat(3, 1fr);
@@ -216,6 +222,7 @@
 
   .contatti {
     height: auto;
+    overflow: auto;
     #email-info {
       padding-top: 0;
     }
@@ -229,7 +236,10 @@
   }
 
   .info .label {
-    width: 50%;
+    width: 62%;
+    & + p {
+      width: 38%;
+    }
   }
 
   footer {

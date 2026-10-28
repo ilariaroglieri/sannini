@@ -133,8 +133,15 @@ ro.observe(container);
 function applyParallax() {
   const SPEED = 100; // ampiezza in px
   const vh = window.innerHeight;
+  const isMobile = window.innerWidth <= MOBILE_BP;
+
 
   document.querySelectorAll('.special-img-module').forEach(el => {
+    if (isMobile) {
+      el.style.transform = '';
+      return;
+    }
+
     const rect = el.getBoundingClientRect();
     if (rect.bottom < 0 || rect.top > vh) return;
 
