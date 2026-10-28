@@ -2,8 +2,12 @@ Caption:
 
 ----
 
-Mobilecropvertical: false
+Mobilecropvertical: true
 
 ----
 
 Uuid: l86hjfnkfdkurkqv
+
+----
+
+Focus: 58.2% 69.3%

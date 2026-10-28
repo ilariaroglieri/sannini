@@ -18,12 +18,17 @@ columns:
             label: Text intro
             extends: fields/writer-basic
 
+          seo_description:
+            type: textarea
+            label: Meta description (max 160 characters)
+            maxlength: 160
+
   - width: 1/3
     sections:
       lista_sistemi:
         type: pages
         label: Cladding systems
-        parent: site.find("cladding-systems")
+        parent: site.find("sistemi-di-facciata")
         templates:
           - cladding-system
         layout: list

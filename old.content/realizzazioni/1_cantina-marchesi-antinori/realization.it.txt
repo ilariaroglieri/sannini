@@ -14,7 +14,7 @@ Intro-text: <p>L’area di intervento si inserisce nel contesto vinicolo-collina
 
 ----
 
-Blocks: [{"content":{"img_layout":"m-s","full_w_img":[],"medium_img":["file://r43keqgyeyefdatz"],"small_img":["file://ucprxygyxpxoxst8"],"image_s1":[],"image_s2":[],"image_s3":[],"alignment":"d-row-reverse"},"id":"9045fb34-60f7-425f-8ca3-b6d6aefaa37f","isHidden":false,"type":"img-block"},{"content":{"small_title":"","text":"<p>Le nuove tecniche hanno consentito di realizzare un sistema di facciata dagli indubbi vantaggi. Tra questi, oltre all’affidabilità della tenuta all’acqua, dobbiamo citare: la riduzione dei rischi di fessurazione e distacco, tipici dei rivestimenti applicati direttamente sul supporto murario; la facilità di posa e di manutenzione; la maggiore protezione della struttura muraria dall’azione degli agenti atmosferici; il maggior comfort estivo ed invernale; un significativo risparmio energetico. </p><p>Le soluzioni tecniche di “pareti ventilate” sono considerate oggigiorno, sotto il profilo tecnologico, fra le migliori soluzioni di isolamento termico disponibili; allo stesso tempo stanno offrendo opportunità di evoluzione linguistica degli elementi impiegati nella formazione dello strato da lasciare a vista.</p>","width":"d-two-thirds","alignment":"align-right"},"id":"6d8aaf06-400f-476e-8c52-f08307403384","isHidden":false,"type":"text-block"},{"content":{"img_layout":"m-s","full_w_img":[],"medium_img":["file://l86hjfnkfdkurkqv"],"small_img":["file://omsw3ao9hccnmdr4"],"image_s1":[],"image_s2":["file://l86hjfnkfdkurkqv"],"image_s3":["file://omsw3ao9hccnmdr4"],"alignment":""},"id":"576a1e15-823a-45ba-b9d1-54fb2a74a0a7","isHidden":false,"type":"img-block"}]
+Blocks: [{"content":{"img_layout":"m-s","full_w_img":[],"medium_img":["file://r43keqgyeyefdatz"],"small_img":["file://ucprxygyxpxoxst8"],"image_s1":[],"image_s2":[],"image_s3":[],"alignment":"d-row-reverse","space_below":"true"},"id":"9045fb34-60f7-425f-8ca3-b6d6aefaa37f","isHidden":false,"type":"img-block"},{"content":{"small_title":"","text":"<p>Le nuove tecniche hanno consentito di realizzare un sistema di facciata dagli indubbi vantaggi. Tra questi, oltre all’affidabilità della tenuta all’acqua, dobbiamo citare: la riduzione dei rischi di fessurazione e distacco, tipici dei rivestimenti applicati direttamente sul supporto murario; la facilità di posa e di manutenzione; la maggiore protezione della struttura muraria dall’azione degli agenti atmosferici; il maggior comfort estivo ed invernale; un significativo risparmio energetico. </p><p>Le soluzioni tecniche di “pareti ventilate” sono considerate oggigiorno, sotto il profilo tecnologico, fra le migliori soluzioni di isolamento termico disponibili; allo stesso tempo stanno offrendo opportunità di evoluzione linguistica degli elementi impiegati nella formazione dello strato da lasciare a vista.</p>","width":"d-two-thirds","alignment":"align-right"},"id":"6d8aaf06-400f-476e-8c52-f08307403384","isHidden":false,"type":"text-block"},{"content":{"img_layout":"m-s","full_w_img":[],"medium_img":["file://l86hjfnkfdkurkqv"],"small_img":["file://omsw3ao9hccnmdr4"],"image_s1":[],"image_s2":["file://l86hjfnkfdkurkqv"],"image_s3":["file://omsw3ao9hccnmdr4"],"alignment":"","space_below":"true"},"id":"576a1e15-823a-45ba-b9d1-54fb2a74a0a7","isHidden":false,"type":"img-block"}]
 
 ----
 
@@ -33,7 +33,7 @@ Cover-img: - file://ps1ekg6mappgpdcq
 
 ----
 
-Realization-caption: <p>Doga per barriera<br>Finitura litos <br>14,5 × 49,6 × 5,2 cm </p>
+Realization-caption: <p>Litos<br>14,5 × 49,6 × 5,2 cm </p>
 
 ----
 

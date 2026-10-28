@@ -12,6 +12,6 @@ sections:
     type: fields
     fields:
       seo_description:
-        label: SEO description
         type: textarea
-        rows: 3
+        label: Meta description (max 160 characters)
+        maxlength: 160

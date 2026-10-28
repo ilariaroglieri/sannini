@@ -2,11 +2,11 @@ Title: PIASTRA PIANA SOTTILE A INCASTRO
 
 ----
 
-Tech-drawing: - file://tgqv54tcpzyj6yd9
+Tech-drawing: - file://yexnuho57sxhjxsc
 
 ----
 
-Tech-drawing-mobile: - file://jzc1espmucdacqwe
+Tech-drawing-mobile: 
 
 ----
 
@@ -14,7 +14,7 @@ Intro-text: <p>Fornitura e posa in opera di rivestimento esterno di tipo “facc
 
 ----
 
-Blocks: [{"content":{"small_title_1":"Sottostruttura metallica di ancoraggio","small_title_2":"Rivestimento","small_title_3":"Posa e Trattamento","text_1":"<p>Struttura secondaria costituita da profili verticali in acciaio inox o in alluminio posti a interasse di 50 cm. circa, vincolati alle solette e trattenuti alle pareti con apposite staffe e tasselli a espansione muniti di distanziatori regolabili, e da ancore per il fissaggio degli elementi in cotto.</p>","text_2":"<p>Rivestimento costituito da elementi in cotto di tipo “piastra piana sottile a incastro” realizzati con terra estratta nel comune di Impruneta delle dimensioni (l × h × s) di 300 × 500 × 25 mm, dotati di kerf nei lati superiore e inferiore, aventi finitura superficiale “Arrotato”, posati con giunti orizzontali e verticali di 6 mm.</p>","text_3":"<p>Il paramento dovrà essere posato idoneamente per il superamento di eventuali fuori piombo e imperfezioni degli esistenti intonaci e strutture in cemento armato, così da creare un vuoto di circa 8-10 cm tra il retro del cotto e la muratura di supporto. Il paramento esterno, in cotto Sannini, viene fornito lavato con detergente acido decalcarizzante per la rimozione di eventuali efflorescenze e trattato per la protezione con impregnante a base di microemulsione silossanica.</p>"},"id":"5bcb9acd-107b-40f2-bd71-d0c73ca6e1f7","isHidden":false,"type":"3-col-text-block"},{"content":{"img_layout":"m-s","full_w_img":[],"medium_img":["file://6wiw5bjt5rh2ecxk"],"small_img":[],"image_s1":[],"image_s2":[],"image_s3":[],"alignment":"d-row"},"id":"3e03493c-7377-4354-a9ec-b8775d465ea9","isHidden":false,"type":"img-block"},{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":[],"image_s2":["file://wzr4vkjna6kpbpdg"],"image_s3":["file://fu97io11t8hho4dd"],"alignment":""},"id":"a1a55078-ab3b-4242-9d5c-383b5462bee9","isHidden":false,"type":"img-block"}]
+Blocks: [{"content":{"small_title_1":"Sottostruttura metallica di ancoraggio","small_title_2":"Rivestimento","small_title_3":"Posa e Trattamento","text_1":"<p>Struttura secondaria costituita da profili verticali in acciaio inox o in alluminio posti a interasse di 50 cm. circa, vincolati alle solette e trattenuti alle pareti con apposite staffe e tasselli a espansione muniti di distanziatori regolabili, e da ancore per il fissaggio degli elementi in cotto.</p>","text_2":"<p>Rivestimento costituito da elementi in cotto di tipo “piastra piana sottile a incastro” realizzati con terra estratta nel comune di Impruneta delle dimensioni (l × h × s) di 300 × 500 × 25 mm, dotati di kerf nei lati superiore e inferiore, aventi finitura superficiale “Arrotato”, posati con giunti orizzontali e verticali di 6 mm.</p>","text_3":"<p>Il paramento dovrà essere posato idoneamente per il superamento di eventuali fuori piombo e imperfezioni degli esistenti intonaci e strutture in cemento armato, così da creare un vuoto di circa 8-10 cm tra il retro del cotto e la muratura di supporto. Il paramento esterno, in cotto Sannini, viene fornito lavato con detergente acido decalcarizzante per la rimozione di eventuali efflorescenze e trattato per la protezione con impregnante a base di microemulsione silossanica.</p>"},"id":"5bcb9acd-107b-40f2-bd71-d0c73ca6e1f7","isHidden":false,"type":"3-col-text-block"},{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":["file://4krdblbmzqcdipb5"],"image_s2":["file://ce8txjhj21owcleg"],"image_s3":["file://0jgj4p9xcapk0tzm"],"alignment":"","space_below":"true"},"id":"a1a55078-ab3b-4242-9d5c-383b5462bee9","isHidden":false,"type":"img-block"}]
 
 ----
 

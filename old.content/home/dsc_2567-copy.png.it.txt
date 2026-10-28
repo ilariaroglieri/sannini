@@ -1,9 +1,13 @@
-Caption: 
+Caption: Dettaglio di una facciata scandita da elementi verticali in terracotta
 
 ----
 
-Mobilecropvertical: false
+Mobilecropvertical: true
 
 ----
 
 Uuid: huvbjzaxiii5a9nw
+
+----
+
+Focus: 34.5% 49.0%

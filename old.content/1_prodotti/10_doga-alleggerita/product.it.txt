@@ -2,7 +2,7 @@ Title: DOGA PIANA ALLEGGERITA
 
 ----
 
-Tech-drawing: 
+Tech-drawing: - file://npdzy4duhzayrbhm
 
 ----
 
@@ -14,7 +14,7 @@ Intro-text: <p>Fornitura e posa in opera di rivestimento esterno di tipo “bris
 
 ----
 
-Blocks: [{"content":{"small_title_1":"Sottostruttura metallica di ancoraggio","small_title_2":"Rivestimento","small_title_3":"Posa e Trattamento","text_1":"<p>Struttura secondaria costituita da profili verticali in acciaio inox o in alluminio posti a interasse di 200 cm circa, vincolati alle solette e trattenuti alle pareti con apposite staffe e tasselli a espansione muniti di distanziatori regolabili, e da ancore e profilo a omega per il fissaggio degli elementi in cotto.</p>","text_2":"<p>Rivestimento costituito da elementi in cotto di tipo elemento “doga piana alleggerita” delle dimensioni (l × h × s) di 500 × 145 × 48 mm, aventi finitura superficiale “Litos”, posati con giunti verticali di 6 mm circa, distanziati orizzontalmente di 15 cm (o con opportuno passo previsto da progetto).&nbsp;</p>","text_3":"<p>Il paramento dovrà essere posato idoneamente per il superamento di eventuali fuori piombo e imperfezioni degli esistenti intonaci e strutture in cemento armato, così da creare un vuoto di circa 8-10 cm tra il retro del cotto e la muratura di supporto. Il paramento esterno, in cotto Sannini, viene fornito lavato con detergente acido decalcarizzante per la rimozione di eventuali efflorescenze e trattato per la protezione con impregnante a base di microemulsione silossanica.</p>"},"id":"c622a5b5-ac35-4f17-ae5e-d7c0225ecb72","isHidden":false,"type":"3-col-text-block"}]
+Blocks: [{"content":{"small_title_1":"Sottostruttura metallica di ancoraggio","small_title_2":"Rivestimento","small_title_3":"Posa e Trattamento","text_1":"<p>Struttura secondaria costituita da profili verticali in acciaio inox o in alluminio posti a interasse di 200 cm circa, vincolati alle solette e trattenuti alle pareti con apposite staffe e tasselli a espansione muniti di distanziatori regolabili, e da ancore e profilo a omega per il fissaggio degli elementi in cotto.</p>","text_2":"<p>Rivestimento costituito da elementi in cotto di tipo elemento “doga piana alleggerita” delle dimensioni (l × h × s) di 500 × 145 × 48 mm, aventi finitura superficiale “Litos”, posati con giunti verticali di 6 mm circa, distanziati orizzontalmente di 15 cm (o con opportuno passo previsto da progetto).&nbsp;</p>","text_3":"<p>Il paramento dovrà essere posato idoneamente per il superamento di eventuali fuori piombo e imperfezioni degli esistenti intonaci e strutture in cemento armato, così da creare un vuoto di circa 8-10 cm tra il retro del cotto e la muratura di supporto. Il paramento esterno, in cotto Sannini, viene fornito lavato con detergente acido decalcarizzante per la rimozione di eventuali efflorescenze e trattato per la protezione con impregnante a base di microemulsione silossanica.</p>"},"id":"c622a5b5-ac35-4f17-ae5e-d7c0225ecb72","isHidden":false,"type":"3-col-text-block"},{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":["file://lon87zl3jwh12xle"],"image_s2":["file://rnv7znc7o0a4fblw"],"image_s3":[],"alignment":"","space_below":"true"},"id":"b05b143c-bcd4-4c53-8788-afa282250374","isHidden":false,"type":"img-block"}]
 
 ----
 

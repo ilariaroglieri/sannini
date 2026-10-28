@@ -2,7 +2,7 @@ Title: DOGA PIANA FORI QUADRI
 
 ----
 
-Tech-drawing: 
+Tech-drawing: - file://pollqxu1wewsakot
 
 ----
 
@@ -14,7 +14,7 @@ Intro-text: <p>Fornitura e posa in opera di rivestimento esterno, realizzato con
 
 ----
 
-Blocks: [{"content":{"small_title_1":"Sottostruttura metallica di ancoraggio","small_title_2":"Rivestimento","small_title_3":"Posa e Trattamento","text_1":"<p>Struttura secondaria costituita da profili verticali in acciaio inox o in alluminio posti a interasse di 100 cm circa, vincolati alle solette e trattenuti alle pareti con apposite staffe e tasselli a espansione, muniti di distanziatori regolabili e di coppia di staffe a bandiera e tubolari orizzontali per il fissaggio dei componenti in cotto.</p>","text_2":"<p>Rivestimento costituito da elementi in cotto di tipo “doga piana a fori quadri” delle dimensioni (l × h × s) di 150 × 500 × 50 mm con finitura superficiale “Litos” e, sul retro, “Arrotato”. Gli elementi sono posati con giunti verticali di mm 6 a interasse di 20 cm (o con opportuno passo previsto da progetto).</p>","text_3":"<p>Il paramento dovrà essere posato idoneamente per il superamento di eventuali fuori piombo e imperfezioni degli esistenti intonaci e strutture in cemento armato, così da creare un vuoto di circa 8-10 cm tra il retro del cotto e la muratura di supporto. Il paramento esterno, in cotto Sannini, viene fornito lavato con detergente acido decalcarizzante per la rimozione di eventuali efflorescenze e trattato per la protezione con impregnante a base di microemulsione silossanica.</p>"},"id":"878fc202-6a77-443d-bfa5-83fc85e6f182","isHidden":false,"type":"3-col-text-block"}]
+Blocks: [{"content":{"small_title_1":"Sottostruttura metallica di ancoraggio","small_title_2":"Rivestimento","small_title_3":"Posa e Trattamento","text_1":"<p>Struttura secondaria costituita da profili verticali in acciaio inox o in alluminio posti a interasse di 100 cm circa, vincolati alle solette e trattenuti alle pareti con apposite staffe e tasselli a espansione, muniti di distanziatori regolabili e di coppia di staffe a bandiera e tubolari orizzontali per il fissaggio dei componenti in cotto.</p>","text_2":"<p>Rivestimento costituito da elementi in cotto di tipo “doga piana a fori quadri” delle dimensioni (l × h × s) di 150 × 500 × 50 mm con finitura superficiale “Litos” e, sul retro, “Arrotato”. Gli elementi sono posati con giunti verticali di mm 6 a interasse di 20 cm (o con opportuno passo previsto da progetto).</p>","text_3":"<p>Il paramento dovrà essere posato idoneamente per il superamento di eventuali fuori piombo e imperfezioni degli esistenti intonaci e strutture in cemento armato, così da creare un vuoto di circa 8-10 cm tra il retro del cotto e la muratura di supporto. Il paramento esterno, in cotto Sannini, viene fornito lavato con detergente acido decalcarizzante per la rimozione di eventuali efflorescenze e trattato per la protezione con impregnante a base di microemulsione silossanica.</p>"},"id":"878fc202-6a77-443d-bfa5-83fc85e6f182","isHidden":false,"type":"3-col-text-block"},{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":["file://s64rayi1x2lecdz5"],"image_s2":["file://nvbsjtwe9cqwfw47"],"image_s3":["file://hi7qengpqmpxoym3"],"alignment":"","space_below":"true"},"id":"bb2378ff-4184-4ef8-962b-7f8fcd16681f","isHidden":false,"type":"img-block"}]
 
 ----
 

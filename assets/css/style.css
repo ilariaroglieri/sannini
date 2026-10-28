@@ -1237,10 +1237,10 @@ header nav ul li a.lang-active {
   display: none;
 }
 
-.privacy-policy p {
+.privacy-policy main p {
   margin-bottom: var(--spacing);
 }
-.privacy-policy ul {
+.privacy-policy main ul {
   list-style-type: disc;
   margin-left: var(--spacing);
 }

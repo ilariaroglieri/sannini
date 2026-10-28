@@ -13,5 +13,10 @@ sections:
           - special-block
           - 3-col-text-block
 
+      seo_description:
+        type: textarea
+        label: Meta description (max 160 characters)
+        maxlength: 160
+
 
 

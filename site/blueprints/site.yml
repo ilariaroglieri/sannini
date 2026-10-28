@@ -84,7 +84,7 @@ tabs:
         label:
           it: Sistemi di facciata 
           en: Cladding systems
-        parent: site.find("cladding-systems")
+        parent: site.find("sistemi-di-facciata")
         templates:
           - cladding-system
         layout: list
@@ -157,7 +157,7 @@ tabs:
   # TAB: MENU
   # ──────────────────────────────────────────
   main_menu:
-    label: Menù
+    label: Menù & SEO
     icon: email
     sections:
       menu_section:
@@ -171,3 +171,8 @@ tabs:
                 type: pages
                 label: Pagina
                 max: 1
+
+          seo_description:
+            type: textarea
+            label: General meta description (will be used for pages without a specific SEO description)
+            maxlength: 160

@@ -2,8 +2,12 @@ Caption: Operai al lavoro tra macchinari e materia nelle prime fasi produttive
 
 ----
 
-Mobilecropvertical: false
+Mobilecropvertical: true
 
 ----
 
 Uuid: tk1i8iul9bmwpbcp
+
+----
+
+Focus: 27.4% 62.5%

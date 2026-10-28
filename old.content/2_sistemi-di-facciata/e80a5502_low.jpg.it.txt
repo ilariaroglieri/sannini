@@ -1,0 +1,13 @@
+Caption: 
+
+----
+
+Mobilecropvertical: true
+
+----
+
+Uuid: iut6p27ixj74epdl
+
+----
+
+Focus: 91.4% 57.1%

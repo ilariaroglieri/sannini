@@ -5,11 +5,19 @@
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
+	  <?php
+		$metaDescription = $page->seo_description()->isNotEmpty()
+		  ? $page->seo_description()->value()
+		  : $site->seo_description()->value();
+		?>
+		<meta name="description" content="<?= html($metaDescription) ?>">
+	  
+	  <link rel="icon" type="image/png" href="<?= url('assets/img/favicon.ico') ?>" sizes="any">
+
 	  <title><?= $site->title() ?> | <?= $page->title() ?></title>
 
 	  <?= css(['assets/css/style.css', '@auto']) ?>
 
-	  <link rel="icon" type="image/x-icon" href="">
 	</head>
 
 	<?php $topLevel = $page->parent() ? $page->parents()->last() : $page; ?>

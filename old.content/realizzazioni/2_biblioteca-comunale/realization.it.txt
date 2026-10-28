@@ -2,7 +2,7 @@ Title: Biblioteca comunale
 
 ----
 
-Hero-img: - file://uznndmekixd8j8rg
+Hero-img: - file://cbsqeqwzahcc2ign
 
 ----
 
@@ -14,7 +14,7 @@ Intro-text: <p>Il nuovo volume, progettato nel contesto del restauro e dell’am
 
 ----
 
-Blocks: [{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":["file://zzzt6aydecd4nret"],"image_s1":["file://ff6wa4t5ss64almc"],"image_s2":[],"image_s3":["file://zzzt6aydecd4nret"],"alignment":"d-row-reverse"},"id":"cc9b06a2-4843-400c-a9c8-fa80fceccb28","isHidden":false,"type":"img-block"},{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":["file://n3czunnbcoqnrwlv"],"image_s2":["file://wacmaadrdrbrdizk"],"image_s3":["file://zm9dy1hj3gqe4azr"],"alignment":""},"id":"689fe2f6-ba0b-4bb2-829a-eee861d2996a","isHidden":false,"type":"img-block"}]
+Blocks: [{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":["file://zzzt6aydecd4nret"],"image_s1":["file://nialzir5nfkxotma"],"image_s2":[],"image_s3":["file://zzzt6aydecd4nret"],"alignment":"d-row-reverse","space_below":"true"},"id":"cc9b06a2-4843-400c-a9c8-fa80fceccb28","isHidden":false,"type":"img-block"},{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":["file://n3czunnbcoqnrwlv"],"image_s2":["file://wacmaadrdrbrdizk"],"image_s3":["file://wuepuokzedvfwiog"],"alignment":"","space_below":"true"},"id":"689fe2f6-ba0b-4bb2-829a-eee861d2996a","isHidden":false,"type":"img-block"}]
 
 ----
 
@@ -29,11 +29,11 @@ Credits:
 
 ----
 
-Cover-img: - file://uznndmekixd8j8rg
+Cover-img: - file://4jn2dwaftlyjuvia
 
 ----
 
-Realization-caption: <p>Litos smaltato<br>36 × 36 × 5 cm </p>
+Realization-caption: <p>Litos<br>36 × 36 × 5 cm </p>
 
 ----
 

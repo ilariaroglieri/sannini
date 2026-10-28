@@ -12,3 +12,4 @@ sections:
     image:
       query: page.cover_img.toFile
     empty: No realizations. Click "+" to add one.
+

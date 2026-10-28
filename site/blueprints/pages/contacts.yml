@@ -26,6 +26,11 @@ columns:
             type: url
             placeholder: "https://instagram.com/..."
 
+          seo_description:
+            type: textarea
+            label: Meta description (max 160 characters)
+            maxlength: 160
+
   - width: 1/2
     sections:
       additional_info:

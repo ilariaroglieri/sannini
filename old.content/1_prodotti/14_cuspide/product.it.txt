@@ -2,7 +2,7 @@ Title: CUSPIDE
 
 ----
 
-Tech-drawing: 
+Tech-drawing: - file://34fe1qwmisqmmexw
 
 ----
 
@@ -14,7 +14,7 @@ Intro-text: <p>Fornitura e posa in opera di rivestimento esterno di tipo “facc
 
 ----
 
-Blocks: [{"content":{"small_title_1":"Sottostruttura metallica di ancoraggio","small_title_2":"Rivestimento","small_title_3":"Posa e Trattamento","text_1":"<p>Struttura secondaria costituita da profili orizzontali in acciaio inox o in alluminio posti a interasse di 50 cm circa, vincolati alle solette con staffe e tasselli a espansione dotati di distanziatori regolabili, e da ancore per il fissaggio degli elementi in cotto.</p>","text_2":"<p>Rivestimento costituito da elementi in cotto di tipo “cuspide” realizzati con terra estratta nel comune di Impruneta, delle dimensioni (l × h × s) di 110 × 500 × 95 mm e aventi finitura superficiale “Litos”. Il paramento dovrà essere posato idoneamente per il superamento di eventuali fuori piombo e imperfezioni degli esistenti intonaci e strutture in&nbsp; cemento armato.&nbsp;</p>","text_3":"<p>Il paramento dovrà essere posato idoneamente per il superamento di eventuali fuori piombo e imperfezioni degli esistenti intonaci e strutture in cemento armato, così da creare un vuoto di circa 8-10 cm tra il retro del cotto e la muratura di supporto. Il paramento esterno, in cotto Sannini, viene fornito lavato con detergente acido decalcarizzante per la rimozione di eventuali efflorescenze e trattato per la protezione con impregnante a base di microemulsione silossanica.</p>"},"id":"553f3078-c8cb-43a3-8cea-f89a5fa97745","isHidden":false,"type":"3-col-text-block"}]
+Blocks: [{"content":{"small_title_1":"Sottostruttura metallica di ancoraggio","small_title_2":"Rivestimento","small_title_3":"Posa e Trattamento","text_1":"<p>Struttura secondaria costituita da profili orizzontali in acciaio inox o in alluminio posti a interasse di 50 cm circa, vincolati alle solette con staffe e tasselli a espansione dotati di distanziatori regolabili, e da ancore per il fissaggio degli elementi in cotto.</p>","text_2":"<p>Rivestimento costituito da elementi in cotto di tipo “cuspide” realizzati con terra estratta nel comune di Impruneta, delle dimensioni (l × h × s) di 110 × 500 × 95 mm e aventi finitura superficiale “Litos”. Il paramento dovrà essere posato idoneamente per il superamento di eventuali fuori piombo e imperfezioni degli esistenti intonaci e strutture in&nbsp; cemento armato.&nbsp;</p>","text_3":"<p>Il paramento dovrà essere posato idoneamente per il superamento di eventuali fuori piombo e imperfezioni degli esistenti intonaci e strutture in cemento armato, così da creare un vuoto di circa 8-10 cm tra il retro del cotto e la muratura di supporto. Il paramento esterno, in cotto Sannini, viene fornito lavato con detergente acido decalcarizzante per la rimozione di eventuali efflorescenze e trattato per la protezione con impregnante a base di microemulsione silossanica.</p>"},"id":"553f3078-c8cb-43a3-8cea-f89a5fa97745","isHidden":false,"type":"3-col-text-block"},{"content":{"img_layout":"s-s-s","full_w_img":[],"medium_img":[],"small_img":[],"image_s1":["file://fes7cgfgoxkb5e74"],"image_s2":["file://2o1jmzbe1xeqq65s"],"image_s3":["file://hd1wfyjceeyvzctf"],"alignment":"","space_below":"true"},"id":"f37fc655-47d0-48db-a816-eee21f5ee080","isHidden":false,"type":"img-block"}]
 
 ----
 
