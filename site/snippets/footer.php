@@ -6,22 +6,28 @@
 			<div class="footer-info d-one-third m-whole element" data-reveal="parent">
 				<div class="info spacing-b-8 d-flex" data-reveal="child">
 					<span class="mono uppercase s-xsmall label">Sannini Impruneta</span>
-					<p class="s-small"><?= page('contatti')->address()->kt()->inline() ?></p>
+					<?php if (page('contatti')->address()->isNotEmpty()): ?>
+						<p class="s-small"><?= page('contatti')->address()->kt()->inline() ?></p>
+					<?php endif; ?>
 				</div>
 
-				<div class="info d-flex" data-reveal="child">
-					<span class="mono uppercase s-xsmall label"><?= t('phone'); ?></span>
-					<p class="s-small"><?= page('contatti')->phone()->kt()->inline() ?></p>
-				</div>
+				<?php if (page('contatti')->phone()->isNotEmpty()): ?>
+					<div class="info d-flex" data-reveal="child">
+						<span class="mono uppercase s-xsmall label"><?= t('phone'); ?></span>
+						<p class="s-small"><?= page('contatti')->phone()->kt()->inline() ?></p>
+					</div>
+				<?php endif; ?>
 
-				<div class="info d-flex" data-reveal="child">
-					<span class="mono uppercase s-xsmall label"><?= t('email'); ?></span>
-					<p class="s-small"><?= page('contatti')->email()->kt()->inline() ?></p>
-				</div>
+				<?php if (page('contatti')->email()->isNotEmpty()): ?>
+					<div class="info d-flex" data-reveal="child">
+						<span class="mono uppercase s-xsmall label"><?= t('email'); ?></span>
+						<p class="s-small"><?= page('contatti')->email()->kt()->inline() ?></p>
+					</div>
+				<?php endif; ?>
 
 				<div class="info spacing-b-8 d-flex" data-reveal="child">
 					<span class="mono uppercase s-xsmall label">IG</span>
-					<a class="s-small" href="<?= page('contatti')->email()->toUrl() ?>">Sannini_Impruneta</a>
+					<a class="s-small" href="https://www.instagram.com/sanniniimpruneta/" target="_blank">Sannini_Impruneta</a>
 				</div>
 
 				<div class="policies d-flex d-column" data-reveal="child">

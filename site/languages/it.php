@@ -17,7 +17,7 @@ return [
     'finishing_front' => 'Finitura fronte',
     'finishing_back' => 'Finitura retro',
     'coste' => 'Coste',
-    'color' => 'Colore',
+    'pcolor' => 'Colore',
     'pdf' => 'Scheda tecnica',
     'pdf2' => 'Catalogo',
   ],

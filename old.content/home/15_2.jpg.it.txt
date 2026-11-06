@@ -1,9 +1,0 @@
-Caption: Vista complessiva della facciata schermata da elementi frangisole
-
-----
-
-Mobilecropvertical: false
-
-----
-
-Uuid: b3v45hkrg5muribq

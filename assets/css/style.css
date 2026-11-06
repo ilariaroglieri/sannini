@@ -1110,7 +1110,7 @@ header nav ul li a.lang-active {
 }
 .module .product .product-inner .product-img {
   flex-grow: 1;
-  background-size: 55%;
+  background-size: 70%;
   background-position: center 42%;
   background-repeat: no-repeat;
   transition: all 0.3s;
@@ -1122,7 +1122,7 @@ header nav ul li a.lang-active {
   background-color: #ECEBDD;
 }
 .module .product:hover .product-img {
-  background-size: 55%;
+  background-size: 75%;
 }
 
 .module.tech-info-module .tech-info {
@@ -1163,7 +1163,7 @@ header nav ul li a.lang-active {
 }
 .module.tech-info-module .color-info .color-variants {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-column: 2fr;
   gap: var(--spacing);
 }

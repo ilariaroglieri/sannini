@@ -16,7 +16,7 @@ return [
     'finishing_front' => 'Finishing front',
     'finishing_back' => 'Finishing back',
     'coste' => 'Coste',
-    'color' => 'Color',
+    'pcolor' => 'Color',
     'pdf' => 'Technical sheet',
     'pdf2' => 'Catalogue',
   ],

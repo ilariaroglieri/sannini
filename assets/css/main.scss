@@ -419,7 +419,7 @@ header {
       }
       .product-img {
         flex-grow: 1;
-        background-size: 55%;
+        background-size: 70%;
         background-position: center 42%;
         background-repeat: no-repeat;
         transition: all .3s;
@@ -433,7 +433,7 @@ header {
     }
     &:hover {
       .product-img {
-        background-size: 55%;
+        background-size: 75%;
       }
     }
   }
@@ -481,7 +481,7 @@ header {
       }
       .color-variants {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         grid-column: 2fr;
         gap: var(--spacing);
       }

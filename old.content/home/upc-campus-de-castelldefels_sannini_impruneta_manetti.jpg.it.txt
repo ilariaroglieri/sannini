@@ -1,9 +1,0 @@
-Caption: Dettaglio di frangisole orizzontali in terracotta
-
-----
-
-Mobilecropvertical: false
-
-----
-
-Uuid: augbfcmhaajao4fx

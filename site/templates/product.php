@@ -49,16 +49,22 @@
 					  <?php endif ?>
 					<?php endforeach ?>
 
+				  <?php if ($page->design()->isNotEmpty()): ?>
+			  		<div class="tech-info" data-reveal="child">
+				      <span class="tech-info-label mono uppercase s-xsmall">Design: </span>
+				      <p class="tech-info__value mono s-xsmall"><?= $page->design(); ?></p>
+				    </div>
+			  	<?php endif; ?>
 
 					<?php // color variables
 						$variables = $page->variables()->toStructure();
 						if ($variables->isNotEmpty()):
 					?>
 						<div class="tech-info color-info" data-reveal="child">
-				      <span class="tech-info-label mono uppercase s-xsmall"><?= t('color') ?>: </span>
+				      <span class="tech-info-label mono uppercase s-xsmall"><?= t('pcolor') ?>: </span>
 				      <div class="color-variants">
 					      <?php foreach ($variables as $i => $variable): ?>
-					      	<div class="color-variant d-flex d-column spacing-b-1">
+					      	<div class="color-variant d-flex d-column space-between spacing-b-1">
 								  	<p class="color-title mono s-xsmall spacing-b-1" data-color="<?= $variable->title()->slug() ?>"><?= $variable->title()->fancypants() ?></p>
 
 								  	<?= snippet('image-w-caption', [
@@ -70,6 +76,7 @@
 							</div>
 						</div>
 				  <?php endif; ?>
+
 
 			    <?php 
 			    $pdf = $page->pdf()->toFile();

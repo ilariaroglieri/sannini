@@ -1,9 +1,0 @@
-Caption: Veduta storica dello stabilimento Sannini Impruneta e delle sue fornaci
-
-----
-
-Mobilecropvertical: false
-
-----
-
-Uuid: w0dto7ehyrr9upgj

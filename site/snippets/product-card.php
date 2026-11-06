@@ -11,11 +11,5 @@
   	<div class="product-title s-small uppercase mono t-center" data-reveal="child"><?= $item->title(); ?></div>
 
   	<div class="product-img grow" data-reveal="child" style="background-image: url('<?= $imgUrl ?>');"></div>
-
-  	<?php if ($productDesigner->isNotEmpty()): ?>
-  		<div class="product-designer p-absolute" data-reveal="child">
-  			<p class="s-small mono t-center"><?= $productDesigner; ?></p>
-  		</div>
-  	<?php endif; ?>
   </div>
 </div>

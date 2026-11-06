@@ -1,9 +1,0 @@
-Caption: Dettaglio di un sistema di facciata in terracotta con frangisole integrati
-
-----
-
-Mobilecropvertical: false
-
-----
-
-Uuid: ewxpq8cngclm0tfj
